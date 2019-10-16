@@ -12,8 +12,25 @@
 #include <stdio.h>
 
 int main(void) {
+
+	char* url = "https://thayer.github.io/eng50";
+	char* html;
+	webpage_t* webby = webpage_new(url, 0, html);
+
+	html = webpage_getHTML(webby);
+
+	if (html==NULL){
+		exit(EXIT_FAILURE);
+	}
+
 	
-	printf("hello\n");
-	return 0;
+	// log one word (1-9 chars) about a given url
+	inline static void logr(const char *word, const int depth, const char *url)
+	{
+  printf("%2d %*s%9s: %s\n", depth, depth, "", word, url);
+	}
 	
+
+	webpage_delete((void*) webby);
+	exit(EXIT_SUCCESS);
 }
