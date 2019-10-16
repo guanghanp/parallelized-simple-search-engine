@@ -1,0 +1,10 @@
+# object files
+*.o
+
+# Emacs Save Files
+*~
+\#*\#
+.\#*
+
+# Debugging symbols
+*.dSYM
