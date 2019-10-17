@@ -28,6 +28,7 @@ void printy(void* element){
 bool searchurl(void* urlp, const void* urlkey){
 	char* up = (char*)urlp;
 	char* key = (char*)urlkey;
+	// printf("up: %s key: %s \n",up,key);
 	return strcmp(up,key)==0;
 }
 
@@ -64,8 +65,8 @@ int main(int argc,char *argv[]) {
 	queue_t* qurl = qopen();
 	
 	if (webpage_fetch(webby)){
-		hput(visited_ht,(void*)webby,seedurl,strlen(seedurl));
-		qput(qp,(void*)webby);		
+		hput(visited_ht,(void*)seedurl,seedurl,strlen(seedurl));
+		qput(qp,(void*)webby);
 	} else {
 		exit(EXIT_FAILURE);
 	}
@@ -98,11 +99,16 @@ int main(int argc,char *argv[]) {
 					webpage_t* inter_web = webpage_new(result, webpage_getDepth(next)+1, NULL);
 					hput(visited_ht,(void*)result,result,strlen(result));
 					qput(qp,(void*)inter_web);
-				} // else
-					// printf("in the ht\n");
-			}
-			else
+				} // else {
+					// qget(qurl);
+					// free(result);
+				// printf("in the ht\n");
+				// }
+			} else {
 				printf("External URL.\n");
+				// qget(qurl);
+				// free(result);
+			}
 		}
 		
 		webpage_delete((void*)next);
