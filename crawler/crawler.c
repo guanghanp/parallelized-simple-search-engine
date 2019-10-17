@@ -28,34 +28,7 @@ void printy(void* element){
 bool searchurl(void* webp, const void* urlkey){
 	webpage_t* wp = (webpage_t*)webp;
 	char* key = (char*)urlkey;
-	4
-Step 
-4
-.
-Hash Table of URL’s.
-Extend  your  solution  to  Step  3
-to  c
-reate  a  hash  table  of 
-visited 
-URL’s
-: 
-No new webpage is placed in the queue if its associated URL is already in the hash table. 
-If a URL is not in the hash table, 
-the associated webpage
-is added to the queue and 
-the URL is 
-also added to the hash table
-. 
-Verify
-that
-only one
-instance of Coding
-Style.html is
-printed
-.
-Run 
-valgrind
-to validate your prograreturn strcmp(webpage_getURL(wp),key)==0;
+	return strcmp(webpage_getURL(wp),key)==0;
 }
 
 int32_t pagesave(webpage_t *pagep, int id, char *dirname){
@@ -88,6 +61,7 @@ int main(int argc,char *argv[]) {
 	queue_t* qp = qopen();
 	hashtable_t* visited_ht = hopen(100);
 	webpage_t* webby = webpage_new(seedurl, 0, NULL);
+	char** URL_array;
 	
 	if (webpage_fetch(webby)){
 		hput(visited_ht,(void*)webby,seedurl,strlen(seedurl));
