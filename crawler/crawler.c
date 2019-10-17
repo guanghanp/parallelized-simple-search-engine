@@ -1,4 +1,4 @@
-/* crawler.c --- just prints hello
+/* crawler.c --- web crawler
  * 
  * 
  * Author: Guanghan Pan
@@ -18,6 +18,7 @@
 #include <string.h>
 #include <stdint.h>
 #include <unistd.h>
+#include <sys/stat.h>
 
 void printy(void* element){
 	webpage_t* wp = (webpage_t*)element;
@@ -49,16 +50,26 @@ int32_t pagesave(webpage_t *pagep, int id, char *dirname){
 int main(int argc,char *argv[]) {
 
 	if(argc != 4){
-		printf("usage: crawler <seedurl> <pagedir> <maxdepth>");
+		printf("usage: crawler <seedurl> <pagedir> <maxdepth>\n");
 		exit(EXIT_FAILURE);
 	}
-	
-	char* seedurl = "https://thayer.github.io/engs50/";
-	char* pagedir = "../pages/";
-	// char* seedurl = argv[1];
-	// char* pagedir = argv[2];
 
+	
+	// char* seedurl = "https://thayer.github.io/engs50/";
+	// char* pagedir = "../pages/";
+	char* seedurl = argv[1];
+	char* pagedir = argv[2];
 	int maxdepth = atoi(argv[3]);
+
+	if(pagedir[strlen(pagedir)-1]!='/')
+		pagedir = strcat(pagedir,"/");
+	
+	struct stat statbuf;
+	if (stat(pagedir, &statbuf)!= 0||!S_ISDIR(statbuf.st_mode)||maxdepth<=0){
+		printf("usage: crawler <seedurl> <pagedir> <maxdepth>\n");
+		exit(EXIT_FAILURE);
+	}
+
 	queue_t* qp = qopen();
 	hashtable_t* visited_ht = hopen(100);
 	webpage_t* webby = webpage_new(seedurl, 0, NULL);
@@ -88,7 +99,6 @@ int main(int argc,char *argv[]) {
 		char* result;
 		while (webpage_getDepth(next)<maxdepth && (pos = webpage_getNextURL(next, pos, &result)) > 0) {
 
-			qput(qurl,(void*)result);
 			printf("Found url: %s  \n", result);
 			if (IsInternalURL(result)){
 				
@@ -97,17 +107,16 @@ int main(int argc,char *argv[]) {
 				if(hsearch(visited_ht,searchurl,result,strlen(result))==NULL){
 					// printf("Not in the ht.\n");
 					webpage_t* inter_web = webpage_new(result, webpage_getDepth(next)+1, NULL);
+					qput(qurl,(void*)result);			
 					hput(visited_ht,(void*)result,result,strlen(result));
 					qput(qp,(void*)inter_web);
-				} // else {
-					// qget(qurl);
-					// free(result);
-				// printf("in the ht\n");
-				// }
+				} else {
+					free(result);
+					printf("in the ht\n");
+				}
 			} else {
 				printf("External URL.\n");
-				// qget(qurl);
-				// free(result);
+				free(result);
 			}
 		}
 		
