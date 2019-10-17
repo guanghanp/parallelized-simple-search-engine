@@ -19,16 +19,14 @@
 #include <unistd.h>
 #include <sys/stat.h>
 
-void printy(void* element){
-	webpage_t* wp = (webpage_t*)element;
-	printf("%s\n",webpage_getURL(wp));
-	webpage_delete((void*)wp);
+void free_content(void* element){
+	char* cp = (char*)element;
+	free(cp);
 }
 
 bool searchurl(void* urlp, const void* urlkey){
 	char* up = (char*)urlp;
 	char* key = (char*)urlkey;
-	// printf("up: %s key: %s \n",up,key);
 	return strcmp(up,key)==0;
 }
 
@@ -51,11 +49,10 @@ int main(int argc,char *argv[]) {
 		printf("usage: crawler <seedurl> <pagedir> <maxdepth>\n");
 		exit(EXIT_FAILURE);
 	}
-
-	
 	// char* seedurl = "https://thayer.github.io/engs50/";
 	// char* pagedir = "../pages/";
 	char* seedurl = argv[1];
+	
 	char* pagedir = argv[2];
 	int maxdepth = atoi(argv[3]);
 
@@ -71,7 +68,7 @@ int main(int argc,char *argv[]) {
 	queue_t* qp = qopen();
 	hashtable_t* visited_ht = hopen(100);
 	webpage_t* webby = webpage_new(seedurl, 0, NULL);
-	queue_t* qurl = qopen();
+	//	queue_t* qurl = qopen();
 	int id = 1;
 	
 	if (webpage_fetch(webby)){
@@ -81,7 +78,6 @@ int main(int argc,char *argv[]) {
 	} else {
 		exit(EXIT_FAILURE);
 	}
-
 
 	webpage_t *next;
 	while ( ( next = (webpage_t*)qget(qp) )!=NULL ){
@@ -106,7 +102,7 @@ int main(int argc,char *argv[]) {
 				if(hsearch(visited_ht,searchurl,result,strlen(result))==NULL){
 					// printf("Not in the ht.\n");
 					webpage_t* inter_web = webpage_new(result, webpage_getDepth(next)+1, NULL);
-					qput(qurl,(void*)result);			
+					//			qput(qurl,(void*)result);			
 					hput(visited_ht,(void*)result,result,strlen(result));
 					qput(qp,(void*)inter_web);
 				} else {
@@ -118,17 +114,17 @@ int main(int argc,char *argv[]) {
 				free(result);
 			}
 		}
-		
 		webpage_delete((void*)next);
-		
 	}
 
-	char *n;
+	/*	char *n;
 	while ( ( n = (char*)qget(qurl) )!=NULL )
 		free(n);
-	
+	*/
+	hremove(visited_ht,searchurl,seedurl,strlen(seedurl));
+	happly(visited_ht,free_content);
 	hclose(visited_ht);
-	qclose(qurl);
+	//	qclose(qurl);
 	qclose(qp);
 	exit(EXIT_SUCCESS);
 	
