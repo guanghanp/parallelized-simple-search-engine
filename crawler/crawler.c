@@ -25,10 +25,10 @@ void printy(void* element){
 	webpage_delete((void*)wp);
 }
 
-bool searchurl(void* webp, const void* urlkey){
-	webpage_t* wp = (webpage_t*)webp;
+bool searchurl(void* urlp, const void* urlkey){
+	char* up = (char*)urlp;
 	char* key = (char*)urlkey;
-	return strcmp(webpage_getURL(wp),key)==0;
+	return strcmp(up,key)==0;
 }
 
 int32_t pagesave(webpage_t *pagep, int id, char *dirname){
@@ -61,7 +61,7 @@ int main(int argc,char *argv[]) {
 	queue_t* qp = qopen();
 	hashtable_t* visited_ht = hopen(100);
 	webpage_t* webby = webpage_new(seedurl, 0, NULL);
-	char** URL_array;
+	queue_t* qurl = qopen();
 	
 	if (webpage_fetch(webby)){
 		hput(visited_ht,(void*)webby,seedurl,strlen(seedurl));
@@ -86,31 +86,35 @@ int main(int argc,char *argv[]) {
 		int pos = 0;
 		char* result;
 		while (webpage_getDepth(next)<maxdepth && (pos = webpage_getNextURL(next, pos, &result)) > 0) {
-			
+
+			qput(qurl,(void*)result);
 			printf("Found url: %s  \n", result);
 			if (IsInternalURL(result)){
 				
 				printf("Internal URL.\n");
 				
 				if(hsearch(visited_ht,searchurl,result,strlen(result))==NULL){
-					printf("Not in the ht.\n");
+					// printf("Not in the ht.\n");
 					webpage_t* inter_web = webpage_new(result, webpage_getDepth(next)+1, NULL);
-					hput(visited_ht,(void*)inter_web,result,strlen(result));
+					hput(visited_ht,(void*)result,result,strlen(result));
 					qput(qp,(void*)inter_web);
-				} else
-					printf("in the ht\n");
-				
+				} // else
+					// printf("in the ht\n");
 			}
 			else
 				printf("External URL.\n");
-			free(result);
 		}
 		
-		// webpage_delete((void*)next);
+		webpage_delete((void*)next);
 		
 	}
 
+	char *n;
+	while ( ( n = (char*)qget(qurl) )!=NULL )
+		free(n);
+	
 	hclose(visited_ht);
+	qclose(qurl);
 	qclose(qp);
 	exit(EXIT_SUCCESS);
 	
