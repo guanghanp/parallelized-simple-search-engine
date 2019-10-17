@@ -63,7 +63,7 @@ int main(int argc,char *argv[]) {
 		pagedir = strcat(pagedir,"/");
 	
 	struct stat statbuf;
-	if (stat(pagedir, &statbuf)!= 0||!S_ISDIR(statbuf.st_mode)||maxdepth<=0){
+	if (stat(pagedir, &statbuf)!= 0||!S_ISDIR(statbuf.st_mode)||maxdepth<0){
 		printf("usage: crawler <seedurl> <pagedir> <maxdepth>\n");
 		exit(EXIT_FAILURE);
 	}
@@ -72,17 +72,18 @@ int main(int argc,char *argv[]) {
 	hashtable_t* visited_ht = hopen(100);
 	webpage_t* webby = webpage_new(seedurl, 0, NULL);
 	queue_t* qurl = qopen();
+	int id = 1;
 	
 	if (webpage_fetch(webby)){
 		hput(visited_ht,(void*)seedurl,seedurl,strlen(seedurl));
 		qput(qp,(void*)webby);
+		pagesave(webby,id++,pagedir);
 	} else {
 		exit(EXIT_FAILURE);
 	}
 
 
 	webpage_t *next;
-	int id = 1;
 	while ( ( next = (webpage_t*)qget(qp) )!=NULL ){
 
 		if(strcmp(webpage_getURL(next),seedurl)!=0){
