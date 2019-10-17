@@ -1,6 +1,5 @@
 /* crawler.c --- web crawler
- * 
- * 
+ *
  * Author: Guanghan Pan
  * Created: Thu Oct 15 17:48:22 2019 (-0400)
  * Version: 1.0
@@ -38,7 +37,6 @@ int32_t pagesave(webpage_t *pagep, int id, char *dirname){
 	char filename[20];
 	// create file name using dirname
 	sprintf(filename,"%s%d",dirname,id);
-
 	// open the file and write the contents
 	fp = fopen(filename,"w");
 	fprintf(fp,"%s\n%d\n%d\n%s",webpage_getURL(pagep),webpage_getDepth(pagep)
