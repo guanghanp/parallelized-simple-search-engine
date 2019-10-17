@@ -1,5 +1,5 @@
 #!/bin/bash
-valgrind --leak-check=full crawler
+valgrind --leak-check=full crawler asd ssad 1
 
 
 
