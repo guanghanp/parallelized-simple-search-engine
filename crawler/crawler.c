@@ -13,6 +13,7 @@
 #include <webpage.h>
 #include <queue.h>
 #include <hash.h>
+#include <pageio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdint.h>
@@ -28,19 +29,6 @@ bool searchurl(void* urlp, const void* urlkey){
 	char* up = (char*)urlp;
 	char* key = (char*)urlkey;
 	return strcmp(up,key)==0;
-}
-
-int32_t pagesave(webpage_t *pagep, int id, char *dirname){
-	FILE *fp;
-	char filename[20];
-	// create file name using dirname
-	sprintf(filename,"%s%d",dirname,id);
-	// open the file and write the contents
-	fp = fopen(filename,"w");
-	fprintf(fp,"%s\n%d\n%d\n%s",webpage_getURL(pagep),webpage_getDepth(pagep)
-					,webpage_getHTMLlen(pagep), webpage_getHTML(pagep));
-	fclose(fp);
-	return 0;
 }
 
 int main(int argc,char *argv[]) {
