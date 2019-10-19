@@ -38,13 +38,16 @@ webpage_t *pageload(int id, char *dirnm){
 	if((fp = fopen(filename,"r"))==NULL)
 		return NULL;
 	else {
-		char url[50],depth[5],lines[5],html[100],html_init[50000] = "";
+		char url[50],depth[5],lines[5],html[1000],html_init[20000];
 		fscanf(fp,"%s\n%s\n%s\n",url,depth,lines);
 		int depth_int = atoi(depth);
-		while (fgets(html,100,fp) != NULL)
-			strcat(html_init,html);
+
+		char* htmlp = html_init;
+		while (fgets(html,1000,fp) != NULL){
+			strcpy(htmlp,html);
+			htmlp += strlen(html);
+		}
 		webpage_t *web = webpage_new(url,depth_int,html_init);
-		
 		return web;
 	}
 		

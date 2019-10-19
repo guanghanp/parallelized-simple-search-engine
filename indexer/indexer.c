@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <webpage.h>
 #include <hash.h>
+#include <queue.h>
 #include <pageio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -24,12 +25,23 @@ static int total = 0;
 
 typedef struct word_t{
 	char* word;
-	int count;
+	queue_t* docq;
 } word_t;
 
-void init_word(word_t *wordp,char *wordc){
-	wordp->word = wordc;
-	wordp->count = 1;
+void init_word(word_t *wordp, char *word){
+	wordp->word = word;
+	wordp->docq = qopen();
+}
+
+typedef struct doc_t{
+	int document;
+	int count;
+} doc_t;
+
+
+void init_doc(doc_t *dp, int id){
+	dp->document = id;
+	dp->count = 1;
 }
 
 bool searchWord(void *wordp, const void *wordc){
@@ -38,8 +50,22 @@ bool searchWord(void *wordp, const void *wordc){
 	return strcmp(wp->word,wc)==0;
 }
 
+bool searchDoc(void *docp, const void *id){
+	doc_t *dp = (doc_t*) docp;
+	int *doc_id = (int*) id;
+	return dp->document == *doc_id;
+}
+
+void freeDocs(void *docp){
+	doc_t *dp = (doc_t*)docp;
+	free(dp);
+}
+
 void freeWords(void *wordp){
 	word_t *wp = (word_t*) wordp;
+	qapply(wp->docq,freeDocs);
+	qclose(wp->docq);
+	free(wp->word);
 	free(wp);
 }
 
@@ -54,38 +80,58 @@ char *NormalizeWord(char *word){
 	return word;
 }
 
+void sumOne(void *docp){
+	doc_t* dp = (doc_t*)docp;
+	total += dp->count;
+}
+
 void sumWords(void *wordp){
 	word_t* wp = (word_t*)wordp;
-	total += wp->count;
+	qapply(wp->docq,sumOne);
 }
 
 int main(void){
 	hashtable_t *word_ht;
-	word_ht=hopen(100);
+	word_ht=hopen(97);
 
 	webpage_t *one;
-	one = pageload(1,"../pages/");
-
+	int id = 1;
+	one = pageload(id,"../pages/");
 	
 	char* result;
 	int pos=0;
 	while ( (pos = webpage_getNextWord(one, pos, &result)) > 0) {
 		if(NormalizeWord(result)!=NULL){
-			printf("normalized result:%s\n",result);
+			// printf("normalized result:%s\n",result);
 			word_t *search_res;
 			search_res=(word_t*)hsearch(word_ht,searchWord,result,strlen(result));
 			if(search_res == NULL){
-				search_res=(word_t*)malloc(sizeof(word_t));
-				init_word(search_res,result);
-				hput(word_ht,search_res,result,strlen(result));
+				word_t *new_word = (word_t*)malloc(sizeof(word_t));
+				doc_t* docp = (doc_t*)malloc(sizeof(doc_t)); 
+				init_word(new_word,result);
+				init_doc(docp,id);
+				qput(new_word->docq,docp);
+				hput(word_ht,new_word,result,strlen(result));
 			} else {
-				search_res->count++;
+				doc_t *search_q;
+				search_q = (doc_t*)qsearch(search_res->docq,searchDoc,&id);
+				if(search_q == NULL){
+					doc_t* docp = (doc_t*)malloc(sizeof(doc_t));
+					init_doc(docp,id);
+					qput(search_res->docq,docp);
+				}
+				else{
+					search_q->count++;
+				}
+				free(result);
 			}
+		} else {
+			free(result);
 		}
-		free(result);
+		// free(result); // ?????
 	}
 	happly(word_ht,sumWords);
 	printf("total:%d\n",total);
-		happly(word_ht,freeWords);
+	happly(word_ht,freeWords);
 	hclose(word_ht);
 }
