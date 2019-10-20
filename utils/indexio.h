@@ -28,6 +28,16 @@ typedef struct doc_t{
 void init_word(word_t *wordp, char *word, queue_t* wordq);
 
 void init_doc(doc_t *dp, int id, int count);
+
+bool searchWord(void *wordp, const void *wordc);
+
+bool searchDoc(void *docp, const void *id);
+
+
+void freeDocs(void *docp);
+
+void freeWords(void *wordp);
+
 /*
  * pagesave -- save the page in filename id in directory dirnm
  *

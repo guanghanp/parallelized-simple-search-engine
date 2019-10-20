@@ -1,0 +1,6 @@
+#!/bin/bash
+valgrind --leak-check=full test_index 
+
+
+
+

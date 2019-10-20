@@ -48,6 +48,32 @@ void saveWord(void* wordp){
 	strcat(content,"\n");
 }
 
+
+void freeDocs(void *docp){
+	doc_t *dp = (doc_t*)docp;
+	free(dp);
+}
+
+void freeWords(void *wordp){
+	word_t *wp = (word_t*) wordp;
+	qapply(wp->docq,freeDocs);
+	qclose(wp->docq);
+	free(wp->word);
+	free(wp);
+}
+
+bool searchWord(void *wordp, const void *wordc){
+	word_t *wp = (word_t*) wordp;
+  char *wc = (char*) wordc;
+	return strcmp(wp->word,wc)==0;
+}
+
+bool searchDoc(void *docp, const void *id){
+	doc_t *dp = (doc_t*) docp;
+	int *doc_id = (int*) id;
+	return dp->document == *doc_id;
+}
+
 /*
  * pagesave -- save the page in filename id in directory dirnm
  *

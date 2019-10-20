@@ -1,5 +1,4 @@
 /* indexer.c --- 
-1;95;0c * 
  * 
  * Author: Guanghan Pan
  * Created: Thu Oct 17 21:28:03 2019 (-0400)
@@ -24,31 +23,6 @@
 
 static int total = 0;
 
-bool searchWord(void *wordp, const void *wordc){
-	word_t *wp = (word_t*) wordp;
-  char *wc = (char*) wordc;
-	return strcmp(wp->word,wc)==0;
-}
-
-bool searchDoc(void *docp, const void *id){
-	doc_t *dp = (doc_t*) docp;
-	int *doc_id = (int*) id;
-	return dp->document == *doc_id;
-}
-
-void freeDocs(void *docp){
-	doc_t *dp = (doc_t*)docp;
-	free(dp);
-}
-
-void freeWords(void *wordp){
-	word_t *wp = (word_t*) wordp;
-	qapply(wp->docq,freeDocs);
-	qclose(wp->docq);
-	free(wp->word);
-	free(wp);
-}
-
 char *NormalizeWord(char *word){
 	if(strlen(word)<3)
 		return NULL;
@@ -60,6 +34,7 @@ char *NormalizeWord(char *word){
 	return word;
 }
 
+
 void sumOne(void *docp){
 	doc_t* dp = (doc_t*)docp;
 	total += dp->count;
@@ -69,6 +44,7 @@ void sumWords(void *wordp){
 	word_t* wp = (word_t*)wordp;
 	qapply(wp->docq,sumOne);
 }
+
 
 int main(int argc, char *argv[]){
 	hashtable_t *word_ht;
@@ -117,8 +93,7 @@ int main(int argc, char *argv[]){
 	
 	happly(word_ht,sumWords);
 	printf("total:%d\n",total);
-	indexsave(word_ht,"hello","./");
-	indexload("hello","./");
+	indexsave(word_ht,"result1","../pages/");
 	happly(word_ht,freeWords);
 	hclose(word_ht);
 }
