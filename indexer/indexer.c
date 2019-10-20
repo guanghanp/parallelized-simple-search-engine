@@ -18,6 +18,7 @@
 #include <string.h>
 #include <stdint.h>
 #include <unistd.h>
+#include <indexio.h>
 #include <ctype.h>
 #include <stdbool.h>
 
@@ -133,9 +134,10 @@ int main(int argc, char *argv[]){
 			// free(result); // ?????
 		}
 	}
+	
 	happly(word_ht,sumWords);
 	printf("total:%d\n",total);
-	
+	indexsave(word_ht,"hello","./");
 	happly(word_ht,freeWords);
 	hclose(word_ht);
 }

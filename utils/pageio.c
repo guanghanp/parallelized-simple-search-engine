@@ -41,24 +41,25 @@ webpage_t *pageload(int id, char *dirnm){
 	char filename[20];
 
 	sprintf(filename,"%s%d",dirnm,id);
-
+	
+	if((fp = fopen(filename,"r"))==NULL)
+		return NULL;
+	char url[50],depth[5],lines[5],html[1000];
+	char *html_init =(char*) malloc(200000*sizeof(char));
+	html_init[0] = '\0';
+	fscanf(fp,"%s\n%s\n%s\n",url,depth,lines);
+	int depth_int = atoi(depth);
+	
 	struct stat buffer;
 	stat(filename, &buffer);
 	if (buffer.st_mode & S_IRUSR){
-			
-		if((fp = fopen(filename,"r"))==NULL)
-			return NULL;
-		else {
-			char url[50],depth[5],lines[5],html[1000],html_init[30000];
-			fscanf(fp,"%s\n%s\n%s\n",url,depth,lines);
-			int depth_int = atoi(depth);
-			
-			while (fgets(html,1000,fp) != NULL){
-				strcat(html_init,html);
-			}
-			webpage_t *web = webpage_new(url,depth_int,html_init);
-			return web;
+		while (fgets(html,1000,fp) != NULL){
+			strcat(html_init,html);
 		}
+		webpage_t *web = webpage_new(url,depth_int,html_init);
+		fclose(fp);
+		return web;
 	}
-		
+	fclose(fp);
+	return NULL;
 }

@@ -34,10 +34,10 @@ int main(void){
 	int html = (strcmp(webpage_getHTML(page),webpage_getHTML(page_new)));
 	int url = (strcmp(webpage_getURL(page),webpage_getURL(page_new)));
 	bool htmllen = (webpage_getHTMLlen(page) == webpage_getHTMLlen(page_new));
-
+	
+ 	webpage_delete((void*)page_new);
 	webpage_delete((void*)page);
-	webpage_delete((void*)page_new);
-
+	
 	if (dep == true && html == 0 && url == 0 && htmllen == true)
 		exit(EXIT_SUCCESS);
  	exit(EXIT_FAILURE);
