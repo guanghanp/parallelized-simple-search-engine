@@ -15,6 +15,19 @@
 #include <hash.h>
 #include <queue.h>
 
+typedef struct word_t{
+	char* word;
+	queue_t* docq;
+} word_t;
+
+typedef struct doc_t{
+	int document;
+	int count;
+} doc_t;
+
+void init_word(word_t *wordp, char *word, queue_t* wordq);
+
+void init_doc(doc_t *dp, int id, int count);
 /*
  * pagesave -- save the page in filename id in directory dirnm
  *

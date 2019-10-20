@@ -1,5 +1,5 @@
 #!/bin/bash
-valgrind --leak-check=full indexer 3
+valgrind --leak-check=full indexer 1
 
 
 

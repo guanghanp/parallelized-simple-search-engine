@@ -24,27 +24,6 @@
 
 static int total = 0;
 
-typedef struct word_t{
-	char* word;
-	queue_t* docq;
-} word_t;
-
-void init_word(word_t *wordp, char *word){
-	wordp->word = word;
-	wordp->docq = qopen();
-}
-
-typedef struct doc_t{
-	int document;
-	int count;
-} doc_t;
-
-
-void init_doc(doc_t *dp, int id){
-	dp->document = id;
-	dp->count = 1;
-}
-
 bool searchWord(void *wordp, const void *wordc){
 	word_t *wp = (word_t*) wordp;
   char *wc = (char*) wordc;
@@ -95,15 +74,15 @@ int main(int argc, char *argv[]){
 	hashtable_t *word_ht;
 	word_ht=hopen(97);
 
-	webpage_t *one;
+	webpage_t *current;
 	int max_id = atoi(argv[1]);
 	int id = 1;
 	for (; id<=max_id; id++){
-		one = pageload(id,"../pages/");
+		current = pageload(id,"../pages/");
 
 		char* result;
 		int pos=0;
-		while ( (pos = webpage_getNextWord(one, pos, &result)) > 0) {
+		while ( (pos = webpage_getNextWord(current, pos, &result)) > 0) {
 			if(NormalizeWord(result)!=NULL){
 				// printf("normalized result:%s\n",result);
 				word_t *search_res;
@@ -111,8 +90,8 @@ int main(int argc, char *argv[]){
 				if(search_res == NULL){
 					word_t *new_word = (word_t*)malloc(sizeof(word_t));
 					doc_t* docp = (doc_t*)malloc(sizeof(doc_t)); 
-					init_word(new_word,result);
-					init_doc(docp,id);
+					init_word(new_word,result,qopen());
+					init_doc(docp,id,1);
 					qput(new_word->docq,docp);
 					hput(word_ht,new_word,result,strlen(result));
 				} else {
@@ -120,7 +99,7 @@ int main(int argc, char *argv[]){
 					search_q = (doc_t*)qsearch(search_res->docq,searchDoc,&id);
 					if(search_q == NULL){
 						doc_t* docp = (doc_t*)malloc(sizeof(doc_t));
-						init_doc(docp,id);
+						init_doc(docp,id,1);
 						qput(search_res->docq,docp);
 					}
 					else{
@@ -133,11 +112,13 @@ int main(int argc, char *argv[]){
 			}
 			// free(result); // ?????
 		}
+		webpage_delete((void*)current);
 	}
 	
 	happly(word_ht,sumWords);
 	printf("total:%d\n",total);
 	indexsave(word_ht,"hello","./");
+	indexload("hello","./");
 	happly(word_ht,freeWords);
 	hclose(word_ht);
 }

@@ -13,19 +13,21 @@
 #include <unistd.h>
 #include <hash.h>
 #include <queue.h>
-
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <indexio.h>
 
 static char content[2000000];
 
-typedef struct word_t{
-	char* word;
-	queue_t* docq;
-} word_t;
+void init_word(word_t *wordp, char *word, queue_t* wordq){
+	wordp->word = word;
+	wordp->docq = wordq;
+}
 
-typedef struct doc_t{
-	int document;
-	int count;
-} doc_t;
+void init_doc(doc_t *dp, int id, int count){
+	dp->document = id;
+	dp->count = count;
+}
 
 void saveDoc(void* docp){
 	doc_t *dp=(doc_t*) docp;
@@ -77,4 +79,47 @@ int32_t indexsave(hashtable_t *indexp, char *indexnm, char *dirnm){
  *
  * returns: non-NULL for success; NULL otherwise
  */
-// hashtable_t *indexload(char *indexnm, char *dirnm);
+hashtable_t *indexload(char *indexnm, char *dirnm){
+	FILE *fp;
+	char filename[20];
+	hashtable_t *index=NULL;
+
+	
+	sprintf(filename,"%s%s",dirnm,indexnm);
+	if((fp = fopen(filename,"r"))==NULL)
+		return NULL;
+	
+	struct stat buffer;
+	stat(filename, &buffer);
+	if (buffer.st_mode & S_IRUSR){
+		index = hopen(97);
+		char buffer[1000];
+		while (fgets(buffer,sizeof(buffer),fp) != NULL){
+			queue_t *wordq = qopen();
+			word_t *wordp = (word_t*)malloc(sizeof(word_t));
+			// extract first word
+			char *pch = (char*)malloc(30);
+			pch = strtok (buffer," ,.-");
+			char *word = (char*)malloc(strlen(pch));
+			strcpy(word,pch);
+			
+			pch = strtok (NULL, " ,.-");
+			while (pch != NULL){
+				doc_t* docp = (doc_t*)malloc(sizeof(doc_t));
+				int id = atoi(pch);
+				pch = strtok (NULL, " ,.-");
+				int count = atoi(pch);
+				pch = strtok (NULL, " ,.-");
+				init_doc(docp,id,count);
+				qput(wordq,(void*)docp);
+			}
+			free(pch);
+			init_word(wordp,word,wordq);
+			hput(index,wordp,word,strlen(word));
+		}
+	}
+	
+	fclose(fp);
+	return index;
+
+}
