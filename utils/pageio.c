@@ -38,7 +38,7 @@ webpage_t *pageload(int id, char *dirnm){
 	if((fp = fopen(filename,"r"))==NULL)
 		return NULL;
 	else {
-		char url[50],depth[5],lines[5],html[1000],html_init[20000];
+		char url[50],depth[5],lines[5],html[1000],html_init[2000000];
 		fscanf(fp,"%s\n%s\n%s\n",url,depth,lines);
 		int depth_int = atoi(depth);
 
