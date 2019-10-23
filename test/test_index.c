@@ -15,16 +15,11 @@
 
 int main(void){
 
-	char dirnm[15];
-	strcpy(dirnm,"../pages/");
-	char indexnm[10];
-	strcpy(indexnm, "result1");
-
-	hashtable_t *index = indexload(indexnm, dirnm);
+	hashtable_t *index = indexload("../pages/result1");
 	
-	indexsave(index,"result2",dirnm);
+	indexsave(index,"../pages/result2");
 
-	hashtable_t *index_new = indexload("result2", dirnm);
+	hashtable_t *index_new = indexload("../pages/result2");
 
 	word_t *wordp1 = hsearch(index, searchWord, "these",5);
 	word_t *wordp2 = hsearch(index_new, searchWord, "these",5);

@@ -1,5 +1,5 @@
 /* indexer.c --- 
- * 
+1;95;0c * 
  * Author: Guanghan Pan
  * Created: Thu Oct 17 21:28:03 2019 (-0400)
  * Version: 
@@ -20,6 +20,9 @@
 #include <indexio.h>
 #include <ctype.h>
 #include <stdbool.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <dirent.h>
 
 static int total = 0;
 
@@ -34,7 +37,6 @@ char *NormalizeWord(char *word){
 	return word;
 }
 
-
 void sumOne(void *docp){
 	doc_t* dp = (doc_t*)docp;
 	total += dp->count;
@@ -45,16 +47,38 @@ void sumWords(void *wordp){
 	qapply(wp->docq,sumOne);
 }
 
-
 int main(int argc, char *argv[]){
 	hashtable_t *word_ht;
 	word_ht=hopen(97);
 
+	char* pagedir = argv[1];
+	/* struct stat buff; */
+	/* if (stat(pagedir,&buff) < 0 ) */
+	/* 	exit(EXIT_FAILURE); */
+	
+	/* if (!S_ISDIR(buff.st_mode)) */
+	/* 	exit(EXIT_FAILURE); */
+	
 	webpage_t *current;
-	int max_id = atoi(argv[1]);
+
+	/* int file_count = 0; */
+	/* struct dirent *de; */
+  
+	/* DIR *dr = opendir(".");  */
+  
+	/* if (dr == NULL){  */
+	/* 	printf("Could not open current directory" );  */
+	/* 	return 0;  */
+	/* }  */
+  
+	/* while ((de = readdir(dr)) != NULL)  */
+	/* 	file_count++; */
+  
+	/* closedir(dr);      */
+	
 	int id = 1;
-	for (; id<=max_id; id++){
-		current = pageload(id,"../pages/");
+	for (; id<=82 ; id++){
+		current = pageload(id,pagedir);
 
 		char* result;
 		int pos=0;
@@ -90,10 +114,12 @@ int main(int argc, char *argv[]){
 		}
 		webpage_delete((void*)current);
 	}
-	
 	happly(word_ht,sumWords);
 	printf("total:%d\n",total);
-	indexsave(word_ht,"result1","../pages/");
+	indexsave(word_ht,argv[2]);
 	happly(word_ht,freeWords);
+	
 	hclose(word_ht);
+
+	exit(EXIT_SUCCESS);
 }

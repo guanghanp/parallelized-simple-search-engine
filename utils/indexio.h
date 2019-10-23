@@ -49,7 +49,7 @@ void freeWords(void *wordp);
  *   <html-length>
  *   <html>
  */
-int32_t indexsave(hashtable_t *indexp, char *indexnm, char *dirnm);
+int32_t indexsave(hashtable_t *indexp, char *indexnm);
 
 /* 
  * pageload -- loads the numbered filename <id> in direcory <dirnm>
@@ -57,4 +57,4 @@ int32_t indexsave(hashtable_t *indexp, char *indexnm, char *dirnm);
  *
  * returns: non-NULL for success; NULL otherwise
  */
-hashtable_t *indexload(char *indexnm, char *dirnm);
+hashtable_t *indexload(char *indexnm);

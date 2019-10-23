@@ -17,7 +17,7 @@
 #include <sys/stat.h>
 #include <indexio.h>
 
-static char content[2000000];
+static FILE *fp;
 
 void init_word(word_t *wordp, char *word, queue_t* wordq){
 	wordp->word = word;
@@ -31,23 +31,18 @@ void init_doc(doc_t *dp, int id, int count){
 
 void saveDoc(void* docp){
 	doc_t *dp=(doc_t*) docp;
-	strcat(content," ");
-	char doc[10];
-	sprintf(doc,"%d",dp->document);
-	strcat(content,doc);
-	strcat(content," ");
-	char count[10];
-	sprintf(count,"%d",dp->count);
-	strcat(content,count);
+	fprintf(fp, " %d", dp->document);
+
+	fprintf(fp," %d",dp->count);
 }
 
 void saveWord(void* wordp){
 	word_t *wp = (word_t*) wordp;
-	strcat(content,wp->word);
+	fprintf(fp,"%s" ,wp->word);
 	qapply(wp->docq,saveDoc);
-	strcat(content,"\n");
+	//strcat(content,"\n");
+	fprintf(fp,"\n");
 }
-
 
 void freeDocs(void *docp){
 	doc_t *dp = (doc_t*)docp;
@@ -85,16 +80,13 @@ bool searchDoc(void *docp, const void *id){
  *   <html-length>
  *   <html>
  */
-int32_t indexsave(hashtable_t *indexp, char *indexnm, char *dirnm){
-	FILE *fp;
-	char filename[20];
-	content[0]='\0';
-	happly(indexp,saveWord);
-	// create file name using dirname
-	sprintf(filename,"%s%s",dirnm,indexnm);
+int32_t indexsave(hashtable_t *indexp, char *indexnm){
+
 	// open the file and write the contents
-	fp = fopen(filename,"w");
-	fprintf(fp,"%s",content);
+
+	fp = fopen(indexnm,"w");
+	happly(indexp,saveWord);
+
 	fclose(fp);
 	return 0;
 }
@@ -105,41 +97,44 @@ int32_t indexsave(hashtable_t *indexp, char *indexnm, char *dirnm){
  *
  * returns: non-NULL for success; NULL otherwise
  */
-hashtable_t *indexload(char *indexnm, char *dirnm){
-	FILE *fp;
-	char filename[20];
+hashtable_t *indexload(char *indexnm){
+	FILE *fp = NULL;
 	hashtable_t *index=NULL;
-
 	
-	sprintf(filename,"%s%s",dirnm,indexnm);
-	if((fp = fopen(filename,"r"))==NULL)
+	if((fp = fopen(indexnm,"r"))==NULL)
 		return NULL;
 	
-	struct stat buffer;
-	stat(filename, &buffer);
-	if (buffer.st_mode & S_IRUSR){
+	struct stat buf;
+	stat(indexnm, &buf);
+	if (buf.st_mode & S_IRUSR){
 		index = hopen(97);
 		char buffer[1000];
+			
 		while (fgets(buffer,sizeof(buffer),fp) != NULL){
 			queue_t *wordq = qopen();
 			word_t *wordp = (word_t*)malloc(sizeof(word_t));
 			// extract first word
-			char *pch = (char*)malloc(30);
-			pch = strtok (buffer," ,.-");
-			char *word = (char*)malloc(strlen(pch));
-			strcpy(word,pch);
-			
-			pch = strtok (NULL, " ,.-");
-			while (pch != NULL){
+			char tmp[30];
+			sscanf(buffer,"%s",tmp);
+			char *word = (char*)malloc(strlen(tmp)+1);
+			strcpy(word,tmp);
+
+			int res = 0;
+			int id, count;
+		
+			int i = strlen(word);
+		
+			while ((res = sscanf(buffer+i,"%d %d",&id,&count)) == 2 ){
+				char temp[10];
+				sprintf(temp," %d %d",id,count);
+				i += strlen(temp);
+
 				doc_t* docp = (doc_t*)malloc(sizeof(doc_t));
-				int id = atoi(pch);
-				pch = strtok (NULL, " ,.-");
-				int count = atoi(pch);
-				pch = strtok (NULL, " ,.-");
+			
 				init_doc(docp,id,count);
 				qput(wordq,(void*)docp);
 			}
-			free(pch);
+		
 			init_word(wordp,word,wordq);
 			hput(index,wordp,word,strlen(word));
 		}
