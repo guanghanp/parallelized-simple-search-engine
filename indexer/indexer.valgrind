@@ -1,5 +1,5 @@
 #!/bin/bash
-valgrind --leak-check=full indexer ../pages/ index_test
+valgrind --leak-check=full indexer ../pages/ ../test/index_testfile
 
 
 

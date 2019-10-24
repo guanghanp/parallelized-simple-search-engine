@@ -1,5 +1,5 @@
 /* indexer.c --- 
-1;95;0c * 
+ * 
  * Author: Guanghan Pan
  * Created: Thu Oct 17 21:28:03 2019 (-0400)
  * Version: 

@@ -15,11 +15,11 @@
 
 int main(void){
 
-	hashtable_t *index = indexload("../pages/result1");
+	hashtable_t *index = indexload("./index_testfile");
 	
-	indexsave(index,"../pages/result2");
+	indexsave(index,"./index_testfile2");
 
-	hashtable_t *index_new = indexload("../pages/result2");
+	hashtable_t *index_new = indexload("./index_testfile2");
 
 	word_t *wordp1 = hsearch(index, searchWord, "these",5);
 	word_t *wordp2 = hsearch(index_new, searchWord, "these",5);
