@@ -28,7 +28,7 @@ int main(void){
 
 	//	printf("%d\n",webpage_getDepth(page_new));
 	//printf("%s\n",webpage_getURL(page_new));
-	printf("%s\n",webpage_getHTML(page));
+	//	printf("%s\n",webpage_getHTML(page));
 	// printf("%s\n",webpage_getHTML(page_new));
 	bool dep = (webpage_getDepth(page) == webpage_getDepth(page_new));
 	int html = (strcmp(webpage_getHTML(page),webpage_getHTML(page_new)));

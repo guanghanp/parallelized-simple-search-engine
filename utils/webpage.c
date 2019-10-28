@@ -69,229 +69,229 @@ webpage_t *webpage_new(char *url, const int depth, char *html) {
   }
   webpage_t *page = checkp(malloc(sizeof(webpage_t)), "webpage_t");
 
-  page->url = checkp(malloc(strlen(url)+1), "page->url");
-  strcpy(page->url, url);
-  page->depth = depth;
-  page->html = html;
-  page->html_len = html ? strlen(html) : 0;
-  return page;
-}
+/*   page->url = checkp(malloc(strlen(url)+1), "page->url"); */
+/*   strcpy(page->url, url); */
+/*   page->depth = depth; */
+/*   page->html = html; */
+/*   page->html_len = html ? strlen(html) : 0; */
+/*   return page; */
+/* } */
 
 
-void webpage_delete(void *data)
-{
-  webpage_t *page = data;
-  if (page != NULL) {
-    if (page->url) free(page->url);
-    if (page->html) free(page->html);
-    free(page);
-  }
-}
+/* void webpage_delete(void *data) */
+/* { */
+/*   webpage_t *page = data; */
+/*   if (page != NULL) { */
+/*     if (page->url) free(page->url); */
+/*     if (page->html) free(page->html); */
+/*     free(page); */
+/*   } */
+/* } */
 
-/**************** webpage_getNextWord ****************/
-/*
- * webpage_getNextWord - returns the next word from doc[pos] into word
- * See "webpage.h" for full documentation.
- * Code is courtesy of Ray Jenkins and/or Charles Palmer, 
- *   cleaned by David Kotz in April 2016, 2017.
- *
- * Pseudocode:
- *     1. skip any leading non-alphabetic characters
- *     2. if we find a tag, i.e., <...tag...>, skip that tag
- *     3. save beginning of the word
- *     4. find the end, i.e., first non-alphabetic character
- *     5. create a new word buffer
- *     6. copy the word into the new buffer
- *     7. return first position past end of word
- * 
- */
-int webpage_getNextWord(webpage_t *page, int pos, char **word) {
-  // make sure we have something to search, and a place for the result
-  if (page == NULL || page->html == NULL || word == NULL) {
-    return -1;
-  }
+/* /\**************** webpage_getNextWord ****************\/ */
+/* /\* */
+/*  * webpage_getNextWord - returns the next word from doc[pos] into word */
+/*  * See "webpage.h" for full documentation. */
+/*  * Code is courtesy of Ray Jenkins and/or Charles Palmer,  */
+/*  *   cleaned by David Kotz in April 2016, 2017. */
+/*  * */
+/*  * Pseudocode: */
+/*  *     1. skip any leading non-alphabetic characters */
+/*  *     2. if we find a tag, i.e., <...tag...>, skip that tag */
+/*  *     3. save beginning of the word */
+/*  *     4. find the end, i.e., first non-alphabetic character */
+/*  *     5. create a new word buffer */
+/*  *     6. copy the word into the new buffer */
+/*  *     7. return first position past end of word */
+/*  *  */
+/*  *\/ */
+/* int webpage_getNextWord(webpage_t *page, int pos, char **word) { */
+/*   // make sure we have something to search, and a place for the result */
+/*   if (page == NULL || page->html == NULL || word == NULL) { */
+/*     return -1; */
+/*   } */
 
-  const char *doc = page->html;		   // the html document
-  const char *beg;                         // beginning of word
-  const char *end;                         // end of word
+/*   const char *doc = page->html;		   // the html document */
+/*   const char *beg;                         // beginning of word */
+/*   const char *end;                         // end of word */
 
-  // consume any non-alphabetic characters
-  while (doc[pos] != '\0' && !isalpha(doc[pos])) {
-    // if we find a tag, i.e., <...tag...>, skip it
-    if (doc[pos] == '<') {
-      end = strchr(&doc[pos], '>');    // find the close
-			/* ST: end is a pointer -- cant compare to a char */
-      if(*end == '\0' || *(++end) == '\0') { // ran out of html
-				return -1;
-      }
-      pos = end - doc;	      // skip over the <...tag...>
-    } else {
-      pos++;		      // just move forward
-    }
-  }
+/*   // consume any non-alphabetic characters */
+/*   while (doc[pos] != '\0' && !isalpha(doc[pos])) { */
+/*     // if we find a tag, i.e., <...tag...>, skip it */
+/*     if (doc[pos] == '<') { */
+/*       end = strchr(&doc[pos], '>');    // find the close */
+/* 			/\* ST: end is a pointer -- cant compare to a char *\/ */
+/*       if(*end == '\0' || *(++end) == '\0') { // ran out of html */
+/* 				return -1; */
+/*       } */
+/*       pos = end - doc;	      // skip over the <...tag...> */
+/*     } else { */
+/*       pos++;		      // just move forward */
+/*     } */
+/*   } */
 
-  // ran out of html
-  if (doc[pos] == '\0') {
-    *word = NULL;
-    return -1;
-  }
+/*   // ran out of html */
+/*   if (doc[pos] == '\0') { */
+/*     *word = NULL; */
+/*     return -1; */
+/*   } */
 
-  // pos is at the first character of a word
-  beg = &(doc[pos]);
+/*   // pos is at the first character of a word */
+/*   beg = &(doc[pos]); */
 
-  // consume word
-  while (doc[pos] != '\0' && isalpha(doc[pos])) {
-    pos++;
-  }
-  // at this point, doc[pos] is the first character *after* the word.
+/*   // consume word */
+/*   while (doc[pos] != '\0' && isalpha(doc[pos])) { */
+/*     pos++; */
+/*   } */
+/*   // at this point, doc[pos] is the first character *after* the word. */
 
-  // pos refers to the last character of the word
-  end = &(doc[pos-1]);
+/*   // pos refers to the last character of the word */
+/*   end = &(doc[pos-1]); */
 
-  // 'beg' points to first character of the word
-  // 'end' points to last character of the word
-  int wordlen = end - beg + 1;
+/*   // 'beg' points to first character of the word */
+/*   // 'end' points to last character of the word */
+/*   int wordlen = end - beg + 1; */
 
-  // allocate space for length of new word + '\0'
-  *word = calloc(wordlen + 1, sizeof(char));
-  if (*word == NULL) {	      // out of memory!
-    return -1;
-  }
+/*   // allocate space for length of new word + '\0' */
+/*   *word = calloc(wordlen + 1, sizeof(char)); */
+/*   if (*word == NULL) {	      // out of memory! */
+/*     return -1; */
+/*   } */
 
-  // copy the new word
-  strncpy(*word, beg, wordlen);
+/*   // copy the new word */
+/*   strncpy(*word, beg, wordlen); */
 
-  return pos;
-}
+/*   return pos; */
+/* } */
 
-/**************** webpage_getNextURL ****************/
-/*
- * get the next url from html[pos] into result
- *
- * Assumptions:
- *     1. page is valid, contains html and base_url
- *     2. pos = 0 on initial call
- *     3. result is NULL and will be allocated internally
- *
- * Pseudocode:
- *     1. check arguments
- *     2. if pos = 0: remove whitespace from html
- *     3. find hyperlink starting tags "<a" or "<A"
- *     4. find next href attribute "href="
- *     5. find next end tag ">"
- *     6. check that href comes before end tag
- *     7. deal with quoted and unquoted urls
- *     8. determine if url is absolute
- *     9. fixup relative links
- *    10. create new character buffer for result and return it
- */
-int webpage_getNextURL(webpage_t *page, int pos, char **result) {
-  // make sure we have text and base url
-  if (page == NULL || page->html == NULL || page->url == NULL) {
-    return -1;
-  }
+/* /\**************** webpage_getNextURL ****************\/ */
+/* /\* */
+/*  * get the next url from html[pos] into result */
+/*  * */
+/*  * Assumptions: */
+/*  *     1. page is valid, contains html and base_url */
+/*  *     2. pos = 0 on initial call */
+/*  *     3. result is NULL and will be allocated internally */
+/*  * */
+/*  * Pseudocode: */
+/*  *     1. check arguments */
+/*  *     2. if pos = 0: remove whitespace from html */
+/*  *     3. find hyperlink starting tags "<a" or "<A" */
+/*  *     4. find next href attribute "href=" */
+/*  *     5. find next end tag ">" */
+/*  *     6. check that href comes before end tag */
+/*  *     7. deal with quoted and unquoted urls */
+/*  *     8. determine if url is absolute */
+/*  *     9. fixup relative links */
+/*  *    10. create new character buffer for result and return it */
+/*  *\/ */
+/* int webpage_getNextURL(webpage_t *page, int pos, char **result) { */
+/*   // make sure we have text and base url */
+/*   if (page == NULL || page->html == NULL || page->url == NULL) { */
+/*     return -1; */
+/*   } */
 
-  char *html = page->html;                 // the html document
-  char *base_url = page->url;		   // the base URL for this html
-  int bad_link;                            // is this link ill formatted?
-  int relative;                            // is this link relative?
-  char delim;                              // url delimiter: ' ', ''', '"'
-  char *lnk;                               // hyperlink tags
-  char *href;                              // href in a tag
-  char *end;                               // end of hyperlink tag or url
-  char *ptr;                               // absolute vs. relative
-  char *hash;                              // hash mark character
+/*   char *html = page->html;                 // the html document */
+/*   char *base_url = page->url;		   // the base URL for this html */
+/*   int bad_link;                            // is this link ill formatted? */
+/*   int relative;                            // is this link relative? */
+/*   char delim;                              // url delimiter: ' ', ''', '"' */
+/*   char *lnk;                               // hyperlink tags */
+/*   char *href;                              // href in a tag */
+/*   char *end;                               // end of hyperlink tag or url */
+/*   char *ptr;                               // absolute vs. relative */
+/*   char *hash;                              // hash mark character */
 
-  // condense html, makes parsing easier
-  if (pos == 0) {
-    RemoveWhitespace(html);
-  }
+/*   // condense html, makes parsing easier */
+/*   if (pos == 0) { */
+/*     RemoveWhitespace(html); */
+/*   } */
 
-  // parse for hyperlinks
-  do {
-    relative = 0;                        // assume absolute link
-    bad_link = 0;                        // assume valid link
+/*   // parse for hyperlinks */
+/*   do { */
+/*     relative = 0;                        // assume absolute link */
+/*     bad_link = 0;                        // assume valid link */
 
-    // find tag "<a" or "<A""
-    lnk = strcasestr(&html[pos], "<a");
+/*     // find tag "<a" or "<A"" */
+/*     lnk = strcasestr(&html[pos], "<a"); */
 
-    // no more links on this page
-    if (!lnk) { result = NULL; return -1; }
+/*     // no more links on this page */
+/*     if (!lnk) { result = NULL; return -1; } */
 
 
-    // find next href after hyperlink tag
-    href = strcasestr(lnk, "href=");
+/*     // find next href after hyperlink tag */
+/*     href = strcasestr(lnk, "href="); */
 
-    // no more links on this page
-    if (!href) { result = NULL; return -1; }
+/*     // no more links on this page */
+/*     if (!href) { result = NULL; return -1; } */
 
-    // find end of hyperlink tag
-    end = strchr(lnk, '>');
+/*     // find end of hyperlink tag */
+/*     end = strchr(lnk, '>'); */
 
-    // if the href we have is outside the current tag, continue
-    if (end && (end < href)) {
-      bad_link = 1; pos+=2; continue;
-    }
+/*     // if the href we have is outside the current tag, continue */
+/*     if (end && (end < href)) { */
+/*       bad_link = 1; pos+=2; continue; */
+/*     } */
 
-    // move href to beginning of url
-    href+=5;
+/*     // move href to beginning of url */
+/*     href+=5; */
 
-    // something went wrong, just continue
-    if (!href) { bad_link=1; pos+=2; continue; }
+/*     // something went wrong, just continue */
+/*     if (!href) { bad_link=1; pos+=2; continue; } */
 
-    // is the url quoted?
-    if (*href == '\'' || *href == '"') {  // yes, href="url" or href='url'
-      delim = *(href++);               // remember delimiter
-      end = strchr(href, delim);       // find next of same delimiter
-    } else {			       // no, href=url
-      end = strchr(href, '>');         // hope: <a ... href=url>
-      // since we've stripped whitespace
-      // this could mangle things like:
-      // <a ... href=url name=val>
-    }
+/*     // is the url quoted? */
+/*     if (*href == '\'' || *href == '"') {  // yes, href="url" or href='url' */
+/*       delim = *(href++);               // remember delimiter */
+/*       end = strchr(href, delim);       // find next of same delimiter */
+/*     } else {			       // no, href=url */
+/*       end = strchr(href, '>');         // hope: <a ... href=url> */
+/*       // since we've stripped whitespace */
+/*       // this could mangle things like: */
+/*       // <a ... href=url name=val> */
+/*     } */
 
-    // if there is a # before the end of the url, exclude the #fragment
-    hash = strchr(href, '#');
-    if (hash && hash < end) {
-      end = hash;
-    }
+/*     // if there is a # before the end of the url, exclude the #fragment */
+/*     hash = strchr(href, '#'); */
+/*     if (hash && hash < end) { */
+/*       end = hash; */
+/*     } */
 
-    // if we don't know where to end the url, continue
-    if (!end) {
-      bad_link = 1; pos += 2; continue;
-    }
+/*     // if we don't know where to end the url, continue */
+/*     if (!end) { */
+/*       bad_link = 1; pos += 2; continue; */
+/*     } */
 
-    // have a link now
-    if (*href == '#') {                   // internal reference
-      bad_link = 1; pos += 2; continue;
-    }
+/*     // have a link now */
+/*     if (*href == '#') {                   // internal reference */
+/*       bad_link = 1; pos += 2; continue; */
+/*     } */
 
-    // is the url absolute, i.e, ':' must precede any '/', '?', or '#'
-    ptr = strpbrk(href, ":/?#");
-    if (!ptr || *ptr != ':') { 
-      relative = 1; 
-    } else if (strncasecmp(href, "http", 4)) { // absolute, but not http(s)
-      bad_link = 1; pos += 2; continue;
-    }
-  } while (bad_link);                       // keep parsing
+/*     // is the url absolute, i.e, ':' must precede any '/', '?', or '#' */
+/*     ptr = strpbrk(href, ":/?#"); */
+/*     if (!ptr || *ptr != ':') {  */
+/*       relative = 1;  */
+/*     } else if (strncasecmp(href, "http", 4)) { // absolute, but not http(s) */
+/*       bad_link = 1; pos += 2; continue; */
+/*     } */
+/*   } while (bad_link);                       // keep parsing */
 
-  // have a good link now
-  if (relative) {                           // need to fixup relative links
-    *result = FixupRelativeURL(base_url, href, end - href);
-    if (!*result) { return -2; }
-  }
-	else {
-    // create new buffer
-    *result = calloc(end-href+1, sizeof(char));
-    if (!*result) { return -2; }          // check memory
-    // copy over absolute url
-    strncpy(*result, href, end - href);
-  }
-  // return position at the end of the url
-  return end - html;
-}
+/*   // have a good link now */
+/*   if (relative) {                           // need to fixup relative links */
+/*     *result = FixupRelativeURL(base_url, href, end - href); */
+/*     if (!*result) { return -2; } */
+/*   } */
+/* 	else { */
+/*     // create new buffer */
+/*     *result = calloc(end-href+1, sizeof(char)); */
+/*     if (!*result) { return -2; }          // check memory */
+/*     // copy over absolute url */
+/*     strncpy(*result, href, end - href); */
+/*   } */
+/*   // return position at the end of the url */
+/*   return end - html; */
+/* } */
 
-/******************** NormalizeURL *******************************/
+/* /\******************** Normalize */URL *******************************/
 /* Normalize the url according to RFC 3986 chapter 3
  *
  * Assumptions:
