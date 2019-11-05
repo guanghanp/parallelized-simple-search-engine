@@ -1,5 +1,5 @@
 /* querier.c --- 
-1;5202;0c * Author: Yu Chen
+ * Author: Yu Chen
  * Created: Thu Oct 24 17:21:39 2019 (-0400)
  * Version: 
  * 
@@ -15,10 +15,15 @@
 #include <queue.h>
 #include <indexio.h>
 #include <hash.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <dirent.h>
 
 static hashtable_t* ht;
-static char pagedir[100];
+static hashtable_t* ht_temp;
 static hashtable_t* index;
+static char pagedir[100];
+
 typedef struct querier_t{
 	int rank;
 	int id;
@@ -70,19 +75,24 @@ querier_t* init_querier(int rank,int id){
 	return qr;
 }
 
+void init_insert(void* docp){
+	doc_t* dp = (doc_t*)docp;
+	querier_t* qp = init_querier(dp->count,dp->document);\
+	char key[100];
+	sprintf(key,"%d",dp->document);
+	hput(ht,qp,key,strlen(key));
+}
+
 void insert(void* dp){
 	doc_t* docp = (doc_t*)dp;
 	char key[100];
 	sprintf(key,"%d",docp->document);
 	querier_t* result = (querier_t*)hsearch(ht,searchquerier,key,strlen(key));
-	if(result == NULL){
-		querier_t* qrp = init_querier(docp->count,docp->document);
+	if(result != NULL){
+		int new_rank = (docp->count < result->rank)?(docp->count):(result->rank);
+		querier_t* qrp = init_querier(new_rank,result->id);
 		int keylen = strlen(key);
-		hput(ht,qrp,key,keylen);
-	} else {
-
-		if(docp->count<result->rank)
-			result->rank = docp->count;
+		hput(ht_temp,qrp,key,keylen);
 	}
 }
 
@@ -100,9 +110,14 @@ void free_querier(void* querierp){
 void insert_docs(void* wordp){
 	char* wp = (char*)wordp;
 	word_t* result = (word_t*)hsearch(index,searchhash,wp,strlen(wp));
-	if(result !=NULL){
+	
+	ht_temp = hopen(97);
+	if(result !=NULL)
 		qapply(result->docq,insert);
-	}
+	
+	happly(ht,free_querier);
+	hclose(ht);
+	ht = ht_temp;
 }
 
 int main(void){
@@ -112,12 +127,18 @@ int main(void){
 	char *output;
 	bool valid = true;
 	strcpy(pagedir,"../pages/");
-	index = indexload("../test/index_m6");
+	index = indexload("../indexer/index_depth_2");
+
+	struct stat buff;
+	if (stat(pagedir,&buff) < 0 )
+		exit(EXIT_FAILURE);
 	
+	if (!S_ISDIR(buff.st_mode))
+		exit(EXIT_FAILURE);
+		
 	while(1) {
 		printf("> ");
 		queue_t *qp = qopen();
-		ht = hopen(97);
 		
 		valid = true;
 		output = fgets(input,100,stdin);
@@ -138,25 +159,43 @@ int main(void){
 					valid = false;
 					break;
 				}
-				if (valid)
-					word[i] = tolower(word[i]);
+				
+				word[i] = tolower(word[i]);
 			} // to lower letters
+			
 			if (!valid)
 				break;
+			
 			if (strlen(word) >= 3 && strcmp(word,"and")!= 0 )
 				qput(qp,word);
 			
 			word = strtok(NULL, s);
 		}
-
+		
+		char* first = (char*)qget(qp);
+		if(first==NULL)
+			valid = false;
+		else {
+			word_t* result = (word_t*)hsearch(index,searchhash,first,strlen(first));
+			if(result !=NULL){
+				ht = hopen(97);
+				qapply(result->docq,init_insert);
+			} else
+				valid = false;
+		}
+					
 		if (valid){
 			qapply(qp,insert_docs);
 			happly(ht,print_querier);
+			happly(ht,free_querier);
+			hclose(ht);
 		}
+		
 		qclose(qp);
-		happly(ht,free_querier);
-		hclose(ht);
 	}
+
+	happly(index,freeWords);
+	hclose(index);
 	
 	return 0;
 }

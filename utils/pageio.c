@@ -25,15 +25,12 @@ int32_t pagesave(webpage_t *pagep, int id, char *dirnm){
 	// create file name using dirname
 	sprintf(filename,"%s%d",dirnm,id);
 	
-	if (access(filename, W_OK) == 0){
-		// open the file and write the contents
-		fp = fopen(filename,"w");
-		fprintf(fp,"%s\n%d\n%d\n%s",webpage_getURL(pagep),webpage_getDepth(pagep)
-						,webpage_getHTMLlen(pagep), webpage_getHTML(pagep));
-		fclose(fp);
-		return 0;
-	}
-	return 1;
+	// open the file and write the contents
+	fp = fopen(filename,"w");
+	fprintf(fp,"%s\n%d\n%d\n%s",webpage_getURL(pagep),webpage_getDepth(pagep)
+					,webpage_getHTMLlen(pagep), webpage_getHTML(pagep));
+	fclose(fp);
+	return 0;
 }
 
 webpage_t *pageload(int id, char *dirnm){
