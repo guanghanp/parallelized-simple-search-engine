@@ -26,10 +26,10 @@ int main(void){
 	
 	webpage_t* page_new = pageload(500,dirnm);
 
-	//	printf("%d\n",webpage_getDepth(page_new));
+	//printf("%d\n",webpage_getDepth(page_new));
 	//printf("%s\n",webpage_getURL(page_new));
-	//	printf("%s\n",webpage_getHTML(page));
-	// printf("%s\n",webpage_getHTML(page_new));
+	//printf("%s\n",webpage_getHTML(page));
+	//printf("%s\n",webpage_getHTML(page_new));
 	bool dep = (webpage_getDepth(page) == webpage_getDepth(page_new));
 	int html = (strcmp(webpage_getHTML(page),webpage_getHTML(page_new)));
 	int url = (strcmp(webpage_getURL(page),webpage_getURL(page_new)));

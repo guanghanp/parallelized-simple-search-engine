@@ -52,32 +52,31 @@ int main(int argc, char *argv[]){
 	word_ht=hopen(97);
 
 	char* pagedir = argv[1];
-	/* struct stat buff; */
-	/* if (stat(pagedir,&buff) < 0 ) */
-	/* 	exit(EXIT_FAILURE); */
+	struct stat buff;
+	if (stat(pagedir,&buff) < 0 )
+		exit(EXIT_FAILURE);
 	
-	/* if (!S_ISDIR(buff.st_mode)) */
-	/* 	exit(EXIT_FAILURE); */
+	if (!S_ISDIR(buff.st_mode))
+		exit(EXIT_FAILURE);
 	
 	webpage_t *current;
 
-	/* int file_count = 0; */
-	/* struct dirent *de; */
+	int file_count = 0;
+	struct dirent *de;
   
-	/* DIR *dr = opendir(".");  */
+	DIR *dr = opendir(pagedir);
   
-	/* if (dr == NULL){  */
-	/* 	printf("Could not open current directory" );  */
-	/* 	return 0;  */
-	/* }  */
+	if (dr == NULL){
+		printf("Could not open page directory" );
+		return 0;
+	}
   
-	/* while ((de = readdir(dr)) != NULL)  */
-	/* 	file_count++; */
+	while ((de = readdir(dr)) != NULL)
+		file_count++;
   
-	/* closedir(dr);      */
-	
+	closedir(dr);
 	int id = 1;
-	for (; id<=82 ; id++){
+	for (; id<=file_count-2; id++){
 		current = pageload(id,pagedir);
 
 		char* result;
@@ -89,7 +88,7 @@ int main(int argc, char *argv[]){
 				search_res=(word_t*)hsearch(word_ht,searchWord,result,strlen(result));
 				if(search_res == NULL){
 					word_t *new_word = (word_t*)malloc(sizeof(word_t));
-					doc_t* docp = (doc_t*)malloc(sizeof(doc_t)); 
+					doc_t* docp = (doc_t*)malloc(sizeof(doc_t));
 					init_word(new_word,result,qopen());
 					init_doc(docp,id,1);
 					qput(new_word->docq,docp);
@@ -115,7 +114,6 @@ int main(int argc, char *argv[]){
 		webpage_delete((void*)current);
 	}
 	happly(word_ht,sumWords);
-	printf("total:%d\n",total);
 	indexsave(word_ht,argv[2]);
 	happly(word_ht,freeWords);
 	
