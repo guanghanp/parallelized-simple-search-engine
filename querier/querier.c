@@ -1,5 +1,5 @@
 /* querier.c --- 
- * Author: Yu Chen
+1;95;0c * Author: Yu Chen
  * Created: Thu Oct 24 17:21:39 2019 (-0400)
  * Version: 
  * 
@@ -24,6 +24,7 @@ static hashtable_t* ht_temp;
 static hashtable_t* final;
 static hashtable_t* index;
 static char pagedir[100];
+static FILE* foutput = NULL;
 
 typedef struct map_t{
 	queue_t* q;
@@ -114,6 +115,11 @@ void print_querier(void* querierp){
 	printf("rank:%d:doc:%d:%s\n",qp->rank,qp->id,qp->url);
 }
 
+void fprint_querier(void* querierp){
+	querier_t* qp = (querier_t*) querierp;
+	fprintf(foutput,"rank:%d:doc:%d:%s\n",qp->rank,qp->id,qp->url);
+}
+
 void free_querier(void* querierp){
 	querier_t* qp = (querier_t*) querierp;
 	free(qp);
@@ -153,8 +159,7 @@ void compare_final(void* qup){
 		querier_t* new = init_querier(qp->rank,qp->id);
 		hput(final,new,key,strlen(key));
 	} else {
-		if(result->rank<qp->rank)
-			result->rank = qp->rank;
+		result->rank += qp->rank;
 	}
 }
 
@@ -172,36 +177,84 @@ void free_all_of_them(void* mapp){
 }
 
 
-int main(void){
-	char input[100];
-	const char s[3] = " \t";
-	char *word;
-	char *output;
+int main(int argc,char* argv[]){
+	char input[100];                                                            
+  const char s[3] = " \t";                                                    
+  char *word;                                                                 
+  char *output;
 	bool valid = true;
-	strcpy(pagedir,"../pages/");
-	index = indexload("../test/index_m6");
+	char indexnm[100];
+  char command[100];
+	int quiet = 0;
+	FILE* fp = NULL;
+	
+  if (argc != 3 && argc != 6){
+    printf("usage: query <pageDirectory> <indexFile>[-q]\n");
+		exit(EXIT_FAILURE);
+	}
+	
+	if(argc == 6){
+		if(strcmp(argv[3],"-q")==0){
+			quiet = 1;
+			if (access(argv[4],R_OK) != 0)
+				exit(EXIT_FAILURE);
+			fp = fopen(argv[4],"r");
+			foutput = fopen(argv[5],"w");
+		} else{
+			printf("usage: query <pageDirectory> <indexFile>[-q]\n");
+			exit(EXIT_FAILURE);
+		}
+	} else{
+		foutput = stdout;
+	}
 
+	
+  strcpy(pagedir,argv[1]);
+  strcpy(indexnm,argv[2]);
+  struct stat buffer;
+	if (stat(pagedir,&buffer) != 0 || !S_ISDIR(buffer.st_mode)){
+		printf("usage: query <pageDirectory> <indexFile>[-q]\n");
+    exit(EXIT_FAILURE);
+	}
+  strcpy(command,"../indexer/indexer ");
+  strcat(command, pagedir);
+	
+  strcat(command, " ");
+	strcat(command, indexnm);
+  system(command);
+  index = indexload(indexnm);
+	
 	struct stat buff;
 	if (stat(pagedir,&buff) < 0 )
 		exit(EXIT_FAILURE);
 	
 	if (!S_ISDIR(buff.st_mode))
 		exit(EXIT_FAILURE);
-		
+ 
 	while(1) {
-		printf("> ");
+		
 		queue_t *qp = qopen();
 		
 		valid = true;
-		output = fgets(input,100,stdin);
+		if (quiet == 1)
+			output = fgets(input,100,fp);
+		else{
+			printf("> ");
+			output = fgets(input,100,stdin);
+		}
+		
 		if (output == NULL) {
 			qclose(qp);
 			break;
 		}
+
+		if(quiet == 1)
+			fprintf(foutput,"query:%s",input);
+		
 		input[strlen(input)-1] = '\0'; // to replace the newline with \0
 		if(strcmp(input,"\0")==0){
 			valid = false;
-			printf("[Invalid input]\n");
+			fprintf(foutput,"[Invalid input]\n");
 		}
 		
 		int flag = 1;
@@ -209,7 +262,7 @@ int main(void){
 		while (word != NULL && valid){
 			for(int i=0; word[i]!= '\0'; i++){
 				if(isalpha(word[i]) == 0){
-					printf("[Invalid input]\n");
+					fprintf(foutput,"[Invalid input]\n");
 					valid = false;
 					break;
 				}	
@@ -221,7 +274,7 @@ int main(void){
 			
 			if (strcmp(word,"or") == 0 || strcmp(word,"and") == 0){
 				if(flag==1){
-					printf("[Invalid input]\n");
+					fprintf(foutput,"[Invalid input]\n");
 					valid = false;
 					break;
 				} else
@@ -236,11 +289,12 @@ int main(void){
 		}
 		
 		if(flag==1 && valid){
-			printf("[Invalid input]\n");
+			fprintf(foutput,"[Invalid input]\n");
 			valid = false;
 		}
-
+		
 		if(valid){
+			
 			queue_t* q_or = qopen();
 			queue_t* q_and = qopen();
 
@@ -275,7 +329,10 @@ int main(void){
 			
 			final = first_ht;
 			qapply(q_or,get_final);
-			happly(final,print_querier);
+			if (quiet == 1)
+				happly(final,fprint_querier);
+			else
+				happly(final,print_querier);
 			
 			happly(first_ht,free_querier);
 			qclose(first_mp->q);
@@ -288,6 +345,11 @@ int main(void){
 		
 		}
 		
+	}
+	
+	if(quiet == 1){
+		fclose(fp);
+		fclose(foutput);
 	}
 
 	happly(index,freeWords);
