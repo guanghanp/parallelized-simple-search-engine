@@ -1,5 +1,5 @@
 #!/bin/bash
-valgrind --leak-check=full querier
+valgrind --leak-check=full --show-leak-kinds=all querier ../pages/ ../indexer/index_test -q good-queries.txt output
 
 
 

@@ -204,13 +204,13 @@ int main(int argc,char* argv[]){
 			printf("usage: query <pageDirectory> <indexFile>[-q]\n");
 			exit(EXIT_FAILURE);
 		}
-	} else{
+	} else
 		foutput = stdout;
-	}
 
 	
   strcpy(pagedir,argv[1]);
   strcpy(indexnm,argv[2]);
+	
   struct stat buffer;
 	if (stat(pagedir,&buffer) != 0 || !S_ISDIR(buffer.st_mode)){
 		printf("usage: query <pageDirectory> <indexFile>[-q]\n");
@@ -233,8 +233,6 @@ int main(int argc,char* argv[]){
  
 	while(1) {
 		
-		queue_t *qp = qopen();
-		
 		valid = true;
 		if (quiet == 1)
 			output = fgets(input,100,fp);
@@ -243,10 +241,10 @@ int main(int argc,char* argv[]){
 			output = fgets(input,100,stdin);
 		}
 		
-		if (output == NULL) {
-			qclose(qp);
+		if (output == NULL) 
 			break;
-		}
+
+		queue_t *qp = qopen();
 
 		if(quiet == 1)
 			fprintf(foutput,"query:%s",input);
@@ -320,15 +318,14 @@ int main(int argc,char* argv[]){
 								
 			}
 			
-			if(valid){
-				qapply(q_or,fill_hash);
-			}
+			qapply(q_or,fill_hash);
 			
 			map_t* first_mp = qget(q_or);
 			hashtable_t* first_ht = first_mp->ht;
 			
 			final = first_ht;
 			qapply(q_or,get_final);
+			
 			if (quiet == 1)
 				happly(final,fprint_querier);
 			else
@@ -341,9 +338,10 @@ int main(int argc,char* argv[]){
 			
 			qapply(q_or,free_all_of_them);
 			qclose(q_or);
-			qclose(qp);
-		
+				
 		}
+
+		qclose(qp);	
 		
 	}
 	
@@ -355,6 +353,6 @@ int main(int argc,char* argv[]){
 	happly(index,freeWords);
 	hclose(index);
 	
-	return 0;
+	exit(EXIT_SUCCESS);
 }
 

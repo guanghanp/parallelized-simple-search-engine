@@ -4,9 +4,7 @@
  */
 #include <stdint.h>
 #include <stdbool.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include "queue.h"
+#include <queue.h>
 
 typedef struct node_t{
 	void* element;
