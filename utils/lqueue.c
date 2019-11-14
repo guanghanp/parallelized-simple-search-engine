@@ -1,5 +1,5 @@
 /* 
- * lqueue.c -- implementation of a queue
+ * lqueue.c -- implementation of concurrent queue module
  * 
  */
 
@@ -15,9 +15,9 @@ typedef struct lq_t{
 /* create an empty queue */
 lqueue_t* lqopen(void){
 	lq_t *lq;
-	if(!(lq = (lq_t*)malloc(sizeof(lq_t)))){
+	if(!(lq = (lq_t*)malloc(sizeof(lq_t))))
 		printf("Malloc failure\n");
-	}
+	
 	lq->qp = qopen();
 	pthread_mutex_init(&(lq->m),NULL);
 	return (lqueue_t*)lq;
