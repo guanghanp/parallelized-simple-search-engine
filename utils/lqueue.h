@@ -1,6 +1,6 @@
 #pragma once
 /* 
- * lqueue.h -- public interface to the queue module
+ * lqueue.h -- public interface to the concurrent queue module
  */
 #include <stdint.h>
 #include <stdbool.h>
