@@ -3,9 +3,9 @@
  * 
  */
 
-
 #include <lqueue.h>
 #include <pthread.h>
+#include <unistd.h>
 
 typedef struct lq_t{
 	queue_t* qp;
@@ -38,6 +38,8 @@ int32_t lqput(lqueue_t *lqp, void *elementp){
 	lq_t *lq=(lq_t*)lqp;
 	int32_t output;
 	pthread_mutex_lock(&(lq->m));
+	//sleep(5);
+	//printf("snowing \n");
 	output = qput(lq->qp,elementp);
 	pthread_mutex_unlock(&(lq->m));
 	return output;
