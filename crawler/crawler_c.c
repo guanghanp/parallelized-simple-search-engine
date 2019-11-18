@@ -47,7 +47,6 @@ bool searchurl(void* urlp, const void* urlkey){
 void *crawlfunc(void *vargp){
 
 	while(running>0||init==1){
-		printf("running:%d\n",running);
 		
 		webpage_t *next;
 		if ( ( next = (webpage_t*)lqget(qp) )!=NULL ){
@@ -137,12 +136,11 @@ int main(int argc,char *argv[]) {
 	pthread_mutex_init(&m_r,NULL);
 	pthread_mutex_init(&m_id,NULL);
 	webpage_t* webby = webpage_new(seedurl, 0, NULL);
-	int id = 1;
 
 	if (webpage_fetch(webby)){
 		lhput(visited_ht,(void*)seedurl,seedurl,strlen(seedurl));
 		lqput(qp,(void*)webby);
-		pagesave(webby,id++,pagedir);
+		pagesave(webby,id,pagedir);
 	} else
 		exit(EXIT_FAILURE);
 
