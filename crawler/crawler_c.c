@@ -1,4 +1,4 @@
-/* crawler.c --- web crawler
+/* crawler.c --- concurrent web crawler
  *
  * Author: Guanghan Pan
  * Created: Thu Oct 15 17:48:22 2019 (-0400)
@@ -112,10 +112,7 @@ int main(int argc,char *argv[]) {
 		printf("usage: crawler <seedurl> <pagedir> <maxdepth> <numthread>\n");
 		exit(EXIT_FAILURE);
 	}
-
-	// char* seedurl = "https://thayer.github.io/engs50/";
-	// char* pagedir = "../pages/";
-
+	
 	seedurl = argv[1];
 	pagedir = argv[2];
 	maxdepth = atoi(argv[3]);

@@ -1,10 +1,9 @@
 /* querier.c --- 
-1;95;0c * Author: Yu Chen
+ *
+ * Author: Yu Chen, Guanghan Pan
  * Created: Thu Oct 24 17:21:39 2019 (-0400)
- * Version: 
  * 
  * Description: 
- * 
  */
 
 #include <stdio.h>
@@ -354,5 +353,6 @@ int main(int argc,char* argv[]){
 	hclose(index);
 	
 	exit(EXIT_SUCCESS);
+
 }
 

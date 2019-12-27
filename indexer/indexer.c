@@ -1,10 +1,8 @@
-/* indexer.c --- 
+/* indexer.c --- crate and save an indexer from a directory of crawled webpages
  * 
- * Author: Guanghan Pan
+ * Author: Guanghan Pan, Yu Chen
  * Created: Thu Oct 17 21:28:03 2019 (-0400)
- * Version: 
  * 
- * Description: 
  * 
  */
 
@@ -24,9 +22,14 @@
 #include <sys/stat.h>
 #include <dirent.h>
 
+// global variable used to debug
 static int total = 0;
 
-char *NormalizeWord(char *word){
+/* normalize the word by filtering out words which
+ countain numbers, with length less than 3, and then
+ convert to lower case.
+*/ 
+char *normalizeWord(char *word){
 	if(strlen(word)<3)
 		return NULL;
 	for(int i=0; word[i]!= '\0'; i++){
@@ -37,6 +40,7 @@ char *NormalizeWord(char *word){
 	return word;
 }
 
+// helper functions used to debug
 void sumOne(void *docp){
 	doc_t* dp = (doc_t*)docp;
 	total += dp->count;
@@ -47,10 +51,10 @@ void sumWords(void *wordp){
 	qapply(wp->docq,sumOne);
 }
 
+// main method
 int main(int argc, char *argv[]){
-	hashtable_t *word_ht;
-	word_ht=hopen(97);
 
+	// check the validity of pagedir
 	char* pagedir = argv[1];
 	struct stat buff;
 	if (stat(pagedir,&buff) < 0 )
@@ -68,55 +72,66 @@ int main(int argc, char *argv[]){
   
 	if (dr == NULL){
 		printf("Could not open page directory" );
-		return 0;
+		exit(EXIT_FAILURE);
 	}
-  
+
 	while ((de = readdir(dr)) != NULL)
 		file_count++;
   
 	closedir(dr);
+
+	// create the hash table for indexer
+	hashtable_t *word_ht;
+	word_ht=hopen(97);
+	
+	// load crawled pages and fill out the indexer
 	int id = 1;
 	for (; id<=file_count-2; id++){
 		current = pageload(id,pagedir);
-
 		char* result;
+		
 		int pos=0;
 		while ( (pos = webpage_getNextWord(current, pos, &result)) > 0) {
-			if(NormalizeWord(result)!=NULL){
+
+			// go through each word and normalize
+			if(normalizeWord(result)!=NULL){
 				// printf("normalized result:%s\n",result);
 				word_t *search_res;
 				search_res=(word_t*)hsearch(word_ht,searchWord,result,strlen(result));
-				if(search_res == NULL){
+
+				if(search_res == NULL){ // if the word is not in indexer, create a new word
 					word_t *new_word = (word_t*)malloc(sizeof(word_t));
 					doc_t* docp = (doc_t*)malloc(sizeof(doc_t));
 					init_word(new_word,result,qopen());
 					init_doc(docp,id,1);
 					qput(new_word->docq,docp);
 					hput(word_ht,new_word,result,strlen(result));
-				} else {
+				} else { // if the word is already in the indexer
 					doc_t *search_q;
 					search_q = (doc_t*)qsearch(search_res->docq,searchDoc,&id);
-					if(search_q == NULL){
+					if(search_q == NULL){ // if the doc is not in the queue
 						doc_t* docp = (doc_t*)malloc(sizeof(doc_t));
 						init_doc(docp,id,1);
 						qput(search_res->docq,docp);
-					}
-					else{
+					} else // if the doc is in the queue
 						search_q->count++;
-					}
+					
 					free(result);
 				}
-			} else {
+			} else 
 				free(result);
-			}
-			// free(result); // ?????
+			
 		}
+		
 		webpage_delete((void*)current);
+
 	}
-	happly(word_ht,sumWords);
+
+	// save the indexer to specified position
 	indexsave(word_ht,argv[2]);
+
+	// free all the data structures
 	happly(word_ht,freeWords);
-	
 	hclose(word_ht);
 
 	exit(EXIT_SUCCESS);

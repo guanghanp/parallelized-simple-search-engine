@@ -10,4 +10,4 @@ crawler_c:  crawler_c.c
 						gcc $(CFLAGS) $^ $(LIBS) -o $@ -lpthread
 
 clean:
-						rm -f crawler
+						rm -f crawler crawler_c
