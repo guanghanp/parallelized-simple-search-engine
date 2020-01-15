@@ -1,9 +1,7 @@
 /* querier.c --- 
  *
  * Author: Yu Chen, Guanghan Pan
- * Created: Thu Oct 24 17:21:39 2019 (-0400)
  * 
- * Description: 
  */
 
 #include <stdio.h>
@@ -175,28 +173,63 @@ void free_all_of_them(void* mapp){
 	free(mp);
 }
 
+// process the input message and put them in qp
+// returns true if the input is valid
+// returns false if the input is invalid
+bool process_input(queue_t *qp, char* input){
+  const char s[3] = " \t";                                                    
+	int flag = 1; // make sure both 'and' and 'or' are not at the beginning or end
+	char *word = strtok(input, s);
+	// process the query and put them in the queue
+	while (word != NULL){
+		for(int i=0; word[i]!= '\0'; i++){
+			
+			if(isalpha(word[i]) == 0)
+				return false;
+		 
+			word[i] = tolower(word[i]);
+		}
+		
+		if (strcmp(word,"or") == 0 || strcmp(word,"and") == 0){
+			if(flag==1)
+				return false;
+			else
+				flag = 1; 
+		} else if(strlen(word) >= 3)
+			flag = 0;
+		
+		if ((strcmp(word,"or") == 0 || strlen(word) >= 3) && strcmp(word,"and") != 0)
+			qput(qp,word);
+		
+		word = strtok(NULL, s);
+	}
+	
+	return flag != 1;
+	
+}
+
 
 int main(int argc,char* argv[]){
-	char input[100];                                                            
-  const char s[3] = " \t";                                                    
-  char *word;                                                                 
+	char input[100];                                                         
   char *output;
-	bool valid = true;
 	char indexnm[100];
   char command[100];
 	int quiet = 0;
 	FILE* fp = NULL;
 	
   if (argc != 3 && argc != 6){
-    printf("usage: query <pageDirectory> <indexFile>[-q]\n");
+    printf("usage: query <pageDirectory> <indexFile> [-q <fileInput> <fileOutput>]\n");
 		exit(EXIT_FAILURE);
 	}
 	
 	if(argc == 6){
 		if(strcmp(argv[3],"-q")==0){
 			quiet = 1;
-			if (access(argv[4],R_OK) != 0)
+			if (access(argv[4],R_OK) != 0){
+				printf("The input file is not readable.\n");
+				printf("usage: query <pageDirectory> <indexFile>[-q]\n");
 				exit(EXIT_FAILURE);
+			}
 			fp = fopen(argv[4],"r");
 			foutput = fopen(argv[5],"w");
 		} else{
@@ -215,16 +248,17 @@ int main(int argc,char* argv[]){
 		printf("usage: query <pageDirectory> <indexFile>[-q]\n");
     exit(EXIT_FAILURE);
 	}
+
+	// run indexer from command line
   strcpy(command,"../indexer/indexer ");
   strcat(command, pagedir);
-	
   strcat(command, " ");
 	strcat(command, indexnm);
   system(command);
   index = indexload(indexnm);
 	
 	struct stat buff;
-	if (stat(pagedir,&buff) < 0 )
+	if (stat(pagedir,&buff) < 0)
 		exit(EXIT_FAILURE);
 	
 	if (!S_ISDIR(buff.st_mode))
@@ -232,7 +266,7 @@ int main(int argc,char* argv[]){
  
 	while(1) {
 		
-		valid = true;
+		bool valid = true;
 		if (quiet == 1)
 			output = fgets(input,100,fp);
 		else{
@@ -249,46 +283,11 @@ int main(int argc,char* argv[]){
 			fprintf(foutput,"query:%s",input);
 		
 		input[strlen(input)-1] = '\0'; // to replace the newline with \0
-		if(strcmp(input,"\0")==0){
+
+		if(strcmp(input,"\0")==0)
 			valid = false;
-			fprintf(foutput,"[Invalid input]\n");
-		}
-		
-		int flag = 1;
-		word = strtok(input, s);
-		while (word != NULL && valid){
-			for(int i=0; word[i]!= '\0'; i++){
-				if(isalpha(word[i]) == 0){
-					fprintf(foutput,"[Invalid input]\n");
-					valid = false;
-					break;
-				}	
-				word[i] = tolower(word[i]);
-			}
-			
-			if (!valid)
-				break;
-			
-			if (strcmp(word,"or") == 0 || strcmp(word,"and") == 0){
-				if(flag==1){
-					fprintf(foutput,"[Invalid input]\n");
-					valid = false;
-					break;
-				} else
-					flag = 1; 
-			} else
-				flag = 0;
-			
-			if ((strcmp(word,"or") == 0 || strlen(word) >= 3) && strcmp(word,"and") != 0)
-				qput(qp,word);
-			
-			word = strtok(NULL, s);
-		}
-		
-		if(flag==1 && valid){
-			fprintf(foutput,"[Invalid input]\n");
-			valid = false;
-		}
+
+		valid = process_input(qp,input);
 		
 		if(valid){
 			
@@ -296,26 +295,19 @@ int main(int argc,char* argv[]){
 			queue_t* q_and = qopen();
 
 			char* ptr = (char*)qget(qp);
-			if (ptr == NULL)
-				valid = false;
-			else {
-				
-				do{
-					
-					if (strcmp(ptr,"or") == 0){
-						map_t* map = init_map(q_and);
-						qput(q_or,map);				
-						q_and = qopen();
-					} else 
-						qput(q_and,ptr);
-					
-					ptr = (char*)qget(qp);
-				} while(ptr!=NULL);
-				
-				map_t* map = init_map(q_and);
-				qput(q_or,map);				
-								
+
+			while(ptr!=NULL){	
+				if (strcmp(ptr,"or") == 0){
+					map_t* map = init_map(q_and);
+					qput(q_or,map);				
+					q_and = qopen();
+				} else 
+					qput(q_and,ptr);				
+				ptr = (char*)qget(qp);
 			}
+			
+			map_t* map = init_map(q_and);
+			qput(q_or,map);
 			
 			qapply(q_or,fill_hash);
 			
@@ -329,29 +321,29 @@ int main(int argc,char* argv[]){
 				happly(final,fprint_querier);
 			else
 				happly(final,print_querier);
+
 			
 			happly(first_ht,free_querier);
 			qclose(first_mp->q);
 			hclose(first_ht);
-			free(first_mp);
-			
+			free(first_mp);			
 			qapply(q_or,free_all_of_them);
 			qclose(q_or);
 				
-		}
+		} else // not valid
+			fprintf(foutput,"[Invalid input]\n");
 
 		qclose(qp);	
 		
 	}
-	
+		
 	if(quiet == 1){
 		fclose(fp);
 		fclose(foutput);
 	}
 
 	happly(index,freeWords);
-	hclose(index);
-	
+	hclose(index);	
 	exit(EXIT_SUCCESS);
 
 }

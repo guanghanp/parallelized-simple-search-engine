@@ -1,10 +1,6 @@
 /* crawler.c --- concurrent web crawler
  *
  * Author: Guanghan Pan
- * Created: Thu Oct 15 17:48:22 2019 (-0400)
- * Version: 1.0
- * 
- * Description: 
  * 
  */
 
@@ -21,29 +17,36 @@
 #include <sys/stat.h>
 #include <pthread.h>
 
-static lqueue_t* qp;
-static lhashtable_t* visited_ht;
-static int running = 0;
-static int init = 1;
-static int id = 1;
-static pthread_mutex_t m_r;
-static pthread_mutex_t m_id;
-
+// arguments for the program
 static char* pagedir;
 static int maxdepth;
 static char* seedurl;
 
+// conditions for threads to run
+static int running = 0;
+static int init = 1;
+
+// variables used by threads
+static lqueue_t* qp;
+static lhashtable_t* visited_ht;
+static int id = 1;
+static pthread_mutex_t m_r;
+static pthread_mutex_t m_id;
+
+// helper function to free urls in hashtable
 void free_content(void* element){
 	char* cp = (char*)element;
 	free(cp);
 }
 
+// helper function to search for urls in hashtable
 bool searchurl(void* urlp, const void* urlkey){
 	char* up = (char*)urlp;
 	char* key = (char*)urlkey;
 	return strcmp(up,key)==0;
 }
 
+// main crawler function used by each thread
 void *crawlfunc(void *vargp){
 
 	while(running>0||init==1){
@@ -56,6 +59,7 @@ void *crawlfunc(void *vargp){
 			init = 0;			
 			
 			if(strcmp(webpage_getURL(next),seedurl)!=0){
+				
 				if(!webpage_fetch(next)){
 					webpage_delete((void*)next);
 					pthread_mutex_lock(&m_r);
@@ -80,9 +84,7 @@ void *crawlfunc(void *vargp){
 					printf("Internal URL.\n");
 					
 					if(lhadd(visited_ht,searchurl,result,strlen(result))==NULL){
-						// printf("Not in the ht.\n");
 						webpage_t* inter_web = webpage_new(result, webpage_getDepth(next)+1, NULL);
-						//			qput(qurl,(void*)result);			
 						lqput(qp,(void*)inter_web);
 					} else {
 						free(result);
@@ -100,14 +102,13 @@ void *crawlfunc(void *vargp){
 			pthread_mutex_unlock(&m_r);
 
 		}
-			
 	}
-	
 	return NULL;
 }
 
 int main(int argc,char *argv[]) {
 
+	// check number of arguments
 	if(argc != 5){
 		printf("usage: crawler <seedurl> <pagedir> <maxdepth> <numthread>\n");
 		exit(EXIT_FAILURE);
@@ -120,13 +121,15 @@ int main(int argc,char *argv[]) {
 	
 	if(pagedir[strlen(pagedir)-1]!='/')
 		pagedir = strcat(pagedir,"/");
-	
+
+	// check validity of arguments
 	struct stat statbuf;
 	if (stat(pagedir, &statbuf)!= 0||!S_ISDIR(statbuf.st_mode)||maxdepth<0){
 		printf("usage: crawler <seedurl> <pagedir> <maxdepth> <numthread>\n");
 		exit(EXIT_FAILURE);
 	}
 
+	// initialize variables
 	qp = lqopen();
   visited_ht = lhopen(97);
 	pthread_t threads[numthread];
@@ -134,6 +137,7 @@ int main(int argc,char *argv[]) {
 	pthread_mutex_init(&m_id,NULL);
 	webpage_t* webby = webpage_new(seedurl, 0, NULL);
 
+	// fetch seedurl
 	if (webpage_fetch(webby)){
 		lhput(visited_ht,(void*)seedurl,seedurl,strlen(seedurl));
 		lqput(qp,(void*)webby);
@@ -151,13 +155,12 @@ int main(int argc,char *argv[]) {
 		pthread_join(threads[i],NULL);
 	}
 
-	
+	// free all the data structures
 	pthread_mutex_destroy(&m_r);
 	pthread_mutex_destroy(&m_id);	
 	lhremove(visited_ht,searchurl,seedurl,strlen(seedurl));
 	lhapply(visited_ht,free_content);
 	lhclose(visited_ht);
-	//	qclose(qurl);
 	lqclose(qp);
 	exit(EXIT_SUCCESS);
 	
