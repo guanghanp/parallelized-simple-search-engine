@@ -71,7 +71,7 @@ int main(int argc, char *argv[]){
 	DIR *dr = opendir(pagedir);
   
 	if (dr == NULL){
-		printf("Could not open page directory" );
+		printf("Could not open page directory");
 		exit(EXIT_FAILURE);
 	}
 

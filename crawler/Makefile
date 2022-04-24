@@ -1,13 +1,13 @@
 CFLAGS=-Wall -pedantic -I../utils -L../lib -g
 LIBS=-lutils -lcurl
 
-ALL:				crawler crawler_c
+ALL:				crawler openmp_crawler
 
 crawler:    crawler.cpp    
 						g++ $(CFLAGS) $^ $(LIBS) -o $@ 
 
-crawler_c:  crawler_c.c
-						gcc $(CFLAGS) $^ $(LIBS) -o $@ -lpthread
+openmp_crawler:  openmp_crawler.cpp
+						g++ $(CFLAGS) $^ $(LIBS) -o $@ -fopenmp
 
 clean:
-						rm -f crawler crawler_c
+						rm -f crawler openmp_crawler
