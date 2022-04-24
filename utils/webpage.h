@@ -153,5 +153,5 @@ bool IsInternalURL(char *url);
 
 // All URLs beginning with this prefix are considered "internal"
 static const
-  char INTERNAL_URL_PREFIX[] = "https://thayer.github.io/engs50";
+  char INTERNAL_URL_PREFIX[] = "https://www.cplusplus.com/";
 
