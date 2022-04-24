@@ -1,8 +1,15 @@
-CFLAGS=-Wall -pedantic -std=c11 -I../utils -L../lib -g
+CFLAGS=-Wall -pedantic -I../utils -L../lib -g
 LIBS=-lutils -lcurl
 
-indexer:    indexer.c    
-						gcc $(CFLAGS) $^ $(LIBS) -o $@
+all: indexer openmp_indexer
+
+indexer:    indexer.cpp    
+						g++ $(CFLAGS) $^ $(LIBS) -o $@
+
+
+openmp_indexer:    openmp_indexer.cpp    
+						g++ $(CFLAGS) $^ $(LIBS) -o $@ -fopenmp
+
 
 clean:
 						rm -f indexer
