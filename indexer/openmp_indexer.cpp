@@ -22,6 +22,7 @@ extern "C"
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <dirent.h>
+#include <chrono>
 
 using namespace std;
 
@@ -60,7 +61,7 @@ char *normalizeWord(char *word){
 	return word;
 }
 
-int32_t indexsave(unordered_map<string, word_t> indexp, char *indexnm){
+int32_t indexsave(unordered_map<string, word_t*> indexp, char *indexnm){
 
 	// open the file and write the contents
 
@@ -70,7 +71,7 @@ int32_t indexsave(unordered_map<string, word_t> indexp, char *indexnm){
 	for (auto const& cur_index : indexp){
 
 		myfile << cur_index.first;
-		vector<doc_t*> doc_vec = cur_index.second.doc_vec;
+		vector<doc_t*> doc_vec = cur_index.second -> doc_vec;
 		for (auto const& cur_doc : doc_vec){
 			myfile <<  " " << cur_doc -> document <<  " " << cur_doc -> count;
 		}
@@ -113,8 +114,10 @@ int main(int argc, char *argv[]){
   
 	closedir(dr);
 
+	auto start_time = std::chrono::steady_clock::now();
+
 	// create the hash map for indexer
-    unordered_map<string, word_t> index_hash;
+    unordered_map<string, word_t*> index_hash;
 	
 	// load crawled pages and fill out the indexer
 	# pragma omp parallel for
@@ -129,22 +132,24 @@ int main(int argc, char *argv[]){
 			if(normalizeWord(result) != NULL){
 
 				bool flag = false;
+				unordered_map<string, word_t*>::const_iterator got;
+
 				# pragma omp critical
 				{
-					unordered_map<string, word_t>::const_iterator got = index_hash.find(string(result));
+					got = index_hash.find(string(result));
 					if(got == index_hash.end()){ // if the word is not in indexer, create a new word
 						doc_t *docp = new doc_t(id);
-						word_t cur_word;
-						cur_word.doc_vec.push_back(docp);
+						word_t *cur_word = new word_t();
+						cur_word -> doc_vec.push_back(docp);
 						index_hash[string(result)] = cur_word;
 						flag = true;
 					}
 				}
-				if (flag) continue;
 				
-				// if the word is already in the indexer
-				omp_set_lock(&index_hash[string(result)].lock);
-				vector<doc_t*> cur_vec = index_hash[string(result)].doc_vec;
+				if (flag) continue;
+
+				omp_set_lock(&got -> second -> lock);
+				vector<doc_t*> cur_vec = got -> second -> doc_vec;
 				bool found = false;
 				for (doc_t *cur_doc : cur_vec){
 					if(cur_doc -> document == id){
@@ -156,19 +161,29 @@ int main(int argc, char *argv[]){
 
 				if(!found){
 					doc_t *docp = new doc_t(id);
-					index_hash[string(result)].doc_vec.push_back(docp);
+					got -> second -> doc_vec.push_back(docp);
 				}
-				omp_unset_lock(&index_hash[string(result)].lock);
-				
+				omp_unset_lock(&got -> second -> lock);
             }
 		}
-		cout << "finish while" << endl;
 
 		webpage_delete((void*)current);
 	}
 
+	auto index_time = std::chrono::steady_clock::now();
+
 	// save the indexer to specified position
 	indexsave(index_hash, argv[2]);
+
+	auto end_time = std::chrono::steady_clock::now();
+	std::chrono::duration<double> diff = end_time - start_time;
+	std::chrono::duration<double> index_diff = index_time - start_time;
+	std::chrono::duration<double> save_diff = end_time - index_time;
+    double seconds = diff.count();
+	double index_seconds = index_diff.count();
+	double save_seconds = save_diff.count();
+
+	std::cout << "Total Time = " << seconds << " seconds. " << " Index Time = " << index_seconds << " seconds. " << " Save Time = " << save_seconds << " seconds" " for " << " indexing.\n";
 
 	exit(EXIT_SUCCESS);
 }
