@@ -46,16 +46,20 @@ webpage_t *pageload(int id, char *dirnm){
 	struct stat buffer;
 	stat(filename, &buffer);
 	if (buffer.st_mode & S_IRUSR){
-		char url[50],depth[5],len[5],html[1000];
+		char url[200],depth[5],len[10],html[1000];
 		fscanf(fp,"%s\n%s\n%s\n",url,depth,len);
 		int length = atoi(len);
+		printf("The length of the file is %d, the url is: %s\n", length, url);
 		char *html_init =(char*) malloc((length+1)*sizeof(char));
 		html_init[0] = '\0';
 		
 		int depth_int = atoi(depth);
 
-		while (fgets(html,1000,fp) != NULL)
-			strcat(html_init,html);
+		if (length >= 1) {
+			while (fgets(html,1000,fp) != NULL)
+				strcat(html_init,html);
+		} 
+
 		
 		web = webpage_new(url,depth_int,html_init);
 	}

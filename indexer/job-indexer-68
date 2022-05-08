@@ -1,0 +1,20 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -C knl
+#SBATCH -q debug
+#SBATCH -J cs267
+#SBATCH -t 00:30:00
+#SBATCH --output=openmp-68-core-%j.out
+
+#OpenMP settings:
+export OMP_NUM_THREADS=68
+export OMP_PLACES=cores
+export OMP_PROC_BIND=spread
+
+
+# ./openmp_indexer ../pages_68/1/ ../index_files/68/1_depth.txt
+# ./openmp_indexer ../pages_68/2/ ../index_files/68/2_depth.txt
+# ./openmp_indexer ../pages_68/3/ ../index_files/68/3_depth.txt
+# ./openmp_indexer ../pages_68/4/ ../index_files/68/4_depth.txt
+
+valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./openmp_indexer ../pages_68/3/ ./index_depth_2_new

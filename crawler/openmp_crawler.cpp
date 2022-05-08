@@ -77,7 +77,7 @@ int main(int argc,char *argv[]) {
 	set<string> visited;
 	webpage_t* webby = webpage_new(seedurl_char, 0, NULL);
 	//	queue_t* qurl = qopen();
-	int id = 1;
+	int id = 0;
 
 	// fetch seedurl, put it in queue and hashtable
 	if (webpage_fetch(webby)){

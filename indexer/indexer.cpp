@@ -7,7 +7,6 @@
 extern "C"
 {
 	#include <webpage.h>
-	#include <pageio.h>
 }
 
 #include <iostream>
@@ -17,10 +16,14 @@ extern "C"
 #include <vector>
 #include <unordered_map>
 #include <string>
+#include <cstring>
 
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <dirent.h>
+#include <chrono>
+
+#include <pageio.hpp>
 
 using namespace std;
 
@@ -103,6 +106,8 @@ int main(int argc, char *argv[]){
   
 	closedir(dr);
 
+	auto start_time = std::chrono::steady_clock::now();
+
 	// create the hash map for indexer
     unordered_map<string, vector<doc_t*>> index_hash;
 	
@@ -151,8 +156,20 @@ int main(int argc, char *argv[]){
 		webpage_delete((void*)current);
 	}
 
+	auto index_time = std::chrono::steady_clock::now();
+
 	// save the indexer to specified position
 	indexsave(index_hash, argv[2]);
+
+	auto end_time = std::chrono::steady_clock::now();
+	std::chrono::duration<double> diff = end_time - start_time;
+	std::chrono::duration<double> index_diff = index_time - start_time;
+	std::chrono::duration<double> save_diff = end_time - index_time;
+    double seconds = diff.count();
+	double index_seconds = index_diff.count();
+	double save_seconds = save_diff.count();
+
+	std::cout << "Total Time = " << seconds << " seconds. " << " Index Time = " << index_seconds << " seconds. " << " Save Time = " << save_seconds << " seconds" " for " << " indexing.\n";
 
 	exit(EXIT_SUCCESS);
 }

@@ -1,0 +1,18 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -C knl
+#SBATCH -q debug
+#SBATCH -J cs267
+#SBATCH -t 00:30:00
+#SBATCH --output=openmpv2-1-core-%j.out
+
+#OpenMP settings:
+export OMP_NUM_THREADS=1
+export OMP_PLACES=cores
+export OMP_PROC_BIND=spread
+
+
+# ./openmp_crawler_v2 https://www.cplusplus.com/ ../pages_1/1/ 1
+./openmp_crawler https://www.cplusplus.com/ ../pages_1/2/ 2
+./openmp_crawler https://www.cplusplus.com/ ../pages_1/3/ 3
+./openmp_crawler https://www.cplusplus.com/ ../pages_1/4/ 4

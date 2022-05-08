@@ -6,10 +6,6 @@
 
 
 #include <stdio.h>
-// #include <queue.h>
-// #include <hash.h>
-// #include <stdlib.h>
-// #include <string.h>
 #include <stdint.h>
 #include <unistd.h>
 #include <sys/stat.h>
@@ -88,8 +84,6 @@ int main(int argc,char *argv[]) {
 		pagesave(webby,id++,pagedir_char);
 	} else {
 		webpage_delete((void*)webby);
-		// qclose(qp);
-		// hclose(visited_ht);
 		exit(EXIT_FAILURE);
 	}
 
@@ -109,14 +103,16 @@ int main(int argc,char *argv[]) {
                 if (!qp.empty()) {
                     next = qp.front();
                     qp.pop_front();
-                    running++;
-                    init = 0;
                 } else {
                     flag = true;
                 }
             }
 
             if (flag) continue;
+            
+            #pragma omp atomic
+            running++;
+            init = 0;
 
             // save the page to pagedir
             if(strcmp(webpage_getURL(next),seedurl_char)!=0){
@@ -172,7 +168,7 @@ int main(int argc,char *argv[]) {
 	std::chrono::duration<double> diff = end_time - start_time;
     double seconds = diff.count();
 
-	std::cout << "Simulation Time = " << seconds << " seconds for " << " crawling.\n";
+	std::cout << "Simulation Time = " << seconds << " seconds for depth of " << maxdepth << " crawling.\n";
 	// free all the data structure
 	// hremove(visited_ht,searchurl,seedurl,strlen(seedurl));
 	// happly(visited_ht,free_content);
