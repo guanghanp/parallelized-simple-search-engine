@@ -13,6 +13,7 @@ extern "C"
 #include <iostream>
 #include <fstream>
 #include <stdio.h>
+#include <algorithm>
 #include <omp.h>
 
 #include <vector>
@@ -23,6 +24,7 @@ extern "C"
 #include <sys/stat.h>
 #include <dirent.h>
 #include <chrono>
+
 
 using namespace std;
 
@@ -46,6 +48,8 @@ class word_t{
 		}
 };
 
+bool DEBUG = true;
+
 /* normalize the word by filtering out words which
  countain numbers, with length less than 3, and then
  convert to lower case.
@@ -61,6 +65,8 @@ char *normalizeWord(char *word){
 	return word;
 }
 
+bool compfunction (doc_t *i,doc_t *j) { return (i -> document < j -> document); }
+
 int32_t indexsave(unordered_map<string, word_t*> indexp, char *indexnm){
 
 	// open the file and write the contents
@@ -72,6 +78,8 @@ int32_t indexsave(unordered_map<string, word_t*> indexp, char *indexnm){
 
 		myfile << cur_index.first;
 		vector<doc_t*> doc_vec = cur_index.second -> doc_vec;
+		if(DEBUG)
+			sort(doc_vec.begin(), doc_vec.end(), compfunction);
 		for (auto const& cur_doc : doc_vec){
 			myfile <<  " " << cur_doc -> document <<  " " << cur_doc -> count;
 		}
