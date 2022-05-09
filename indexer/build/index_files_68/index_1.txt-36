@@ -1,0 +1,41 @@
+age 1 1
+animation 5 1 10 1
+assert 6 1 9 1 11 1 21 3 24 2
+assume 13 1
+assumed 13 3
+background 0 9
+based 2 1 7 2 15 1
+been 2 1 3 4 7 3 13 3 19 3 22 3 23 2
+described 21 2
+entirely 3 1
+equations 2 1 15 1
+eventually 15 1
+exact 13 3
+hence 19 1
+introduces 11 1 19 1
+jetm 15 1
+listing 7 1
+may 1 2 2 4 3 11 4 5 5 3 6 1 7 20 8 34 10 2 13 6 14 1 15 31 16 4 19 4 20 5 22 5 23 16 25 1
+modifications 2 1
+multiset 9 9
+offer 2 2 9 1
+orientation 12 1
+over 2 3 3 1 7 3 15 1 19 2 20 1
+portability 2 1 14 1
+project 2 2 7 2 8 1 14 1 25 2
+require 2 1 3 1 13 1
+responsibility 2 1
+resulting 2 3 3 1 13 1
+script 4 2 5 2 7 2 8 2 10 2 15 2 16 2 20 2 23 3 25 2
+serves 22 1
+she 2 1
+short 0 1 3 1 13 3 17 1
+usually 2 4 8 1
+versions 13 1 19 1 21 4
+viktar 20 1 25 1
+visibility 3 1 12 2 13 1 19 1 22 1
+visited 0 1
+whether 1 1 7 1 13 1
+winner 8 1
+write 2 1 3 2 8 1 13 1 15 2 22 1
+ztmbdd 8 1

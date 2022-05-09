@@ -1,0 +1,3 @@
+/global/homes/x/xizhang1/parallelized-simple-search-engine/indexer/build/CMakeFiles/distribute_indexer.dir
+/global/homes/x/xizhang1/parallelized-simple-search-engine/indexer/build/CMakeFiles/edit_cache.dir
+/global/homes/x/xizhang1/parallelized-simple-search-engine/indexer/build/CMakeFiles/rebuild_cache.dir

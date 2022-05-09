@@ -17,7 +17,6 @@
 extern "C"
 {
 	#include <webpage.h>
-	#include <pageio.h>
 }
 
 
@@ -28,6 +27,7 @@ extern "C"
 #include <set>
 #include <cstring>
 #include <chrono>
+#include <pageio.hpp>
 
 using namespace std;
 

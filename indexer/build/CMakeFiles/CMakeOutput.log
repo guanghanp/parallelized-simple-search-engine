@@ -1,0 +1,318 @@
+The system is: Linux - 5.3.18-24.96-default - x86_64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/cray/pe/craype/2.7.10/bin/CC 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/global/homes/x/xizhang1/parallelized-simple-search-engine/indexer/build/CMakeFiles/3.22.1/CompilerIdCXX/a.out"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /global/homes/x/xizhang1/parallelized-simple-search-engine/indexer/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8b6bc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8b6bc.dir/build.make CMakeFiles/cmTC_8b6bc.dir/build
+gmake[1]: Entering directory '/global/u2/x/xizhang1/parallelized-simple-search-engine/indexer/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.o
+/opt/cray/pe/craype/2.7.10/bin/CC   -v -o CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.o -c /global/common/software/nersc/cori-2022q1/spack/cray-cnl7-haswell/cmake-3.22.1-zdiyyvt/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/opt/gcc/11.2.0/bin/../snos/bin/g++
+Target: x86_64-suse-linux
+Configured with: ../cray-gcc-11.2.0-202108140355.9bf1fd589a5c1/configure --prefix=/opt/gcc/11.2.0/snos --disable-nls --libdir=/opt/gcc/11.2.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/gcc/11.2.0/snos/include/g++ --with-slibdir=/opt/gcc/11.2.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 20210728 (Cray Inc.) (GCC) 
+COLLECT_GCC_OPTIONS='-march=knl' '-D' '__CRAYXC' '-D' '__CRAY_MIC_KNL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include' '-I' '/opt/cray/xpmem/default/include' '-I' '/opt/cray/gni-headers/default/include' '-I' '/opt/cray/pe/pmi/5.0.17/include' '-I' '/opt/cray/ugni/default/include' '-I' '/opt/cray/udreg/default/include' '-I' '/opt/cray/pe/atp/3.14.9/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_8b6bc.dir/'
+ /opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/cc1plus -quiet -v -I /opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include -I /opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include -I /opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include -I /opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include -I /opt/cray/xpmem/default/include -I /opt/cray/gni-headers/default/include -I /opt/cray/pe/pmi/5.0.17/include -I /opt/cray/ugni/default/include -I /opt/cray/udreg/default/include -I /opt/cray/pe/atp/3.14.9/include -I /opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include -I /opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include -I /opt/cray-hss-devel/9.0.0/include -D_GNU_SOURCE -D __CRAYXC -D __CRAY_MIC_KNL -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ /global/common/software/nersc/cori-2022q1/spack/cray-cnl7-haswell/cmake-3.22.1-zdiyyvt/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8b6bc.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=knl -version -o /tmp/ccBRdcG8.s
+GNU C++17 (GCC) version 11.2.0 20210728 (Cray Inc.) (x86_64-suse-linux)
+	compiled by GNU C version 11.2.0 20210728 (Cray Inc.), GMP version 6.0.0, MPFR version 3.1.3, MPC version 1.0.3, isl version isl-0.15-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../../../x86_64-suse-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include
+ /opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include
+ /opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include
+ /opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include
+ /opt/cray/xpmem/default/include
+ /opt/cray/gni-headers/default/include
+ /opt/cray/pe/pmi/5.0.17/include
+ /opt/cray/ugni/default/include
+ /opt/cray/udreg/default/include
+ /opt/cray/pe/atp/3.14.9/include
+ /opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include
+ /opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include
+ /opt/cray-hss-devel/9.0.0/include
+ /opt/gcc/11.2.0/snos/include/g++
+ /opt/gcc/11.2.0/snos/include/g++/x86_64-suse-linux
+ /opt/gcc/11.2.0/snos/include/g++/backward
+ /opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/include
+ /usr/local/include
+ /opt/gcc/11.2.0/snos/include
+ /opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/include-fixed
+ /usr/include
+End of search list.
+GNU C++17 (GCC) version 11.2.0 20210728 (Cray Inc.) (x86_64-suse-linux)
+	compiled by GNU C version 11.2.0 20210728 (Cray Inc.), GMP version 6.0.0, MPFR version 3.1.3, MPC version 1.0.3, isl version isl-0.15-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 23c4fe70341a0a849cea1637ba28b7df
+COLLECT_GCC_OPTIONS='-march=knl' '-D' '__CRAYXC' '-D' '__CRAY_MIC_KNL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include' '-I' '/opt/cray/xpmem/default/include' '-I' '/opt/cray/gni-headers/default/include' '-I' '/opt/cray/pe/pmi/5.0.17/include' '-I' '/opt/cray/ugni/default/include' '-I' '/opt/cray/udreg/default/include' '-I' '/opt/cray/pe/atp/3.14.9/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_8b6bc.dir/'
+ as -v -I /opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include -I /opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include -I /opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include -I /opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include -I /opt/cray/xpmem/default/include -I /opt/cray/gni-headers/default/include -I /opt/cray/pe/pmi/5.0.17/include -I /opt/cray/ugni/default/include -I /opt/cray/udreg/default/include -I /opt/cray/pe/atp/3.14.9/include -I /opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include -I /opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include -I /opt/cray-hss-devel/9.0.0/include --64 -o CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccBRdcG8.s
+GNU assembler version 2.35.1 (x86_64-suse-linux) using BFD version (GNU Binutils; SUSE Linux Enterprise 15) 2.35.1.20201123-7.18
+COMPILER_PATH=/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/:/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/:/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/:/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/
+LIBRARY_PATH=/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/:/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=knl' '-D' '__CRAYXC' '-D' '__CRAY_MIC_KNL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include' '-I' '/opt/cray/xpmem/default/include' '-I' '/opt/cray/gni-headers/default/include' '-I' '/opt/cray/pe/pmi/5.0.17/include' '-I' '/opt/cray/ugni/default/include' '-I' '/opt/cray/udreg/default/include' '-I' '/opt/cray/pe/atp/3.14.9/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_8b6bc
+/global/common/software/nersc/cori-2022q1/spack/cray-cnl7-haswell/cmake-3.22.1-zdiyyvt/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b6bc.dir/link.txt --verbose=1
+/opt/cray/pe/craype/2.7.10/bin/CC  -v CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8b6bc 
+Using built-in specs.
+COLLECT_GCC=/opt/gcc/11.2.0/bin/../snos/bin/g++
+COLLECT_LTO_WRAPPER=/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/lto-wrapper
+Target: x86_64-suse-linux
+Configured with: ../cray-gcc-11.2.0-202108140355.9bf1fd589a5c1/configure --prefix=/opt/gcc/11.2.0/snos --disable-nls --libdir=/opt/gcc/11.2.0/snos/lib --enable-languages=c,c++,fortran --with-gxx-include-dir=/opt/gcc/11.2.0/snos/include/g++ --with-slibdir=/opt/gcc/11.2.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 20210728 (Cray Inc.) (GCC) 
+COMPILER_PATH=/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/:/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/:/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/:/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/
+LIBRARY_PATH=/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/:/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-march=knl' '-D' '__CRAYXC' '-D' '__CRAY_MIC_KNL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_8b6bc' '-I' '/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include' '-I' '/opt/cray/xpmem/default/include' '-I' '/opt/cray/gni-headers/default/include' '-I' '/opt/cray/pe/pmi/5.0.17/include' '-I' '/opt/cray/ugni/default/include' '-I' '/opt/cray/udreg/default/include' '-I' '/opt/cray/pe/atp/3.14.9/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-L/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/lib' '-L/opt/cray/dmapp/default/lib64' '-L/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib' '-L/opt/cray/dmapp/default/lib64' '-L/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib' '-L/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/lib64' '-L/global/common/cori_cle7up03/software/darshan/3.3.1/lib' '-L/opt/cray/pe/atp/3.14.9/lib' '-shared-libgcc' '-dumpdir' 'cmTC_8b6bc.'
+ /opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/collect2 -plugin /opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/liblto_plugin.so -plugin-opt=/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5SvZXA.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8b6bc /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/crtbegin.o -L/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/lib -L/opt/cray/dmapp/default/lib64 -L/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib -L/opt/cray/dmapp/default/lib64 -L/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib -L/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/lib64 -L/global/common/cori_cle7up03/software/darshan/3.3.1/lib -L/opt/cray/pe/atp/3.14.9/lib -L/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0 -L/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../.. CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.o -rpath=/opt/cray/pe/gcc-libs -Bdynamic -lAtpSigHandler -rpath /opt/cray/pe/atp/3.14.9/lib --undefined=__libAtpSigHandler_ctor -Ttext-segment=0x20000000 --whole-archive -lhugetlbfs --no-whole-archive -lrca -rpath=/global/common/cori_cle7up03/software/darshan/3.3.1/lib -no-as-needed -ldarshan -llustreapi -lz --as-needed -lsci_gnu_82_mpi --no-as-needed --as-needed -lsci_gnu_82 --no-as-needed --as-needed -lmpich_gnu_82 --no-as-needed --as-needed -lmpichcxx_gnu_82 --no-as-needed --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lmvec --no-as-needed --as-needed -lm --no-as-needed --as-needed -lpthread --no-as-needed -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/crtend.o /usr/lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-march=knl' '-D' '__CRAYXC' '-D' '__CRAY_MIC_KNL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_8b6bc' '-I' '/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include' '-I' '/opt/cray/xpmem/default/include' '-I' '/opt/cray/gni-headers/default/include' '-I' '/opt/cray/pe/pmi/5.0.17/include' '-I' '/opt/cray/ugni/default/include' '-I' '/opt/cray/udreg/default/include' '-I' '/opt/cray/pe/atp/3.14.9/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-L/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/lib' '-L/opt/cray/dmapp/default/lib64' '-L/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib' '-L/opt/cray/dmapp/default/lib64' '-L/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib' '-L/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/lib64' '-L/global/common/cori_cle7up03/software/darshan/3.3.1/lib' '-L/opt/cray/pe/atp/3.14.9/lib' '-shared-libgcc' '-dumpdir' 'cmTC_8b6bc.'
+gmake[1]: Leaving directory '/global/u2/x/xizhang1/parallelized-simple-search-engine/indexer/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include]
+    add: [/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include]
+    add: [/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include]
+    add: [/opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include]
+    add: [/opt/cray/xpmem/default/include]
+    add: [/opt/cray/gni-headers/default/include]
+    add: [/opt/cray/pe/pmi/5.0.17/include]
+    add: [/opt/cray/ugni/default/include]
+    add: [/opt/cray/udreg/default/include]
+    add: [/opt/cray/pe/atp/3.14.9/include]
+    add: [/opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include]
+    add: [/opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include]
+    add: [/opt/cray-hss-devel/9.0.0/include]
+    add: [/opt/gcc/11.2.0/snos/include/g++]
+    add: [/opt/gcc/11.2.0/snos/include/g++/x86_64-suse-linux]
+    add: [/opt/gcc/11.2.0/snos/include/g++/backward]
+    add: [/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/include]
+    add: [/usr/local/include]
+    add: [/opt/gcc/11.2.0/snos/include]
+    add: [/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/include-fixed]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include] ==> [/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include]
+  collapse include dir [/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include] ==> [/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include]
+  collapse include dir [/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include] ==> [/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include]
+  collapse include dir [/opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include] ==> [/opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include]
+  collapse include dir [/opt/cray/xpmem/default/include] ==> [/opt/cray/xpmem/default/include]
+  collapse include dir [/opt/cray/gni-headers/default/include] ==> [/opt/cray/gni-headers/default/include]
+  collapse include dir [/opt/cray/pe/pmi/5.0.17/include] ==> [/opt/cray/pe/pmi/5.0.17/include]
+  collapse include dir [/opt/cray/ugni/default/include] ==> [/opt/cray/ugni/default/include]
+  collapse include dir [/opt/cray/udreg/default/include] ==> [/opt/cray/udreg/default/include]
+  collapse include dir [/opt/cray/pe/atp/3.14.9/include] ==> [/opt/cray/pe/atp/3.14.9/include]
+  collapse include dir [/opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include] ==> [/opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include]
+  collapse include dir [/opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include] ==> [/opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include]
+  collapse include dir [/opt/cray-hss-devel/9.0.0/include] ==> [/opt/cray-hss-devel/9.0.0/include]
+  collapse include dir [/opt/gcc/11.2.0/snos/include/g++] ==> [/opt/gcc/11.2.0/snos/include/g++]
+  collapse include dir [/opt/gcc/11.2.0/snos/include/g++/x86_64-suse-linux] ==> [/opt/gcc/11.2.0/snos/include/g++/x86_64-suse-linux]
+  collapse include dir [/opt/gcc/11.2.0/snos/include/g++/backward] ==> [/opt/gcc/11.2.0/snos/include/g++/backward]
+  collapse include dir [/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/include] ==> [/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/opt/gcc/11.2.0/snos/include] ==> [/opt/gcc/11.2.0/snos/include]
+  collapse include dir [/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/include-fixed] ==> [/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/include-fixed]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include;/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include;/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include;/opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include;/opt/cray/xpmem/default/include;/opt/cray/gni-headers/default/include;/opt/cray/pe/pmi/5.0.17/include;/opt/cray/ugni/default/include;/opt/cray/udreg/default/include;/opt/cray/pe/atp/3.14.9/include;/opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include;/opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include;/opt/cray-hss-devel/9.0.0/include;/opt/gcc/11.2.0/snos/include/g++;/opt/gcc/11.2.0/snos/include/g++/x86_64-suse-linux;/opt/gcc/11.2.0/snos/include/g++/backward;/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/include;/usr/local/include;/opt/gcc/11.2.0/snos/include;/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/include-fixed;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /global/homes/x/xizhang1/parallelized-simple-search-engine/indexer/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8b6bc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8b6bc.dir/build.make CMakeFiles/cmTC_8b6bc.dir/build]
+  ignore line: [gmake[1]: Entering directory '/global/u2/x/xizhang1/parallelized-simple-search-engine/indexer/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/cray/pe/craype/2.7.10/bin/CC   -v -o CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.o -c /global/common/software/nersc/cori-2022q1/spack/cray-cnl7-haswell/cmake-3.22.1-zdiyyvt/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/gcc/11.2.0/bin/../snos/bin/g++]
+  ignore line: [Target: x86_64-suse-linux]
+  ignore line: [Configured with: ../cray-gcc-11.2.0-202108140355.9bf1fd589a5c1/configure --prefix=/opt/gcc/11.2.0/snos --disable-nls --libdir=/opt/gcc/11.2.0/snos/lib --enable-languages=c c++ fortran --with-gxx-include-dir=/opt/gcc/11.2.0/snos/include/g++ --with-slibdir=/opt/gcc/11.2.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 20210728 (Cray Inc.) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=knl' '-D' '__CRAYXC' '-D' '__CRAY_MIC_KNL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include' '-I' '/opt/cray/xpmem/default/include' '-I' '/opt/cray/gni-headers/default/include' '-I' '/opt/cray/pe/pmi/5.0.17/include' '-I' '/opt/cray/ugni/default/include' '-I' '/opt/cray/udreg/default/include' '-I' '/opt/cray/pe/atp/3.14.9/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_8b6bc.dir/']
+  ignore line: [ /opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/cc1plus -quiet -v -I /opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include -I /opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include -I /opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include -I /opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include -I /opt/cray/xpmem/default/include -I /opt/cray/gni-headers/default/include -I /opt/cray/pe/pmi/5.0.17/include -I /opt/cray/ugni/default/include -I /opt/cray/udreg/default/include -I /opt/cray/pe/atp/3.14.9/include -I /opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include -I /opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include -I /opt/cray-hss-devel/9.0.0/include -D_GNU_SOURCE -D __CRAYXC -D __CRAY_MIC_KNL -D __CRAYXT_COMPUTE_LINUX_TARGET -D __TARGET_LINUX__ /global/common/software/nersc/cori-2022q1/spack/cray-cnl7-haswell/cmake-3.22.1-zdiyyvt/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8b6bc.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=knl -version -o /tmp/ccBRdcG8.s]
+  ignore line: [GNU C++17 (GCC) version 11.2.0 20210728 (Cray Inc.) (x86_64-suse-linux)]
+  ignore line: [	compiled by GNU C version 11.2.0 20210728 (Cray Inc.)  GMP version 6.0.0  MPFR version 3.1.3  MPC version 1.0.3  isl version isl-0.15-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../../../x86_64-suse-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include]
+  ignore line: [ /opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include]
+  ignore line: [ /opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include]
+  ignore line: [ /opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include]
+  ignore line: [ /opt/cray/xpmem/default/include]
+  ignore line: [ /opt/cray/gni-headers/default/include]
+  ignore line: [ /opt/cray/pe/pmi/5.0.17/include]
+  ignore line: [ /opt/cray/ugni/default/include]
+  ignore line: [ /opt/cray/udreg/default/include]
+  ignore line: [ /opt/cray/pe/atp/3.14.9/include]
+  ignore line: [ /opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include]
+  ignore line: [ /opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include]
+  ignore line: [ /opt/cray-hss-devel/9.0.0/include]
+  ignore line: [ /opt/gcc/11.2.0/snos/include/g++]
+  ignore line: [ /opt/gcc/11.2.0/snos/include/g++/x86_64-suse-linux]
+  ignore line: [ /opt/gcc/11.2.0/snos/include/g++/backward]
+  ignore line: [ /opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /opt/gcc/11.2.0/snos/include]
+  ignore line: [ /opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/include-fixed]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (GCC) version 11.2.0 20210728 (Cray Inc.) (x86_64-suse-linux)]
+  ignore line: [	compiled by GNU C version 11.2.0 20210728 (Cray Inc.)  GMP version 6.0.0  MPFR version 3.1.3  MPC version 1.0.3  isl version isl-0.15-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 23c4fe70341a0a849cea1637ba28b7df]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=knl' '-D' '__CRAYXC' '-D' '__CRAY_MIC_KNL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include' '-I' '/opt/cray/xpmem/default/include' '-I' '/opt/cray/gni-headers/default/include' '-I' '/opt/cray/pe/pmi/5.0.17/include' '-I' '/opt/cray/ugni/default/include' '-I' '/opt/cray/udreg/default/include' '-I' '/opt/cray/pe/atp/3.14.9/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_8b6bc.dir/']
+  ignore line: [ as -v -I /opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include -I /opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include -I /opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include -I /opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include -I /opt/cray/xpmem/default/include -I /opt/cray/gni-headers/default/include -I /opt/cray/pe/pmi/5.0.17/include -I /opt/cray/ugni/default/include -I /opt/cray/udreg/default/include -I /opt/cray/pe/atp/3.14.9/include -I /opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include -I /opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include -I /opt/cray-hss-devel/9.0.0/include --64 -o CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccBRdcG8.s]
+  ignore line: [GNU assembler version 2.35.1 (x86_64-suse-linux) using BFD version (GNU Binutils]
+  ignore line: [ SUSE Linux Enterprise 15) 2.35.1.20201123-7.18]
+  ignore line: [COMPILER_PATH=/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/:/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/:/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/:/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/]
+  ignore line: [LIBRARY_PATH=/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/:/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=knl' '-D' '__CRAYXC' '-D' '__CRAY_MIC_KNL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-I' '/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include' '-I' '/opt/cray/xpmem/default/include' '-I' '/opt/cray/gni-headers/default/include' '-I' '/opt/cray/pe/pmi/5.0.17/include' '-I' '/opt/cray/ugni/default/include' '-I' '/opt/cray/udreg/default/include' '-I' '/opt/cray/pe/atp/3.14.9/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_8b6bc]
+  ignore line: [/global/common/software/nersc/cori-2022q1/spack/cray-cnl7-haswell/cmake-3.22.1-zdiyyvt/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b6bc.dir/link.txt --verbose=1]
+  ignore line: [/opt/cray/pe/craype/2.7.10/bin/CC  -v CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8b6bc ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/opt/gcc/11.2.0/bin/../snos/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-suse-linux]
+  ignore line: [Configured with: ../cray-gcc-11.2.0-202108140355.9bf1fd589a5c1/configure --prefix=/opt/gcc/11.2.0/snos --disable-nls --libdir=/opt/gcc/11.2.0/snos/lib --enable-languages=c c++ fortran --with-gxx-include-dir=/opt/gcc/11.2.0/snos/include/g++ --with-slibdir=/opt/gcc/11.2.0/snos/lib --with-system-zlib --enable-shared --enable-__cxa_atexit --build=x86_64-suse-linux --with-ppl --with-cloog --disable-multilib]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 20210728 (Cray Inc.) (GCC) ]
+  ignore line: [COMPILER_PATH=/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/:/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/:/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/:/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/:/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/]
+  ignore line: [LIBRARY_PATH=/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/:/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=knl' '-D' '__CRAYXC' '-D' '__CRAY_MIC_KNL' '-D' '__CRAYXT_COMPUTE_LINUX_TARGET' '-D' '__TARGET_LINUX__' '-v' '-o' 'cmTC_8b6bc' '-I' '/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/include' '-I' '/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/include' '-I' '/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/include' '-I' '/opt/cray/alps/6.6.67-7.0.3.1_3.7__gb91cd181.ari/include' '-I' '/opt/cray/xpmem/default/include' '-I' '/opt/cray/gni-headers/default/include' '-I' '/opt/cray/pe/pmi/5.0.17/include' '-I' '/opt/cray/ugni/default/include' '-I' '/opt/cray/udreg/default/include' '-I' '/opt/cray/pe/atp/3.14.9/include' '-I' '/opt/cray/wlm_detect/1.3.3-7.0.3.1_3.4__g7109084.ari/include' '-I' '/opt/cray/krca/2.2.8-7.0.3.1_3.7__g59af36e.ari/include' '-I' '/opt/cray-hss-devel/9.0.0/include' '-L/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/lib' '-L/opt/cray/dmapp/default/lib64' '-L/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib' '-L/opt/cray/dmapp/default/lib64' '-L/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib' '-L/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/lib64' '-L/global/common/cori_cle7up03/software/darshan/3.3.1/lib' '-L/opt/cray/pe/atp/3.14.9/lib' '-shared-libgcc' '-dumpdir' 'cmTC_8b6bc.']
+  link line: [ /opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/collect2 -plugin /opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/liblto_plugin.so -plugin-opt=/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5SvZXA.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8b6bc /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/crtbegin.o -L/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/lib -L/opt/cray/dmapp/default/lib64 -L/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib -L/opt/cray/dmapp/default/lib64 -L/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib -L/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/lib64 -L/global/common/cori_cle7up03/software/darshan/3.3.1/lib -L/opt/cray/pe/atp/3.14.9/lib -L/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0 -L/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../.. CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.o -rpath=/opt/cray/pe/gcc-libs -Bdynamic -lAtpSigHandler -rpath /opt/cray/pe/atp/3.14.9/lib --undefined=__libAtpSigHandler_ctor -Ttext-segment=0x20000000 --whole-archive -lhugetlbfs --no-whole-archive -lrca -rpath=/global/common/cori_cle7up03/software/darshan/3.3.1/lib -no-as-needed -ldarshan -llustreapi -lz --as-needed -lsci_gnu_82_mpi --no-as-needed --as-needed -lsci_gnu_82 --no-as-needed --as-needed -lmpich_gnu_82 --no-as-needed --as-needed -lmpichcxx_gnu_82 --no-as-needed --as-needed -lgfortran -lquadmath --no-as-needed --as-needed -lmvec --no-as-needed --as-needed -lm --no-as-needed --as-needed -lpthread --no-as-needed -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/crtend.o /usr/lib/../lib64/crtn.o]
+    arg [/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/gcc/11.2.0/snos/libexec/gcc/x86_64-suse-linux/11.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc5SvZXA.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_8b6bc] ==> ignore
+    arg [/usr/lib/../lib64/crt1.o] ==> obj [/usr/lib/../lib64/crt1.o]
+    arg [/usr/lib/../lib64/crti.o] ==> obj [/usr/lib/../lib64/crti.o]
+    arg [/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/crtbegin.o] ==> obj [/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/crtbegin.o]
+    arg [-L/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/lib] ==> dir [/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/lib]
+    arg [-L/opt/cray/dmapp/default/lib64] ==> dir [/opt/cray/dmapp/default/lib64]
+    arg [-L/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib] ==> dir [/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib]
+    arg [-L/opt/cray/dmapp/default/lib64] ==> dir [/opt/cray/dmapp/default/lib64]
+    arg [-L/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib] ==> dir [/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib]
+    arg [-L/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/lib64] ==> dir [/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/lib64]
+    arg [-L/global/common/cori_cle7up03/software/darshan/3.3.1/lib] ==> dir [/global/common/cori_cle7up03/software/darshan/3.3.1/lib]
+    arg [-L/opt/cray/pe/atp/3.14.9/lib] ==> dir [/opt/cray/pe/atp/3.14.9/lib]
+    arg [-L/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0] ==> dir [/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0]
+    arg [-L/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../../../lib64] ==> dir [/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../..] ==> dir [/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../..]
+    arg [CMakeFiles/cmTC_8b6bc.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-rpath=/opt/cray/pe/gcc-libs] ==> ignore
+    arg [-Bdynamic] ==> search dynamic
+    arg [-lAtpSigHandler] ==> lib [AtpSigHandler]
+    arg [-rpath] ==> ignore
+    arg [/opt/cray/pe/atp/3.14.9/lib] ==> ignore
+    arg [--undefined=__libAtpSigHandler_ctor] ==> ignore
+    arg [-Ttext-segment=0x20000000] ==> ignore
+    arg [--whole-archive] ==> ignore
+    arg [-lhugetlbfs] ==> lib [hugetlbfs]
+    arg [--no-whole-archive] ==> ignore
+    arg [-lrca] ==> lib [rca]
+    arg [-rpath=/global/common/cori_cle7up03/software/darshan/3.3.1/lib] ==> ignore
+    arg [-no-as-needed] ==> ignore
+    arg [-ldarshan] ==> lib [darshan]
+    arg [-llustreapi] ==> lib [lustreapi]
+    arg [-lz] ==> lib [z]
+    arg [--as-needed] ==> ignore
+    arg [-lsci_gnu_82_mpi] ==> lib [sci_gnu_82_mpi]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lsci_gnu_82] ==> lib [sci_gnu_82]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lmpich_gnu_82] ==> lib [mpich_gnu_82]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lmpichcxx_gnu_82] ==> lib [mpichcxx_gnu_82]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lquadmath] ==> lib [quadmath]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lmvec] ==> lib [mvec]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lm] ==> lib [m]
+    arg [--no-as-needed] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [--no-as-needed] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/crtend.o] ==> obj [/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/crtend.o]
+    arg [/usr/lib/../lib64/crtn.o] ==> obj [/usr/lib/../lib64/crtn.o]
+  collapse obj [/usr/lib/../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+  collapse obj [/usr/lib/../lib64/crti.o] ==> [/usr/lib64/crti.o]
+  collapse obj [/usr/lib/../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+  collapse library dir [/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/lib] ==> [/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/lib]
+  collapse library dir [/opt/cray/dmapp/default/lib64] ==> [/opt/cray/dmapp/default/lib64]
+  collapse library dir [/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib] ==> [/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib]
+  collapse library dir [/opt/cray/dmapp/default/lib64] ==> [/opt/cray/dmapp/default/lib64]
+  collapse library dir [/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib] ==> [/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib]
+  collapse library dir [/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/lib64] ==> [/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/lib64]
+  collapse library dir [/global/common/cori_cle7up03/software/darshan/3.3.1/lib] ==> [/global/common/cori_cle7up03/software/darshan/3.3.1/lib]
+  collapse library dir [/opt/cray/pe/atp/3.14.9/lib] ==> [/opt/cray/pe/atp/3.14.9/lib]
+  collapse library dir [/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0] ==> [/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0]
+  collapse library dir [/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../../../lib64] ==> [/opt/gcc/11.2.0/snos/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/../../..] ==> [/opt/gcc/11.2.0/snos/lib]
+  implicit libs: [AtpSigHandler;hugetlbfs;rca;darshan;lustreapi;z;sci_gnu_82_mpi;sci_gnu_82;mpich_gnu_82;mpichcxx_gnu_82;gfortran;quadmath;mvec;m;pthread;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/crtbegin.o;/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0/crtend.o;/usr/lib64/crtn.o]
+  implicit dirs: [/opt/cray/pe/libsci/20.09.1/GNU/8.1/x86_64/lib;/opt/cray/dmapp/default/lib64;/opt/cray/pe/mpt/7.7.19/gni/mpich-gnu/8.2/lib;/opt/cray/rca/2.2.20-7.0.3.1_3.7__g8e3fb5b.ari/lib64;/global/common/cori_cle7up03/software/darshan/3.3.1/lib;/opt/cray/pe/atp/3.14.9/lib;/opt/gcc/11.2.0/snos/lib/gcc/x86_64-suse-linux/11.2.0;/opt/gcc/11.2.0/snos/lib64;/lib64;/usr/lib64;/opt/gcc/11.2.0/snos/lib]
+  implicit fwks: []
+
+

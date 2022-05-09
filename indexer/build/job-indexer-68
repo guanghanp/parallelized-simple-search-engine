@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -C knl
+#SBATCH -q debug
+#SBATCH -J CS267-final-proj
+#SBATCH -t 00:30:00
+
+#SBATCH -o dist-68-rank-%j.out
+#OpenMP settings:
+export OMP_NUM_THREADS=1
+export OMP_PLACES=threads
+export OMP_PROC_BIND=spread
+export GASNET_BACKTRACE=1
+
+#run the application:
+srun -N 1 -n 68 ./distribute_indexer ../../pages_68/1/ ./index_files_68/index_1.txt
+srun -N 1 -n 68 ./distribute_indexer ../../pages_68/2/ ./index_files_68/index_2.txt
+srun -N 1 -n 68 ./distribute_indexer ../../pages_68/3/ ./index_files_68/index_3.txt
+srun -N 1 -n 68 ./distribute_indexer ../../pages_68/4/ ./index_files_68/index_4.txt

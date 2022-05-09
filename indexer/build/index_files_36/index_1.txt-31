@@ -1,0 +1,103 @@
+alias 13 1
+allocator 9 14
+alvarez 10 1
+among 0 1
+anyone 1 1
+assignments 22 1
+bac 23 1
+bar 13 3 19 6 22 7
+black 0 1
+braces 3 1 19 4
+brief 1 1 2 4 14 1 17 3
+cgi 4 2 5 3 7 4 8 4 10 3 15 4 16 3 20 3 23 4 25 3
+ciso 6 1 9 1 11 1 21 3 24 2
+compared 3 1
+contained 13 2
+contexts 2 1
+control 2 3 3 4 12 2 13 1 19 1 22 1
+copies 3 6
+corresponding 3 1 13 1 14 1 21 1 24 1
+data 1 1 3 4 8 1 9 3 10 1 12 6 13 22 15 3 16 1 19 17 22 10 23 1
+date 5 1 10 1 16 1 20 1 25 1
+declares 3 2 13 2 19 1
+definitions 10 1 21 4 24 2
+deprecated 21 1
+device 2 1
+diagnostics 21 2 24 1
+dif 7 1
+discontinued 7 1
+dont 7 1 8 1
+edea 23 1
+ends 3 4
+everyone 7 2 8 1 23 1
+exchanged 2 1
+explain 2 1 12 1
+fastest 2 1
+forbid 2 1
+formula 3 1
+frek 15 3
+fruit 2 1
+gaq 4 4 5 4 7 4 8 4 10 4 15 4 16 4 20 4 23 4 25 4
+generalized 24 1
+guestgulkan 16 1
+having 2 2 3 2 7 1 8 2 15 1 19 1
+header 3 2 6 4 11 2 21 44 23 1 24 79
+hold 19 1
+homework 8 1
+hope 8 1
+however 2 8 13 1 14 2 22 1
+ideal 2 1
+img 0 6
+increase 13 4 22 3
+indeed 3 1 13 3
+inline 3 11 5 1 7 1 19 2 22 1
+instances 19 1
+lapack 15 1
+long 2 1 3 5 11 6 13 4 21 2
+lukeproducts 7 5
+management 2 1 24 1
+means 1 1 2 2 3 3 7 1 8 2 13 2 22 3
+merits 13 1
+modifies 3 3 13 1
+navfor 4 1 7 1 8 1 15 1 23 1
+net 4 1
+offering 2 2
+ostream 6 3 9 1 11 1 21 1 24 1
+password 16 1 20 1
+pchar 13 3
+places 22 1
+plan 7 1
+polymorphism 3 1 12 2 13 1 19 1 22 1
+pop 9 8
+possible 2 2 3 1 7 1 8 1 13 3 15 1 19 3 22 2
+prashant 5 1
+ready 4 1 5 1 7 1 8 1 10 1 15 1 16 1 20 1 23 1 25 1
+recall 13 1
+ref 0 2
+reflects 2 1
+reorganize 3 1
+restricting 19 1
+start 8 1 12 1 13 5 23 1
+stod 11 2
+strchr 21 1
+surrounding 13 1
+tbt 7 7 8 7 15 7 23 7
+tck 20 1
+test 15 2
+thx 23 1
+tonic 23 1
+treats 1 1
+undefined 2 1 8 1 10 1 13 1
+undesired 2 1
+unsafe 2 3
+values 3 19 7 3 10 1 13 2 15 2 19 21 22 5 24 1 25 1
+weasel 23 1
+webcam 7 2
+website 0 3 1 2 2 2 3 1 4 2 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 3 24 1 25 1
+well 1 1 2 3 3 1 13 1 14 2
+which 1 3 2 9 3 18 7 2 9 3 13 14 14 12 19 9 21 1 22 7
+with 0 1 1 7 2 9 3 29 4 1 5 1 7 7 8 6 9 4 10 3 12 3 13 39 14 9 15 4 18 1 19 31 20 1 21 6 22 16 23 7 24 1 25 3
+wondered 7 1
+worry 13 1
+wstring 11 4
+www 4 1 5 1 7 1 8 1 10 1 15 1 16 1 20 1 23 1 25 1

@@ -1,0 +1,162 @@
+account 5 1 10 1 16 3 25 2
+acting 22 1
+aliases 3 3
+alone 10 1 22 1
+alternately 15 1
+ammount 23 1
+ans 8 1
+ansi 1 10 2 1
+approach 15 2
+art 0 2
+ask 17 1 23 1
+asked 0 1 8 1 17 1
+assignment 9 1 13 7 19 1 22 1
+associated 3 1
+automatic 15 2
+bazzy 20 1
+bcd 8 1
+bing 7 1
+bitset 6 1 9 2 11 1 21 1 24 3
+bowels 7 1
+cassert 6 1 9 1 11 1 21 3 24 2
+causing 3 1 7 1
+clarify 13 1
+class 0 1 1 1 4 2 5 1 6 1 7 2 8 3 9 21 10 1 11 11 15 6 19 82 22 77
+click 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+codernew 15 2
+comment 13 2
+commercial 14 2
+complexity 9 2
+const 3 8 8 1 9 2 13 44 14 1 22 58
+convert 11 12 25 1
+cores 23 1
+cpre 14 1
+cstdbool 6 1 9 1 11 1 21 2 24 2
+dam 21 1
+define 3 1 13 1 15 1 19 2 22 3
+defining 0 1 3 2 19 1
+deployment 7 1
+detector 5 1 25 1
+dictionary 15 3
+displayed 8 1
+doing 2 1 7 1 8 2 14 1
+each 1 2 2 1 3 7 8 1 9 1 13 18 15 1 19 2 21 1 22 2 23 1 24 1
+edu 15 1
+effective 2 1
+efficiency 3 5 9 1 15 1
+efficient 3 3
+especially 2 1 9 1
+examine 3 1
+fact 3 3 13 4 15 1 19 1 22 3
+factorial 3 8
+false 22 1
+fibonacii 5 1 10 1
+following 1 1 3 4 13 12 19 5 21 2 22 4 24 1
+functional 0 1 2 2 6 1 9 1 11 1 19 5 21 1 22 1 24 2
+genetic 5 1 25 1
+global 21 1
+goes 2 1
+heepoo 20 1
+htop 23 1
+illustrates 3 1
+immediately 13 1
+impossible 2 1
+improving 20 1
+increased 1 1 3 1
+increment 13 15
+inexpensive 3 1
+initializations 19 2
+inlining 14 1
+inserted 3 1 13 2
+knowledge 0 1
+left 7 1 13 1 22 1
+letter 23 4
+libraries 1 2 2 3 5 2 10 6 14 2 16 3 20 3 25 3
+limits 6 2 9 2 11 2 21 4 24 5
+locale 6 2 9 2 11 2 21 4 24 4
+longer 3 1 13 1
+machine 2 5
+manipulation 1 1
+math 6 1 9 1 11 1 21 3 24 3
+matter 3 1 13 3 19 1
+member 9 4 15 1 19 41 22 45
+methodology 2 1
+model 1 1 2 1
+modeless 7 2
+months 7 1 8 1 15 1 23 1
+mornin 8 1
+noted 22 1
+number 3 9 13 3 19 1 20 1 22 1
+obj 19 4
+offers 1 1 2 2 4 1
+only 3 13 7 1 8 1 9 1 13 5 19 13 22 10 25 1
+operator 9 20 13 27 14 2 19 6 21 2 22 39 24 1
+overflow 3 1
+pair 3 1
+paranthesis 20 1
+parser 23 1
+participation 0 1
+pickapv 15 1
+piece 1 2
+plotting 15 2
+popular 0 1 2 1 3 1
+price 22 1
+programme 23 1
+qualified 13 2 22 1
+quite 2 2 13 2
+real 2 1
+reason 13 2 22 1
+references 3 8 13 1 14 1
+regardless 2 1
+related 4 1 7 1 13 1 21 1 24 1
+remembering 8 1 13 2
+resize 9 5
+respective 13 1 19 1
+reused 2 1
+rgv 7 1
+run 2 5 7 1 13 1 23 2
+sans 0 1
+seperate 4 1 8 2
+shall 3 7 13 1 19 1 22 3
+sign 13 3 19 2 22 2
+sizeof 13 6
+sizes 13 1 21 2 24 1
+small 7 1 23 1
+socket 7 3
+solve 8 1
+source 5 11 7 1 10 9 15 1 16 11 20 8 25 16
+spaces 13 3
+specify 3 2 19 1 22 1
+split 5 1 10 1 20 1 25 2
+srvany 7 1
+static 2 3 4 1 7 4 14 1 22 11 23 1
+stddef 6 1 9 1 11 1 21 3 24 2
+step 5 2 10 2
+stold 11 2
+stop 13 4
+stream 6 9 16 1 24 1
+stunning 2 1
+subroutines 2 1
+subtracting 13 1
+subtraction 3 14 13 6
+such 1 1 2 8 3 5 6 1 9 2 13 8 19 2 22 5 23 2
+suckless 23 2
+supplemental 18 1
+table 0 2 10 1 15 1 22 1
+talk 7 1 8 1 15 1 23 1
+tha 7 1 8 1
+theory 2 1
+uncertain 2 1
+underlying 2 1 9 2
+uppercase 22 3
+user 0 2 1 2 2 1 4 1 5 1 7 1 8 3 10 1 15 1 16 2 20 1 23 3 25 1
+users 0 1 5 1 7 2 8 2 10 1 13 1 15 2 16 1 20 1 23 2 25 1
+val 22 6
+valarray 6 1 9 2 11 1 21 1 24 2
+variadic 14 1
+vista 16 2
+went 8 1
+widely 1 1 14 1
+worth 14 1 22 1
+zsummer 16 1
+ztmae 4 1

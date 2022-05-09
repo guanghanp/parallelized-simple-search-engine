@@ -1,0 +1,2732 @@
+aac 15 1
+aad 23 1
+abandoned 14 1
+abbreviated 2 1
+abdulbadii 23 2
+abdullah 20 1
+ability 13 1
+able 1 3 13 2 15 1
+abort 21 1
+about 0 1 4 3 7 2 8 2 13 3 15 1 19 2 22 2 23 2
+above 3 7 13 5 19 5 22 3 23 1
+abs 21 1
+absence 3 1 13 1
+absolute 23 1
+abstraction 24 1
+abstractionanon 8 1
+academic 1 1
+acc 8 1
+accdc 8 1
+acces 8 1
+access 2 1 3 4 7 1 9 3 11 1 13 6 19 22 22 6
+accessed 2 1 9 1 13 2 19 3 22 2
+accessible 19 4
+accessing 2 1 9 1 13 3 19 1 22 1
+accident 10 1
+accomplish 2 2
+according 13 1
+accordingly 14 1
+account 5 1 10 1 16 3 25 2
+achieve 1 1
+across 2 1
+acting 22 1
+action 19 1
+active 0 1 4 1
+actively 13 1
+acts 3 1
+actual 3 3 13 1
+actually 2 2 3 8 13 7 22 4
+adam 8 4
+adaptor 9 1
+adaptors 9 3
+add 13 2 14 2 15 1 16 2
+added 13 3 14 2 21 1 23 1
+addeventlistener 0 2 1 2 2 2 3 2 4 2 5 2 6 2 7 2 8 2 9 2 10 2 11 2 12 2 13 2 14 2 15 2 16 2 17 2 18 2 19 2 20 2 21 2 22 2 23 2 24 2 25 2
+adding 13 3 14 1 22 1
+addition 3 20 13 4 14 1 19 1 22 5
+additional 14 1 21 2
+additionally 3 1
+additions 3 1 21 1 22 1
+address 13 51 19 1
+addresses 13 8
+ade 8 1
+admin 5 1 7 1 8 2 10 1 15 1 16 1 20 1 23 1 25 1
+administrator 7 1
+adsbygoogle 1 4 2 6 3 6 4 4 6 4 7 6 8 6 9 6 11 4 12 4 13 6 14 4 15 6 17 4 18 4 19 6 21 4 22 6 23 6 24 6
+advanced 0 1
+advantage 19 1
+advise 23 1
+affected 3 1
+afgpattern 5 1 10 1
+after 1 1 3 2 7 3 8 1 9 4 13 10 14 1 15 2 19 2 22 2
+again 2 1 3 5 8 2 14 1 15 2 22 1
+againtry 15 1
+age 1 1
+aim 2 1
+albatross 2 1 14 1 20 1
+alejandro 23 1
+algorithm 2 1 6 1 8 1 9 1 11 1 15 2 21 1 24 2 25 1
+algorithms 0 1 2 1 5 10 10 7 16 1 20 4 24 1 25 26
+alias 13 1
+aliases 3 3
+align 0 4
+alike 22 1
+all 0 2 1 2 2 4 3 8 4 1 5 1 6 1 7 2 8 4 9 1 10 2 11 1 12 2 13 14 14 2 15 3 16 1 17 1 18 1 19 6 20 1 21 1 22 12 23 3 24 1 25 1
+allocate 19 1
+allocated 7 1 22 1
+allocator 9 14
+allow 2 3 3 3 19 1
+allowed 8 1 13 3 19 1 22 1
+allowing 2 3 3 1 19 1 22 1
+allows 2 3 9 1 13 3 22 1
+almost 2 1 15 1
+alone 10 1 22 1
+already 1 3 3 3 13 1 15 1 19 1
+also 0 2 1 3 2 2 3 6 6 1 9 1 13 15 14 1 19 15 21 2 22 10 24 1
+alt 23 2
+alternate 16 1
+alternately 15 1
+alternative 21 2 24 1
+although 2 1 3 2 13 3 14 1 21 1 22 2
+altogether 3 1
+alvarez 10 1
+always 3 6 7 1 13 7 19 1 23 1
+amazing 7 1 23 1
+amendment 21 2
+american 2 1
+ammount 23 1
+among 0 1
+amount 13 2 25 2
+amounts 2 1
+amp 3 12 7 1 13 24 19 1 22 25
+ampersand 3 2 13 1
+ampersands 13 1
+analytics 4 1 5 1 7 1 8 1 10 1 15 1 16 1 20 1 23 1 25 1
+analyzoh 10 1 25 2
+anastasiak 10 1
+and 0 6 1 17 2 31 3 61 4 2 5 14 6 2 7 7 8 11 9 6 10 29 11 1 12 7 13 92 14 11 15 11 16 10 19 50 20 14 21 13 22 33 23 9 24 4 25 15
+andrewllewop 15 1
+andreykarpov 10 3
+android 5 1 10 1
+angelrapallo 25 1
+angle 22 1
+animation 5 1 10 1
+annotated 14 2
+anonymous 4 1
+another 1 1 2 2 3 1 7 1 13 5 19 1 22 1 23 1
+ans 8 1
+ansi 1 10 2 1
+ansisupported 1 2
+answer 8 1
+answers 8 1
+antonio 23 1
+any 2 3 3 9 7 2 8 1 13 10 15 1 19 6 22 7 23 2
+anyone 1 1
+anything 2 2 4 1 13 1
+anyway 1 1 3 2 13 2 22 1
+anywh 7 1
+anywhere 19 1
+api 0 1 5 1 7 3 10 3 16 24 20 4 25 1
+app 7 2
+appear 21 1
+appearance 13 1
+appearances 22 1
+appears 13 1
+appendchild 4 2 5 3 7 3 8 3 10 3 15 3 16 3 20 3 23 3 25 3
+appended 3 1
+appending 13 1
+applicable 13 2
+application 7 3 15 1 20 1 23 3
+applications 1 1 16 1
+applied 22 1
+applies 3 2 13 1 21 1
+apply 1 1 2 1 23 1
+appreciate 23 1
+approach 15 2
+apr 4 1 5 2 7 17 8 14 10 2 15 16 16 6 20 5 23 16
+apriorit 16 2
+archived 7 1 8 1 15 1 23 1
+ardsio 15 2
+are 0 1 1 2 2 24 3 27 7 1 8 1 9 5 13 42 14 1 15 4 19 20 21 8 22 21 23 4 24 1
+area 15 1 19 49
+arg 22 7
+argc 8 1
+argument 3 9 13 3 15 1 19 1 22 2
+arguments 3 26 13 1 14 1 19 9 21 2 22 1 23 1 24 1
+argv 8 1
+arial 0 1
+arithmetic 22 1
+arithmetical 13 1
+arithmetics 13 1
+around 13 1 14 1
+array 6 1 9 5 11 1 13 10 14 1 15 3 21 1 23 1 24 3
+arrays 3 1 7 2 9 2 12 2 13 13 19 2 20 1 22 1 24 1
+arrived 3 1
+arrow 19 2
+art 0 2
+article 5 2 10 2 15 1 16 2 20 2 25 2
+articles 0 4 1 1 2 1 3 1 4 3 5 8 6 1 7 1 8 1 9 1 10 9 11 1 12 1 13 1 14 1 15 1 16 8 17 2 18 1 19 1 20 8 21 1 22 1 23 1 24 1 25 8
+asap 23 1
+ascii 3 1 12 1 13 1 18 2 19 1 22 1
+aselcukakyuz 5 1 25 1
+ashy 8 2
+ask 17 1 23 1
+asked 0 1 8 1 17 1
+aspects 17 1 24 1
+assembly 2 2
+assert 6 1 9 1 11 1 21 3 24 2
+assign 8 1 9 5 13 2
+assigned 3 3 13 11 19 1
+assigning 13 1
+assignment 9 1 13 7 19 1 22 1
+assignments 22 1
+assigns 13 2
+associated 3 1
+associative 9 4
+assume 13 1
+assumed 13 3
+assumes 3 2
+assuming 13 1
+asterisk 13 10
+asterisks 13 1
+asteroids 16 1
+async 4 1 5 1 7 1 8 1 10 1 15 1 16 1 20 1 23 1 25 1
+atef 7 1
+atexit 21 1
+atl 4 1 10 1
+atomic 6 1 9 1 11 1 21 1 24 3
+atomics 14 1 24 1
+attending 7 1
+attention 13 1
+aug 5 4 7 14 8 14 10 4 15 14 16 1 20 4 23 14 25 4
+auth 4 1 5 3 7 3 8 3 10 3 15 3 16 3 20 3 23 3 25 3
+authorization 16 1
+authors 3 1
+auto 14 1 15 1
+automate 2 1
+automatic 15 2
+automatically 3 1 6 2 19 4
+auxiliarry 5 1 25 1
+availa 7 1
+available 0 1 2 1 9 1 23 2
+avoid 2 3 5 1 10 1 15 2 19 1 20 1 22 1
+avoided 3 1
+avoiding 2 1
+avphys 23 1
+away 7 1 12 1
+aztecoo 15 1
+bac 23 1
+back 3 1 8 1 9 17 14 1
+background 0 9
+badb 15 1
+balance 2 1
+bar 13 3 19 6 22 7
+barrier 2 1
+base 15 2 19 6 23 1
+based 2 1 7 2 15 1
+bases 3 1 12 1 13 1 18 2 19 1 22 1
+basic 3 1 11 2 12 2 13 1 14 1 19 1 22 1
+basics 0 1 3 1 12 3 13 1 18 1 19 1 22 1
+bayusetiaji 5 1 10 1
+baz 13 7 19 8
+bazzy 20 1
+bbe 7 1
+bcd 8 1
+bcpl 14 1
+bddff 23 1
+bde 15 1
+bearing 3 1
+bears 22 1
+became 14 1
+because 3 5 13 6 19 7 22 6
+become 3 1 13 1
+becomes 3 1 19 1
+been 2 1 3 4 7 3 13 3 19 3 22 3 23 2
+before 1 2 2 1 3 11 8 1 9 1 13 7 14 1 15 1 19 5 22 1
+began 14 3
+begginer 8 1
+begin 3 1 9 17 11 1 13 1
+beginner 8 2
+beginners 0 1 4 3 5 1 7 1 8 4 15 1 23 2 25 1
+beginning 8 1 11 1
+begins 3 1 22 1
+behave 13 1
+behavior 2 1 3 3 10 1 13 3 19 1 21 1 22 3
+behind 3 1
+being 2 3 3 7 10 1 12 1 13 11 16 1 19 2 22 3
+belongs 19 1
+below 7 1
+best 5 1 8 2 10 1 13 1
+better 2 1 13 1 14 1 23 1
+between 2 2 3 2 9 1 13 3 16 1 19 4 22 2
+bgi 0 10 7 1
+bignibs 8 1
+biicode 5 1 10 1
+bilalch 10 2 25 2
+binary 22 1
+bing 7 1
+bison 23 2
+bit 1 1 11 2 13 4
+bitset 6 1 9 2 11 1 21 1 24 3
+bjarne 14 1
+black 0 1
+bless 8 1
+blitz 20 1
+block 3 2 13 1
+blueshark 15 2
+bluetooth 7 1
+boa 15 1
+board 7 1 15 2 23 1
+boards 0 1
+body 0 1 1 1 2 1 3 4 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 5 20 1 21 1 22 2 23 1 24 1 25 1
+book 14 1
+books 1 1
+bool 1 2 8 1 21 1 22 2
+boolean 3 1 8 1 12 1 13 1 18 2 19 1 21 1 22 1 24 1
+bools 8 1
+boost 14 2
+boot 23 1
+border 0 4
+boring 2 1
+borland 1 1 7 1 10 1 14 1 25 1
+both 1 1 2 3 3 2 10 1 13 18 14 1 15 1 19 3 22 5 25 1
+bottom 0 3
+bound 9 10
+bounds 13 1
+bowels 7 1
+box 7 1
+braces 3 1 19 4
+brackets 13 3 22 1
+break 3 1
+brief 1 1 2 4 14 1 17 3
+briefly 17 1
+btn 4 2 5 3 7 3 8 3 10 3 15 3 16 3 20 3 23 3 25 3
+bubble 15 1
+bucket 9 20
+buckets 9 1
+bugs 5 1 10 1 20 1
+build 7 1
+builds 2 1
+built 15 1
+but 1 2 2 2 3 20 7 3 8 5 9 2 13 28 15 2 19 17 21 1 22 12 23 4
+byte 13 6
+bytes 13 3 23 1
+caa 8 2
+caee 8 1
+caesar 5 1
+calculate 3 1 15 1
+calculating 3 1
+calculator 3 1 16 1 20 1
+call 3 37 13 1 19 7 22 2 23 1
+called 2 2 3 27 13 2 14 3 19 19 22 9 24 1
+caller 3 1
+calling 3 7 19 1
+calls 3 5 19 1 22 1
+cambalinho 4 2 7 2 15 2
+came 23 1
+can 0 3 1 7 2 8 3 22 4 1 5 1 7 10 8 3 10 1 13 38 14 1 15 6 16 1 19 26 20 2 22 22 23 5 25 1
+cannot 2 1 3 2 7 1 13 7 15 1 19 5 22 5
+capable 2 1 15 1
+capacity 9 4
+care 13 1
+careful 23 1
+carry 5 1 19 1 25 1
+cartesian 22 4
+carving 8 2
+case 2 1 3 12 13 5 19 3 22 5
+cases 3 3 13 4 19 3
+cassert 6 1 9 1 11 1 21 3 24 2
+cast 2 1
+casting 10 1
+casts 2 1
+catch 3 1
+categories 0 1 5 20 10 21 16 20 20 20 25 20
+catfish 5 2 25 1
+cause 13 1 22 1
+causes 3 2 10 1 13 2 19 1
+causing 3 1 7 1
+cbbbe 23 1
+cbefore 9 1
+cbegin 9 15
+ccac 4 1
+cctype 6 1 9 1 11 1 21 3 24 2
+cdee 15 1
+cdialog 7 2
+ceb 7 1
+cell 0 6 13 4
+cells 13 6
+celltop 0 1
+cend 9 15
+center 0 2
+cerr 6 2
+cerrno 6 1 9 1 11 1 21 3 24 2
+certain 3 4 7 2 9 1 13 1 14 1 21 1 22 1
+cfd 15 1
+cfenv 6 1 9 1 11 1 21 1 24 2
+cfloat 6 1 9 1 11 1 21 3 24 2
+cfront 14 4
+cgi 4 2 5 3 7 4 8 4 10 3 15 4 16 3 20 3 23 4 25 3
+challenging 22 1
+change 3 4 13 1
+changed 14 2 23 1
+changes 2 1 21 2
+chapter 13 2 19 2
+chapters 3 1 12 1 13 3 19 2
+char 6 1 8 3 11 2 13 21 21 2 22 10 23 1
+character 3 1 11 2 12 2 13 6 19 1 21 3 22 1 23 2 24 3
+characteristics 2 1 21 2 24 1
+characters 1 2 6 2 11 2 13 5 20 1 21 2 24 2 25 1
+chars 4 1 8 1 25 1
+chart 9 1
+chat 7 1
+check 22 1 23 1 24 1
+checked 2 3
+checker 20 1
+checking 2 4 14 1 23 1
+chikwado 7 1
+child 7 1
+choice 19 1
+choices 2 1
+choose 19 1
+choosing 2 1
+chosen 13 1
+chrisname 5 2 16 1 20 2 25 1
+chrono 6 1 9 1 11 1 21 1 24 2
+cin 3 1 6 2
+cinttypes 6 1 9 1 11 1 21 1 24 2
+cipher 5 1
+circle 19 11
+circum 19 2
+circumference 19 2
+ciso 6 1 9 1 11 1 21 3 24 2
+clapack 15 5
+clarify 13 1
+class 0 1 1 1 4 2 5 1 6 1 7 2 8 3 9 21 10 1 11 11 15 6 19 82 22 77
+classes 0 2 1 1 3 3 9 3 11 1 12 6 13 3 14 8 15 1 19 24 22 13 24 2
+classified 9 1
+clear 1 2 3 1 9 14 13 1 16 1
+clearing 10 1
+clearly 13 1
+cli 4 1 10 1
+click 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+climits 6 1 9 1 11 1 21 3 24 2
+clion 10 1
+clocale 6 1 9 1 11 1 21 3 24 2
+clog 6 2
+closed 5 1 16 3 25 2
+closing 8 1 22 1
+cluster 23 1
+cmath 6 1 9 1 11 1 21 4 24 2
+code 0 1 1 9 2 12 3 13 4 2 5 12 6 1 7 6 8 4 9 1 10 10 11 1 12 1 13 7 14 2 15 6 16 12 17 1 18 1 19 2 20 9 21 1 22 6 23 3 24 1 25 17
+codecvt 6 1 9 1 11 1 21 1 24 2
+coder 20 1
+codernew 15 2
+codes 3 1 12 1 13 1 18 2 19 1 22 1
+coding 10 1 23 1
+collapse 0 2
+collection 0 1 9 1
+colon 19 2
+colons 19 1
+color 0 3 16 3
+colorref 7 1
+com 0 2 1 1 2 1 3 1 4 2 5 2 6 1 7 4 8 3 9 1 10 2 11 1 12 1 13 1 14 1 15 4 16 2 17 1 18 1 19 1 20 2 21 1 22 1 23 3 24 1 25 2
+combinations 13 1 19 1
+come 22 1 23 1
+coming 13 1
+comma 3 1
+command 7 1 16 1 20 2
+commas 25 1
+comment 13 2
+commenting 15 1
+comments 0 2 14 1
+commercial 14 2
+committee 2 1 14 3
+common 2 2 3 1 9 1 17 1 22 5 23 1
+commonly 9 1
+communicate 1 1 2 1
+communicating 1 1
+communication 1 1 2 1
+community 7 1
+commutative 3 1
+comp 9 10
+compare 13 2
+compared 3 1
+comparison 1 1 9 1
+compatibility 21 1
+compatible 2 2 21 2
+compilation 2 1 22 1
+compile 1 4 2 2 3 1 7 2 14 1 23 2
+compiled 2 9 8 1
+compiler 1 5 2 5 3 7 7 1 13 1 14 6 15 1 19 3 22 1 23 1
+compilers 1 2 2 1 3 2 10 1 12 2 13 1 14 2 19 1 22 1
+compiles 2 1 7 1
+compiling 5 1 8 1
+comple 15 1
+complementary 13 1
+complementing 1 1
+complete 19 1
+completely 3 1 7 1 8 1 19 1 22 1
+complex 6 1 9 1 11 1 21 1 24 3
+complexity 9 2
+complicated 13 1
+component 1 1
+components 23 1 24 1
+compound 3 3 12 2 13 2 19 1 22 1
+comprehensive 14 1
+compressor 5 1 25 1
+computation 2 1
+computer 2 5 10 1 13 2 23 1
+computergeek 16 1
+computers 2 4
+con 7 1
+concatenate 3 7
+concatenating 3 1
+concept 2 1 13 1 19 2
+concepts 2 2 13 1 15 1 18 1
+conceptual 14 1
+concrete 13 1
+concretely 3 1
+condition 6 1 9 1 11 1 21 1 24 3
+conditional 8 1
+conduct 13 2
+config 23 1
+configuring 10 1
+confuse 13 1
+confused 13 2 19 1 22 2
+confusion 13 2 15 1
+connection 7 1
+cons 8 2
+consecutive 13 1
+consent 0 2 1 2 2 2 3 2 4 2 5 2 6 2 7 2 8 2 9 2 10 2 11 2 12 2 13 2 14 2 15 2 16 2 17 2 18 2 19 2 20 2 21 2 22 2 23 2 24 2 25 2
+consider 3 2 7 1 8 1 13 2 15 1 19 1 22 1
+considerable 14 2
+considerations 3 1
+considered 1 1 2 1 19 1
+considering 13 1
+consists 3 1
+console 1 2 7 1 8 1 16 3 20 1
+const 3 8 8 1 9 2 13 44 14 1 22 58
+constant 3 1 13 6
+constants 3 1 12 2 13 1 19 1 22 1
+constness 13 2 21 1 22 2
+construct 15 1 19 1
+constructed 19 5
+constructing 15 1 19 1
+construction 19 1
+constructions 22 1
+constructor 9 2 19 30 22 4
+constructors 19 12 22 1
+contact 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+contain 3 1 8 1 13 5 19 3 22 2
+contained 13 2
+container 8 1 9 13 14 1 15 1
+containers 0 1 6 1 9 15 11 1 20 1 21 1 24 2
+containing 13 1
+contains 1 1 13 1 15 1 19 1
+content 13 3
+context 19 1
+contexts 2 1
+continue 3 1
+continuing 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+contribute 0 1
+contributed 0 1
+control 2 3 3 4 12 2 13 1 19 1 22 1
+convenient 19 1 22 1
+conversely 19 2
+conversion 22 1 24 1
+conversions 2 2 3 1 12 2 13 1 19 1 22 1
+convert 11 12 25 1
+converted 2 1 13 2
+convertible 13 1
+converting 2 1 11 1 20 1
+cookie 0 4 1 4 2 4 3 4 4 4 5 4 6 4 7 4 8 4 9 4 10 4 11 4 12 4 13 4 14 4 15 4 16 4 17 4 18 4 19 4 20 4 21 4 22 4 23 4 24 4 25 4
+cookies 0 2 1 2 2 2 3 2 4 2 5 2 6 2 7 2 8 2 9 2 10 2 11 2 12 2 13 2 14 2 15 2 16 2 17 2 18 2 19 2 20 2 21 2 22 2 23 2 24 2 25 2
+coordinates 22 3
+copied 3 2 13 1 15 1
+copies 3 6
+copy 0 1 1 1 2 1 3 6 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+copycats 20 1
+copying 3 1
+cor 21 1
+core 25 1
+cores 23 1
+correspond 3 1 13 1
+correspondence 3 1
+corresponding 3 1 13 1 14 1 21 1 24 1
+corrigenda 21 1
+could 3 3 8 2 13 4 19 3 22 4 23 1
+couldn 10 1 15 1
+count 9 19
+counter 8 1 22 1
+course 3 1 22 1
+cout 1 1 3 20 6 2 13 9 15 1 19 14 22 14
+cover 24 1
+covered 2 1
+covering 0 1 18 1
+cplusc 15 3
+cplusplus 0 2 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+cpp 8 2
+cpre 14 1
+crbegin 9 10
+create 2 1 7 3 15 1 22 3 23 2
+created 7 1 19 3
+createelement 0 1 1 1 2 1 3 1 4 2 5 2 6 1 7 2 8 2 9 1 10 2 11 1 12 1 13 1 14 1 15 2 16 2 17 1 18 1 19 1 20 2 21 1 22 1 23 2 24 1 25 2
+creates 23 1
+creating 3 1
+creation 23 1
+crend 9 10
+cross 10 1
+cryptic 1 1
+csetjmp 6 1 9 1 11 1 21 3 24 2
+csignal 6 1 9 1 11 1 21 3 24 2
+cstdarg 6 1 9 1 11 1 21 3 24 2
+cstdbool 6 1 9 1 11 1 21 2 24 2
+cstddef 6 1 9 1 11 1 21 3 24 2
+cstdint 6 1 9 1 11 1 21 2 24 2
+cstdio 6 1 9 1 11 1 21 3 24 2
+cstdlib 3 2 6 1 9 1 11 1 21 5 23 1 24 2
+cstring 6 1 7 2 9 1 11 1 21 3 24 2
+ctgmath 6 1 9 1 11 1 21 1 24 2
+ctime 6 1 9 1 11 1 21 3 24 2
+ctype 6 1 9 1 11 1 21 3 24 2
+cuchar 6 1 9 1 11 1 21 3 24 2
+curl 15 1
+current 13 8
+currently 8 1 19 1 22 1 23 1
+cursor 16 1
+customizable 16 1
+cvector 22 33
+cwchar 6 1 9 1 11 1 21 3 24 2
+cwctype 6 1 9 1 11 1 21 3 24 2
+cylinder 19 7
+daf 7 1
+dam 21 1
+data 1 1 3 4 8 1 9 3 10 1 12 6 13 22 15 3 16 1 19 17 22 10 23 1
+date 5 1 10 1 16 1 20 1 25 1
+dates 7 1
+day 2 1 7 1
+days 15 1
+ddd 7 1
+dddd 8 1
+dea 7 1
+dealing 8 1
+deals 2 1
+dealt 23 1
+dear 23 1
+debated 13 1
+debian 23 1
+debuggers 10 1
+debugging 7 1
+dec 5 8 7 14 8 14 10 3 15 14 16 2 20 1 23 16 25 4
+decade 14 1
+decide 13 1 22 1
+decides 13 1
+decimals 13 1
+decision 9 1
+declaration 3 9 13 6 19 9 22 1
+declarations 3 3 10 1 13 2 19 3 21 1
+declarative 2 4
+declare 3 1 13 2 19 3 22 4
+declared 3 12 6 1 13 2 19 10 22 2
+declares 3 2 13 2 19 1
+declaring 3 4 13 3 19 1
+decode 23 1
+decoration 0 2
+decrement 13 3
+decrementing 13 1
+dede 7 1
+default 3 4 10 1 14 1 19 20
+defeats 2 1
+define 3 1 13 1 15 1 19 2 22 3
+defined 2 1 3 10 13 4 15 2 19 10 21 3 22 7
+defines 3 1 6 1
+defining 0 1 3 2 19 1
+definitely 13 1
+definition 3 7 19 10 22 2
+definitions 10 1 21 4 24 2
+defintion 22 1
+degree 2 3
+delay 8 1
+delegated 3 1
+delete 19 2 22 3
+demonstrate 13 1
+demonstrating 3 1
+depend 9 1
+dependencies 7 1
+dependent 13 1
+depending 1 1 2 1 13 1
+depends 13 1
+deploy 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 2 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+deployment 7 1
+deployments 7 1
+depreacted 7 1
+deprecate 2 1
+deprecated 21 1
+depth 8 1
+deque 6 1 9 7 11 1 21 1 24 3
+dereference 13 20
+dereferenced 13 5
+dereferencing 10 1 13 2
+derivati 15 1
+derived 14 2 15 2 19 1
+describe 17 1
+described 21 2
+description 0 2 1 1 2 4 3 1 14 1 17 2
+descriptions 0 1
+descriptive 0 1
+design 5 1 7 1 10 1
+designated 23 1
+designed 14 2 24 1
+designer 23 1
+desired 2 1
+destructor 9 2
+detailed 0 2 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+detailing 14 1
+details 3 1 14 1
+detect 7 1
+detector 5 1 25 1
+determine 8 1
+deu 16 1
+devc 7 1
+develop 1 1 2 1
+developed 2 1
+developing 23 2
+development 1 1 14 4 17 1
+device 2 1
+devops 4 1
+diagnostics 21 2 24 1
+diagram 13 1
+dialog 7 1
+dictionary 15 3
+did 3 1 8 2
+didn 7 1 8 1 23 2
+didnt 8 1
+dif 7 1
+differe 8 1
+difference 3 2 13 5 19 4
+differences 19 1 21 1 22 1
+differenciates 1 1
+different 0 1 2 3 9 3 13 14 19 5 22 6 23 1
+differentiate 3 1 13 1
+differentiation 15 2
+difficult 2 1 14 1 19 1
+dimension 13 1
+direct 19 1
+directives 3 1 12 2 13 1 19 1 22 1
+directly 2 2 3 2 9 1 13 7 14 1 19 5 22 2
+directx 10 1
+disch 16 1
+discontinued 7 1
+discussions 4 2
+disk 23 1
+displayed 8 1
+div 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 2 22 1 23 1 24 1 25 1
+diverse 22 1
+divide 3 6
+divided 3 1
+dll 16 1
+doc 0 2
+docnew 5 1 10 1 16 1 20 1 25 1
+document 0 5 1 5 2 5 3 5 4 9 5 9 6 5 7 11 8 11 9 5 10 9 11 5 12 5 13 5 14 5 15 11 16 9 17 5 18 5 19 5 20 9 21 5 22 5 23 11 24 5 25 9
+documentation 1 1
+documents 0 1
+dodge 7 1
+does 1 1 2 5 3 6 4 1 7 2 8 1 9 1 13 4 15 1 19 4 22 1 23 2
+doesn 15 1 23 1
+doin 8 1
+doing 2 1 7 1 8 2 14 1
+don 1 1 8 5 22 1 23 2
+done 3 1 8 1 13 2 19 1
+dont 7 1 8 1
+dot 19 1
+dotted 0 1
+double 9 1 11 2 13 3 19 12 21 1 22 1 23 2
+doubts 1 1
+down 8 1 23 1
+download 15 1
+downloaded 15 1
+draw 8 1
+drawing 7 1
+drive 23 1
+drivers 2 1
+dsl 16 1
+dubbed 14 4
+duckduckgo 7 1
+due 1 1 7 1 13 2
+dummy 22 17
+dumped 25 1
+duplicate 3 8 23 2
+duplicates 3 1
+during 3 1 13 4
+duthomhas 8 3 16 1 20 2
+dynamic 2 2 3 1 9 1 12 2 13 3 19 1 20 1 22 1 24 2
+dynamically 2 1 10 1 25 1
+each 1 2 2 1 3 7 8 1 9 1 13 18 15 1 19 2 21 1 22 2 23 1 24 1
+earlier 3 4 13 6 19 2
+easier 2 2 15 1
+easiest 10 2 23 1 25 2
+easily 2 1 3 1 13 1 19 1
+easy 2 2
+ebf 15 1
+edea 23 1
+edit 4 4 5 4 7 5 8 4 10 4 15 5 16 4 20 4 23 4 25 4
+editing 23 1
+editor 7 1
+edu 15 1
+efb 8 1
+efe 4 1
+eff 7 1
+effect 3 1
+effective 2 1
+effects 2 1
+efficiency 3 5 9 1 15 1
+efficient 3 3
+effort 22 1
+either 2 1 3 2 8 1 9 1 13 4 19 2 22 3
+eklavya 16 2
+elaborated 13 1
+element 9 2 13 9 21 1 22 11 25 2
+elements 2 1 3 1 9 6 13 6 22 1 24 2
+else 3 4 5 1 7 1 8 1 10 1 13 1 15 1 16 1 19 2 20 1 22 1 23 3 25 1
+emplace 9 31
+empty 3 2 9 15 19 4 22 1
+encapsulated 9 1
+enclosed 13 1
+enclosing 19 1
+encodes 23 1
+encountering 3 1
+end 3 2 8 1 9 15 11 2 13 1 14 1
+ended 3 2 9 1
+ending 3 1
+endl 19 6 22 2
+ends 3 4
+engineer 4 1
+english 1 1
+enjoy 22 1
+enlist 8 1
+enough 3 1 13 2
+ensure 2 2
+enter 3 5 8 1
+entered 15 1
+entire 3 1
+entirely 3 1
+entitled 14 1
+enum 15 2
+environment 1 3 3 1 13 1 24 1
+environments 3 1
+equal 9 9 13 5 19 2
+equality 8 1
+equations 2 1 15 1
+equivalent 2 1 13 5 19 2 21 1 22 1
+erase 9 14
+errno 6 1 9 1 11 1 21 3 24 2
+error 0 1 1 1 2 1 3 1 4 1 5 1 6 2 7 5 8 4 9 2 10 1 11 2 12 1 13 5 14 1 15 3 16 1 17 1 18 1 19 1 20 1 21 2 22 2 23 2 24 3 25 1
+errors 2 1 6 2 8 1 21 2 23 1 24 2
+especially 2 1 9 1
+essence 22 1
+essentially 13 2 19 1 22 1
+esslercuffi 10 1
+etc 1 1 3 1
+evaluated 3 2 13 3
+even 1 1 3 18 8 1 13 5 19 6 22 2 23 2
+evening 8 2 23 1
+event 15 1
+events 15 1
+eventually 15 1
+every 2 1 8 1 21 1
+everybody 7 1
+everyone 7 2 8 1 23 1
+everything 13 1
+evil 20 1
+evolution 1 1
+exact 13 3
+exactly 2 2 3 2 13 4 19 1 22 1 23 1
+examine 3 1
+examineone 8 2
+example 1 1 3 28 8 2 12 1 13 23 15 2 19 28 21 1 22 19
+examples 0 1 3 2 13 1 21 2 22 1
+except 1 1 13 1 19 1 22 1
+exception 3 1 6 1 9 1 11 1 21 1 24 3
+exceptions 3 1 12 2 13 1 14 1 19 1 22 1 24 1
+exchange 0 1 13 1 16 1
+exchanged 2 1
+exclusive 2 1
+exclusively 2 1
+exe 7 3
+executed 2 2 3 1 19 1 22 1
+execution 3 2 13 1
+exercise 15 1
+exercises 8 1
+existed 23 1
+existing 1 1 19 1
+exists 13 1
+exit 3 7 8 1 21 1
+expanded 3 1 19 1
+expansion 3 1
+expect 7 1 13 1 23 1
+expected 14 1 15 1 22 1
+expects 2 1
+expensive 3 1
+experience 13 1 23 1
+experimental 14 1
+explain 2 1 12 1
+explained 12 1 13 2
+explaining 8 1
+explanations 0 1 8 1
+explanatory 13 1
+explicitly 1 1 2 2 3 4 13 2 19 2 22 1
+explore 7 1
+exponent 15 1
+exposed 13 1
+express 2 1
+expressed 13 1
+expresses 2 1
+expression 2 1 3 3 10 1 13 13 14 1 15 1 19 1 22 1
+expressions 1 1 3 1 13 9 14 1 19 1 22 1 24 1
+extended 13 1
+extension 21 1
+external 3 1 7 1 8 1
+extreme 19 1
+extremely 3 1
+faabe 4 1
+faced 7 1
+facets 24 1
+fact 3 3 13 4 15 1 19 1 22 3
+facto 2 2
+factor 9 10
+factorial 3 8
+factors 2 1
+failed 3 1
+failure 3 1
+fake 23 1
+false 22 1
+family 0 1
+faq 1 4 2 1 14 1 17 1
+far 2 1 8 2 14 1
+fast 2 1 18 1
+fastest 2 1
+feats 2 1
+feature 13 2 14 1 23 2
+features 0 2 1 3 2 1 3 1 5 3 10 7 12 3 13 1 14 6 16 2 17 1 18 1 19 1 20 7 22 1 25 1
+feb 5 1 7 15 8 15 10 1 15 15 16 6 20 1 23 16 25 1
+feeling 0 1
+fenv 6 1 9 1 11 1 21 1 24 2
+few 2 3 3 1 7 1 23 1
+fewer 3 1
+fibonacci 5 1 10 1
+fibonacii 5 1 10 1
+fifo 9 1
+fifth 13 1
+figure 2 1
+figured 8 1
+file 4 1 5 1 7 1 8 2 15 1 21 3 23 2 24 1 25 1
+files 3 1 4 1 7 3 8 1 12 2 13 1 19 1 21 1 22 1 24 1
+fill 22 1
+film 23 2
+fimas 5 1 20 1 25 1
+final 3 1
+finally 2 1 13 1 19 1
+find 2 1 7 3 9 9 15 1 22 1
+finding 10 1
+fine 3 1 8 1
+finished 14 1
+firs 23 1
+first 3 7 8 1 13 9 14 4 19 3 22 9 23 1
+firstchild 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+firstvalue 13 15
+fit 9 3
+fix 8 1 15 1
+flex 23 2
+flexibility 2 2 9 1 13 1
+flip 3 1
+float 6 1 9 1 11 2 13 2 21 4 22 1 24 2
+floating 21 2 24 2
+flow 3 2 12 1 13 1 19 1 22 1
+focus 1 1 2 1
+focuses 2 2
+folksss 8 1
+follow 2 2 3 1 13 2 19 1 22 1
+followed 1 1 3 1 19 1 22 1
+following 1 1 3 4 13 12 19 5 21 2 22 4 24 1
+follows 3 1 13 2 19 1
+font 0 2
+foo 10 1 13 32 19 12 22 13
+for 0 1 1 5 2 10 3 36 4 4 5 2 6 4 7 11 8 9 9 3 10 4 13 32 14 10 15 6 16 2 19 20 21 4 22 36 23 15 24 1
+forbid 2 1
+forbidden 3 1
+forces 3 1
+foreach 14 1
+forgotten 23 1
+forgottencoder 4 1
+form 0 1 2 1 7 2 15 1 19 5
+formal 2 1
+formally 3 1
+format 7 1 15 1 19 1 23 1 25 1
+formatting 7 1
+formidable 2 1
+forms 1 1 22 2
+formula 3 1
+formulas 10 1
+fortunately 13 1
+forum 0 2 1 1 2 1 3 1 4 10 5 1 6 1 7 15 8 15 9 1 10 1 11 1 12 1 13 1 14 1 15 15 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 16 24 1 25 1
+forward 6 1 9 7 11 1 14 1 15 1 21 1 24 3
+fouad 20 1
+found 2 1 7 2 14 2
+four 13 1 19 2
+fourth 3 3 13 1
+fractal 10 2 25 2
+fragment 1 1 13 1
+freddie 7 1
+free 1 1 3 2
+freeing 7 1
+frek 15 3
+frequency 23 1
+frequently 0 1 2 1 17 1 22 1
+friend 8 1
+friendly 16 1
+friends 19 2
+friendship 3 1 12 2 13 1 19 1 22 1
+from 0 1 1 3 2 1 3 11 7 2 8 1 11 1 12 1 13 3 14 5 15 3 18 1 19 13 22 5 23 2 24 1
+front 9 18
+fruit 2 1
+fstream 6 1 9 1 11 1 21 1 23 1 24 1
+full 9 1
+fully 0 1 21 1
+fumagalli 23 1
+fun 8 1
+function 0 2 1 2 2 2 3 126 4 4 5 5 6 2 7 5 8 6 9 7 10 4 11 14 12 2 13 12 14 4 15 10 16 4 17 2 18 2 19 28 20 4 21 2 22 32 23 4 24 3 25 5
+functional 0 1 2 2 6 1 9 1 11 1 19 5 21 1 22 1 24 2
+functionalities 9 1
+functionality 2 1 3 1 9 1 14 2 24 2
+functions 0 2 1 1 2 3 3 33 5 1 7 1 8 2 9 3 11 3 12 2 13 5 14 1 19 13 21 6 22 23 24 4
+functocall 13 2
+fundamental 3 2 13 1 19 1 21 1 22 3
+future 6 1 9 1 11 1 14 1 21 1 24 3
+gabzz 8 1
+gain 3 1
+game 4 1 8 2 16 1 20 1
+gaq 4 4 5 4 7 4 8 4 10 4 15 4 16 4 20 4 23 4 25 4
+garett 7 1
+gcc 7 3
+gdb 7 3
+geckoo 8 2
+gen 8 1
+general 0 2 4 2 7 1 8 1 15 5 17 1 21 2 23 1 24 2
+generalized 24 1
+generally 1 2 2 6 3 2 9 1 13 3 19 1 22 1
+generate 1 1 3 2 5 1 10 1
+generated 3 1 8 1
+generates 22 1
+generator 20 1
+generic 2 3 11 1 13 1 22 4 24 1
+genetic 5 1 25 1
+gentle 8 1
+george 4 1 7 6 8 3 15 4
+georgesnyder 7 1
+get 7 4 8 2 9 14 13 1 15 4 22 18 23 1
+getch 16 1
+getelementbyid 4 1 5 1 7 3 8 3 10 1 15 3 16 1 20 1 23 3 25 1
+getelementsbytagname 0 1 1 1 2 1 3 1 4 2 5 2 6 1 7 2 8 2 9 1 10 2 11 1 12 1 13 1 14 1 15 2 16 2 17 1 18 1 19 1 20 2 21 1 22 1 23 2 24 1 25 2
+getmax 22 5
+getter 15 1
+gettin 8 1
+getting 15 1
+ghostrider 23 2
+gif 0 6
+git 23 2
+github 15 1
+give 0 1 1 1 2 3 3 2 4 1 5 1 6 1 7 2 8 1 9 1 10 1 11 1 12 1 13 2 14 1 15 1 16 1 17 1 18 1 19 2 20 1 21 1 22 1 23 1 24 1 25 1
+given 3 1 13 1 15 3 19 1
+gives 13 1 14 1
+giving 3 1
+glfw 5 1 10 1
+global 21 1
+glut 10 1
+gmann 5 1
+gnh 16 2
+gnu 15 1
+gnuc 15 1
+goal 14 1
+god 8 2
+goes 2 1
+going 3 1 13 2 14 1 15 1 22 1
+good 3 1 7 3 8 5 23 1
+google 4 1 5 1 7 2 8 1 10 1 15 1 16 1 20 1 23 1 25 1
+googled 7 1
+got 8 1 15 1
+goto 2 1
+gotten 8 1
+gradient 15 1
+granting 19 1
+graphics 5 2 7 5 10 7 16 3 20 2 23 2 25 4
+grasping 13 1
+great 9 1 13 2
+greater 3 1 19 1
+group 3 1
+guarantee 3 1
+guaranteed 3 1
+guards 15 1
+guestgulkan 16 1
+guidance 23 1
+guide 5 1 25 1
+guided 10 1
+guides 19 1
+guys 7 1 8 7
+guyss 8 1
+had 2 1 3 1 8 1 14 1 15 1 19 1 23 1
+haephrati 5 1 10 1
+hah 23 1
+half 3 1 23 1
+hand 20 1 22 1
+handle 8 1 9 1 21 2 24 1
+handlers 19 1
+handling 21 4 24 2
+hanoy 20 1 25 1
+happen 13 2 19 1
+happens 13 3
+haqks 5 1
+hard 15 1
+hardest 8 1
+hardware 2 2
+has 2 4 3 3 7 3 13 7 14 1 19 10 21 1 22 4
+haschildnodes 4 1 7 3 8 3 15 3 23 3
+hash 9 6
+hate 7 1
+hav 7 1
+have 1 2 2 9 3 11 7 5 8 5 9 1 12 1 13 18 14 1 15 7 19 18 21 2 22 12 23 5
+having 2 2 3 2 7 1 8 2 15 1 19 1
+header 3 2 6 4 11 2 21 44 23 1 24 79
+headers 6 1 9 2 13 1 21 2 24 1
+heaps 9 1
+heepoo 20 1
+heh 8 1
+height 0 2 19 33
+helios 15 1
+hello 7 6 8 10 13 4 15 3 23 5
+help 1 2 7 1 8 3 13 1 23 3
+helper 15 1
+helpful 8 1 23 1
+helvetica 0 1
+hence 19 1
+here 2 4 3 1 5 1 10 1 13 4 14 1 15 2 16 1 19 4 20 1 22 4 25 1
+heres 15 1
+hey 8 4 15 1 23 1
+high 2 6
+higher 2 1 13 2
+hint 9 9
+his 14 3 23 1
+historical 3 1 13 1
+history 0 1 1 1 2 1 14 5 17 3
+hold 19 1
+holder 9 1
+home 0 2 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+homework 8 1
+hook 7 1
+hooking 7 2
+hope 8 1
+hosting 14 1
+hover 0 1
+how 1 3 2 4 3 3 4 5 5 10 7 10 8 7 10 15 13 4 14 1 15 3 16 9 19 5 20 13 23 5 25 10
+however 2 8 13 1 14 2 22 1
+htop 23 1
+http 4 1 5 1 7 1 8 1 10 1 15 1 16 1 20 1 23 1 25 1
+https 4 2 5 2 7 3 8 2 10 2 15 5 16 2 20 2 23 2 25 2
+huge 14 1
+human 2 1
+hwnd 7 1
+ichnar 8 1
+icl 15 1
+ide 10 1 23 1
+idea 8 2 15 1
+ideal 2 1
+identical 15 1 19 1 22 2
+identified 3 1
+identifier 3 2 13 3 19 1
+identifiers 3 1
+identifies 22 1
+identify 23 2
+ides 10 1
+idiots 4 1
+iec 14 1 21 5
+igln 25 1
+ignored 3 1
+iissim 23 1
+illustrates 3 1
+image 0 6
+imagine 13 2
+img 0 6
+immediately 13 1
+impact 14 3
+imperative 2 5
+impetus 23 1
+impl 7 1
+implement 1 2
+implementation 8 1 21 1 22 2
+implementations 10 1 14 1
+implemented 2 1 9 2 14 1 22 1
+implementing 19 1
+implicit 2 1 3 2 9 3
+implicitly 3 1 13 3 22 2
+implies 14 2
+important 0 1 2 2 8 1 13 2 14 1 19 2 22 1
+impossible 2 1
+improve 1 1 3 1
+improved 19 1
+improves 3 1 15 1
+improving 20 1
+incl 15 1
+include 1 1 3 10 6 1 8 5 13 9 14 1 15 6 19 11 22 9 23 5
+included 3 1 14 3 19 3 24 1
+includes 1 1 3 1 6 1 13 1 21 3
+including 0 2 2 2 3 1 6 2 10 2 13 3 15 1 22 2 23 1
+incompat 8 1
+incompatible 1 1
+incorporation 1 1
+increase 13 4 22 3
+increased 1 1 3 1
+increaser 13 1
+increases 22 1
+incredible 2 2
+increment 13 15
+incremented 13 7
+incrementing 13 1 14 1
+indeed 3 1 13 3
+independent 22 1
+independently 9 1
+index 3 1 13 2 19 1 22 1 24 1
+indexof 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+indicate 8 1
+indicated 3 1
+indicates 3 1 13 1
+indirection 13 2
+indirectly 3 1 13 1
+individual 3 1
+inexpensive 3 1
+infer 2 1 13 1
+inferred 2 4
+infers 2 1
+infinite 3 1
+influence 14 1
+info 0 2 7 1
+informal 2 1
+informally 14 2
+informatics 7 1
+information 0 3 1 4 2 6 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 4 15 1 16 1 17 7 18 1 19 1 20 1 21 1 22 1 23 1 24 2 25 1
+informs 3 2
+infos 23 1
+inheritance 3 1 12 2 13 1 14 2 19 1 22 2
+init 19 2
+initializate 4 1 7 1
+initialization 13 1 14 1 19 11
+initializations 19 2
+initialize 3 1 13 2 19 4 22 1
+initialized 13 5 19 5 22 2
+initializer 6 1 9 1 11 1 19 3 21 1 24 3
+initializes 19 1
+initiate 7 2 8 2 15 2 23 2
+inline 3 11 5 1 7 1 19 2 22 1
+inlining 14 1
+innerhtml 0 1 1 1 2 1 3 1 4 1 5 3 6 1 7 2 8 2 9 1 10 3 11 1 12 1 13 1 14 1 15 2 16 3 17 1 18 1 19 1 20 3 21 1 22 1 23 2 24 1 25 3
+input 0 1 1 1 3 2 6 5 9 1 11 1 12 4 13 2 16 1 19 2 20 1 21 3 22 2 23 2 24 5
+inputting 8 1
+ins 7 1
+insert 3 1 9 14
+insertbefore 0 1 1 1 2 1 3 1 4 2 5 2 6 1 7 2 8 2 9 1 10 2 11 1 12 1 13 1 14 1 15 2 16 2 17 1 18 1 19 1 20 2 21 1 22 1 23 2 24 1 25 2
+inserted 3 1 13 2
+inserting 9 1 19 2
+inside 3 1 13 1
+insight 14 1
+install 7 4
+installed 15 1
+installing 10 1 23 2
+instances 19 1
+instantiation 19 1
+instantiations 11 1
+instead 1 1 3 8 8 1 13 1 19 4
+institute 2 1
+instruction 23 1
+instructions 2 3 10 1
+int 1 1 3 56 7 1 8 4 11 1 13 93 15 1 19 53 22 44 23 4
+integer 2 1 11 2 13 3 15 1 21 1 22 1 24 2
+integers 8 1 25 1
+integral 21 2 24 1
+integrate 14 1
+integrated 1 1 13 1
+intelligent 2 1
+intended 13 1
+intensely 13 1
+intensive 1 1
+interact 22 2
+interaction 16 1
+interested 13 1
+interesting 13 1 14 1
+interface 1 1 9 1
+international 1 1 2 1 14 1
+internet 7 1 13 1
+interpret 3 1
+interpreted 2 4 3 2 19 1
+interpreter 2 5
+interrupted 3 1
+interwebz 7 1
+into 0 1 3 1 4 1 7 1 8 1 13 2 14 3 20 1 25 1
+introduce 18 1
+introduced 1 1 12 1 13 1 19 4
+introduces 11 1 19 1
+introduction 3 1 12 2 13 1 19 1 22 1
+introductions 21 1
+inttypes 6 1 9 1 11 1 21 1 24 2
+intuitive 2 1
+invalid 13 2
+invoked 3 1
+involved 3 2 4 1 8 1
+involving 13 1
+iomanip 6 1 9 1 11 1 15 1 21 1 24 1
+ios 6 3 9 1 11 1 21 1 24 1
+iosfwd 6 3 9 1 11 1 21 1 24 1
+iostream 0 1 1 1 3 7 6 7 8 2 9 1 11 1 13 6 15 2 19 7 21 1 22 9 23 1 24 1
+ironically 14 1
+isitme 22 3
+iso 1 1 2 3 6 1 9 1 11 1 14 1 21 15 24 3
+issue 15 1
+issues 8 2
+istream 6 4 9 1 11 1 21 1 24 1
+item 4 2 7 1 8 1 15 1 23 1
+items 5 2 10 2 16 2 20 2 25 2
+iterator 6 1 9 1 11 3 21 1 24 3
+iterators 9 5
+its 0 2 1 4 2 2 3 16 5 1 9 4 10 2 12 1 13 16 14 2 15 1 18 1 19 13 21 3 22 11
+itself 2 1 3 4 13 4 14 1 19 1 22 6
+ive 7 2
+izzy 15 1
+jan 5 4 7 16 8 15 10 3 15 16 16 4 20 5 23 24 25 1
+javascript 4 1 5 1 7 1 8 1 10 1 15 1 16 1 20 1 23 1 25 1
+jetm 15 1
+jit 2 2
+jlb 23 1
+jlborges 15 1
+jnc 8 1
+job 4 1
+jobs 4 2 7 1 8 1 15 1 23 1
+johnny 4 1 23 2
+jonathan 8 1
+jonnin 7 3 15 2 23 2
+juan 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+juandent 7 2 15 1
+jul 4 1 5 1 7 14 8 14 15 14 16 1 20 4 23 14 25 4
+jumps 2 1 3 1 21 2 24 1
+jun 5 4 7 14 8 14 10 2 15 14 16 3 20 2 23 14 25 7
+just 2 1 3 4 7 3 8 5 13 5 15 2 19 2 22 7
+karma 16 2
+kbw 23 5
+kde 23 2
+keep 8 1
+keeps 7 1
+kempofighter 20 2
+kernel 5 1 10 1
+keskiverto 15 1
+key 9 12 23 4
+keys 10 1 25 1
+keyword 13 1 14 2 19 9 22 5
+keywords 19 3 21 1
+kfmfe 20 1
+khutko 20 1 25 1
+kigar 7 4 8 1 15 3 23 3
+kind 7 1 19 1
+kinda 8 1
+kinds 3 1
+know 1 2 2 1 7 2 8 3 13 1 15 1
+knowledge 0 1
+known 1 2 2 1 3 1 13 5 14 1 19 1 22 2
+knows 1 1
+koch 10 1 25 1
+kubota 10 1
+lab 15 1
+label 5 2 10 2 16 2 20 2 25 2
+lacking 5 1 10 1 14 1
+lampahome 15 1
+language 0 8 1 15 2 40 3 5 5 3 10 7 12 8 13 6 14 21 16 2 17 5 18 5 19 4 20 7 21 4 22 4 23 2 24 1 25 1
+languages 1 3 2 23 14 2
+lapack 15 1
+large 0 1 1 1 3 3 14 1 15 1
+largely 19 1
+larger 13 3
+last 3 1 4 1 7 14 8 18 13 1 14 1 15 19 19 2 23 17
+lastchance 15 2 23 1
+lastchild 4 1 7 3 8 3 15 3 23 3
+lately 23 1
+later 3 1 13 2 14 1 19 1
+latest 2 1 14 1 24 1
+latter 19 1
+lead 2 1
+leak 7 2 15 3
+learn 0 1 1 1 7 1 10 1 15 1 18 1
+learned 10 1
+learning 1 2 7 1 8 2 10 1 15 1 23 1
+learnt 1 1
+least 3 3
+left 7 1 13 1 22 1
+legacy 15 1
+legend 9 1
+legibility 3 1 13 1
+length 13 1
+leniency 2 1
+less 2 2 3 1 8 1
+let 3 2 13 4 22 1 23 1
+lets 15 1
+letter 23 4
+level 2 16 13 2 14 1 16 1 19 1
+levels 13 1
+lhs 22 3
+libraries 1 2 2 3 5 2 10 6 14 2 16 3 20 3 25 3
+library 0 9 1 1 2 3 3 1 5 4 6 2 9 2 10 4 11 1 12 2 13 2 14 5 15 6 16 4 19 1 20 24 21 25 22 1 23 3 24 21 25 4
+lies 15 1
+lifetime 13 1
+lifo 9 1
+like 1 1 2 1 3 3 8 2 13 5 15 1 19 5 21 2 22 5 23 2 24 1
+likely 8 1 13 1
+lilthanos 8 1
+limitation 13 1
+limited 3 1 22 1
+limits 6 2 9 2 11 2 21 4 24 5
+line 0 1 7 1 8 1 13 4 14 1 16 1 20 2 22 1
+linear 15 1
+lines 3 3
+link 0 1 2 1 7 1
+linked 5 1 9 1 20 1 25 2
+linker 1 1 23 2
+linking 5 1
+linux 0 1 4 3 5 2 7 1 8 1 10 3 15 1 16 5 20 3 23 11 25 1
+list 2 1 3 4 6 3 7 1 9 18 11 3 17 1 19 5 21 3 22 2 24 9
+listing 7 1
+lists 0 1 2 1 5 1 7 1 9 1 14 1 25 1
+literal 13 1
+literally 1 1
+literals 3 2 13 5
+little 2 1 13 3 23 1
+lnk 7 1
+load 9 10
+local 3 5 13 1 21 2 24 1
+locale 6 2 9 2 11 2 21 4 24 4
+localization 21 2 24 2
+located 13 1 22 1
+location 2 1 3 1 4 1 5 1 7 1 8 1 10 1 13 2 15 1 16 1 20 1 23 1 25 1
+locations 13 6
+log 16 1
+logging 6 2
+logic 3 1
+logical 13 1
+logo 8 1
+loneranger 23 1
+long 2 1 3 5 11 6 13 4 21 2
+longer 3 1 13 1
+look 3 1 8 1 23 1
+looking 23 1
+looks 3 1
+lookup 15 2
+loop 3 1 14 1 15 1
+loops 8 1 14 1
+lord 4 1
+losing 1 1
+losowanie 23 1
+lost 8 1
+lostdog 8 1
+lot 1 1 8 2
+lottery 5 2 20 1 25 2
+lounge 4 2 7 1 8 1 15 1 23 1
+low 2 9 14 1
+lower 9 5 13 1
+lucas 8 2
+lukeproducts 7 5
+lzw 5 1 25 1
+lzyhbrd 16 1
+mac 7 1
+machine 2 5
+macos 1 1
+macro 7 1
+macros 21 1 24 1
+made 3 2 13 1 14 2 23 2
+mae 8 2
+main 1 1 3 30 7 1 8 2 13 9 19 7 22 9
+mainly 1 1 6 1
+maintain 15 1
+maintained 2 2
+make 1 1 2 3 3 1 4 1 7 1 8 5 13 2 15 1 19 1 20 1 23 2
+makefile 8 2
+makes 1 1 19 3
+making 14 2 15 2 16 1
+management 2 1 24 1
+manages 9 1
+manga 20 1
+manifest 2 4
+manipulate 1 1
+manipulation 1 1
+manish 16 2
+manner 13 1
+manual 14 2
+manufacturers 1 1
+many 1 3 2 9 3 1 7 2 9 1 13 2 14 1 22 2 24 1
+map 6 2 7 1 9 17 11 2 20 3 21 2 24 7
+mapping 7 1
+maps 0 1
+mar 5 4 7 26 8 16 10 2 15 16 16 4 20 5 23 20 25 3
+marine 10 1
+marked 3 1 22 1
+marking 22 1
+masking 16 1 20 1
+masotrix 20 1 25 1
+match 3 1 19 1 23 1
+matches 19 1
+math 6 1 9 1 11 1 21 3 24 3
+mathematical 2 2 3 1 22 1
+matter 3 1 13 3 19 1
+max 9 25
+may 1 2 2 4 3 11 4 5 5 3 6 1 7 20 8 34 10 2 13 6 14 1 15 31 16 4 19 4 20 5 22 5 23 16 25 1
+mbozzi 8 1
+mdb 7 1
+mea 15 1
+mean 1 1 3 2 8 1 15 3
+meaning 1 1 3 1 13 6 22 2
+meaningful 15 1
+meanings 13 1
+means 1 1 2 2 3 3 7 1 8 2 13 2 22 3
+meant 2 2 13 1 14 1
+mechanism 3 1
+member 9 4 15 1 19 41 22 45
+members 0 1 3 1 9 4 12 2 13 1 14 1 15 2 19 38 22 22 23 1
+memchr 21 1
+memory 3 1 6 1 7 3 9 1 11 1 12 2 13 25 19 1 21 1 22 1 23 2 24 5
+merely 3 2 19 1
+merge 9 3
+merits 13 1
+message 0 1 3 1
+messages 0 1
+method 8 1 10 1 15 4 25 1
+methodology 2 1
+methods 1 1
+mfc 4 1 7 2 10 1
+mhcrnl 5 1 10 1
+michael 5 1 10 1
+microsoft 1 1 7 1
+mid 14 2
+middle 0 1
+might 2 2 3 1
+min 23 1
+mind 2 1 3 1
+mingw 7 4
+mini 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+minus 13 4
+miscellaneous 24 1
+mix 2 2 13 1
+mixes 13 1
+modal 7 2
+model 1 1 2 1
+modeless 7 2
+modern 5 1 10 1 18 1 20 1
+modification 3 2
+modifications 2 1
+modified 3 3 13 1 19 1 22 1
+modifiers 9 2
+modifies 3 3 13 1
+modify 3 2 13 5 19 1 22 4
+modifying 3 1 13 2
+modularity 5 1 10 1
+modules 14 1
+mohamed 7 1 20 1
+moment 3 6 8 1 13 2 19 1
+monitor 7 1
+months 7 1 8 1 15 1 23 1
+more 0 3 1 3 2 6 3 4 8 2 13 7 19 1 20 1 22 2 25 1
+mornin 8 1
+morning 8 1
+most 0 2 1 1 2 5 3 5 8 1 13 1 14 1 15 2 19 4 22 2
+mostly 14 1
+mpi 23 2
+much 2 2 3 1 4 1 7 1 8 1 13 3 15 2 23 1
+multi 6 1 9 1 11 1 21 1 24 1
+multidimensional 15 1
+multimap 9 9
+multimedia 5 2 10 6 16 3 20 2 25 3
+multiple 3 1 9 2 13 1 14 1 19 1
+multiplying 3 1
+multiset 9 9
+must 7 1 22 2 23 1
+mutable 2 1
+mutex 6 1 9 1 11 1 21 1 24 3
+mutually 2 1 3 1
+myarea 19 1
+myarray 13 7
+mychar 13 5 22 2
+myclass 22 14
+mycontainer 22 10
+myfloats 22 1
+myint 22 2
+mylong 13 5
+myobject 22 4
+mypair 22 9
+mypointer 13 15
+myposts 7 1 8 1 15 1 23 1
+myptr 13 7
+myshort 13 5
+mystring 15 1
+myvar 13 27
+name 1 2 3 9 10 1 12 2 13 11 14 3 15 1 19 16 21 2 22 11 23 2
+named 16 1
+namely 14 1
+names 3 2 19 3 21 1 22 1 24 1
+namespace 1 1 3 7 13 6 19 7 21 2 22 9
+namespaces 1 1 19 1
+narrow 6 1
+national 2 1
+native 2 5
+naturally 3 2 22 1
+nature 1 1 2 1
+navfor 4 1 7 1 8 1 15 1 23 1
+nay 15 1
+nbsp 0 1 3 15 5 20 7 22 8 22 10 20 13 12 15 22 16 20 19 6 20 20 22 6 23 22 25 20
+necessarily 1 1 2 2 3 3
+necessary 1 1 2 1 3 1
+need 1 1 2 2 3 5 4 1 7 2 8 2 9 1 13 1 15 5 19 2 22 1 23 5
+needed 3 1 13 1 15 1 22 1
+needs 2 1 13 5 19 1 23 1
+negative 3 1
+neither 3 2 13 2 19 1 22 2
+net 4 1
+network 0 1 23 2
+never 2 1 3 1 13 4 19 2
+nevertheless 3 1 13 1 19 1 21 1
+new 1 1 4 5 5 6 6 1 7 9 8 10 9 2 10 7 11 1 13 2 14 12 15 8 16 6 18 1 19 5 20 6 21 1 22 4 23 11 24 2 25 6
+newer 1 1 19 1
+newest 12 1
+next 3 2 13 2 19 1 22 1
+nick 8 2
+nini 15 1
+nmake 7 1
+noahp 23 2
+node 23 1
+non 0 1 13 10 19 1 21 2 22 15 24 1 25 1
+none 0 2 13 1
+nonetheless 14 1
+nonexistent 13 1
+noobmaster 15 1
+noop 15 1
+nope 7 1
+nor 3 3 13 4 19 1 22 2
+normal 19 3
+normally 3 1
+not 1 2 2 9 3 21 4 1 7 4 8 2 9 2 13 28 14 2 15 3 19 18 20 1 21 2 22 14
+notable 14 1
+notably 19 1
+note 3 5 6 1 8 1 13 5 19 2 21 1 22 2 23 1
+noted 22 1
+notepad 7 1
+noteworthy 2 2
+nothing 19 2
+notice 3 2 13 4 19 6 22 4 23 1
+noticeable 3 1
+noticed 3 1
+noting 14 1
+nov 5 3 7 14 8 15 10 1 15 14 16 6 20 3 23 14 25 4
+novice 17 1
+now 2 2 3 1 8 2 13 2 15 2 19 2
+nowhere 13 3
+nuances 2 1
+null 10 2 13 15 16 1 20 1
+nullptr 13 3
+numbe 8 1
+number 3 9 13 3 19 1 20 1 22 1
+numbers 3 2 13 11 20 2 24 1
+numeric 6 1 9 1 11 1 21 1 24 5
+numerical 3 1 11 2 12 1 13 1 18 2 19 1 22 1 25 1
+numerics 21 2 24 1
+obfuscation 5 1
+obj 19 4
+object 1 2 2 4 6 8 8 2 9 2 14 2 19 36 22 22
+objective 1 1
+objects 0 1 2 3 6 3 8 1 9 2 19 13 22 11 24 1
+observed 7 1
+observers 9 2
+observing 7 1
+obtain 3 1 13 1
+obtained 13 2
+obvious 13 1 22 2
+obviously 13 1
+occupy 13 3
+occur 2 1
+oct 7 14 8 14 10 11 15 14 23 14 25 7
+odd 3 12
+oddy 7 2
+off 2 2
+offer 2 2 9 1
+offered 9 1
+offering 2 2
+offers 1 1 2 2 4 1
+official 2 1
+officially 14 1
+offs 9 1
+offset 13 2 19 1
+old 7 1
+older 1 1 13 1
+olympiad 7 1
+omnibiotic 4 1
+once 1 1 2 1 3 4 13 2 19 2 22 1
+one 1 2 2 5 3 4 7 3 9 1 10 1 13 20 14 1 15 3 19 6 22 11 23 3 25 1
+ones 2 1
+oneself 1 1
+online 1 1
+only 3 13 7 1 8 1 9 1 13 5 19 13 22 10 25 1
+onsession 4 2 5 1 7 2 8 2 10 1 15 2 16 1 20 1 23 2 25 1
+oop 1 1 2 1
+oops 19 1
+open 0 1 2 2 7 1
+opengl 5 1 10 2
+opens 7 1
+operand 3 1 22 3
+operate 19 2
+operates 3 1
+operating 2 1 13 1 14 1
+operation 3 2 13 8 22 4
+operations 0 1 2 2 3 1 9 2 12 1 13 6 18 2 19 1 21 2 22 3 24 3
+operator 9 20 13 27 14 2 19 6 21 2 22 39 24 1
+operators 3 1 12 2 13 8 19 3 22 14
+opportunity 3 1 14 1
+opposite 2 1 13 1
+optimization 2 1 3 1
+optimizations 19 1
+optimize 3 2
+optimized 2 1
+optimizing 2 1
+optional 3 3 19 1
+optionally 19 2
+options 0 1
+order 2 2 3 3 13 5 15 1 19 1
+ordered 0 1 2 1 13 1
+ordinary 14 1
+org 7 1
+organization 2 2
+organized 0 1 21 1
+orientation 12 1
+oriented 1 1 2 3 6 1 14 2 19 1
+original 7 1
+originally 13 1
+osgz 10 1
+ostream 6 3 9 1 11 1 21 1 24 1
+other 0 2 1 4 2 4 3 8 4 2 6 2 9 3 11 1 12 4 13 7 14 1 19 15 21 2 22 5 24 1
+others 0 1 13 1 19 1 22 1
+otherwise 2 2 3 2 19 1
+our 0 1 1 1 2 2 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+out 1 1 2 2 7 2 8 3 13 1 23 1
+output 0 1 1 1 3 3 6 9 9 1 11 1 12 4 13 2 19 2 21 3 22 2 23 1 24 5
+outputs 15 1
+outside 3 2 19 6 22 4
+over 2 3 3 1 7 3 15 1 19 2 20 1
+overflow 3 1
+overhead 3 2
+overload 22 2
+overloadable 22 1
+overloaded 19 1 21 1 22 8
+overloading 14 1 19 2 22 3
+overloads 3 2 12 2 13 1 19 1 22 7
+overview 2 1
+own 0 1 1 1 2 2 7 1 19 4
+owns 1 1
+paced 18 1
+package 15 1
+padding 0 2
+page 0 1 1 1 2 2 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+pages 5 1 8 1 10 1 15 1 16 1 20 1 23 1 25 1
+pair 3 1
+papers 18 1
+paradigm 1 1 2 5 7 1 14 2
+paradigms 2 4 19 1
+param 22 9
+parameter 3 17 13 2 19 3 22 8
+parameters 1 1 3 25 13 3 16 1 19 5 20 1 21 2 22 5
+paranthesis 20 1
+parent 23 1
+parentheses 3 3 13 2 19 7
+parenthesis 22 1
+parentnode 0 1 1 1 2 1 3 1 4 2 5 2 6 1 7 2 8 2 9 1 10 2 11 1 12 1 13 1 14 1 15 2 16 2 17 1 18 1 19 1 20 2 21 1 22 1 23 2 24 1 25 2
+parity 5 1 25 1
+parse 16 1 20 1
+parser 23 1
+part 0 1 5 1 13 2 15 1 19 1 23 1 25 1
+participation 0 1
+particular 3 2 10 1 13 1 19 1 23 1
+pass 13 1 19 1
+passed 3 20 13 1 19 3 22 2
+passes 3 3
+passing 3 4 8 1 13 1 15 1 23 1
+password 16 1 20 1
+patch 23 1
+patching 23 1
+path 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 2 24 1 25 1
+pattern 5 1 10 1
+pchar 13 3
+people 15 1 23 1
+per 13 2 23 2
+perceived 3 1
+perfectly 22 1
+perform 2 1 3 2 21 2 24 2
+performance 2 2
+performed 13 3 22 1
+performing 2 1 3 2
+performs 3 1 19 1
+perhaps 19 1
+permission 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+person 2 1
+perspective 1 1
+peter 8 2
+pheonix 25 2
+physical 2 1 13 1
+physicsisfun 23 1
+pickapv 15 1
+piece 1 2
+pint 13 3
+pipes 16 1
+pitfalls 19 1
+pizdrykzesklepu 8 1
+place 3 2
+placed 13 1
+places 22 1
+plain 19 5
+plan 7 1
+planning 14 1
+platform 10 1 13 1
+platforms 2 3 3 2 10 1
+please 3 5 7 1 8 1 15 1 22 1 23 3
+plethora 14 1
+plotting 15 2
+pls 15 1
+plugin 16 1
+plus 3 1 13 1 21 1
+pman 23 1
+pod 19 1
+point 3 6 8 1 13 27 14 1 19 1 21 2 24 2
+pointed 13 29 15 1 19 8
+pointer 4 1 10 2 13 81 15 2 19 4 22 1
+pointers 0 1 3 2 9 1 12 2 13 75 19 4 22 1
+pointing 13 3
+points 13 14
+policy 0 2 1 2 2 2 3 2 4 2 5 2 6 2 7 2 8 2 9 3 10 2 11 2 12 2 13 2 14 2 15 2 16 2 17 2 18 2 19 2 20 2 21 2 22 2 23 2 24 2 25 2
+polymorphism 3 1 12 2 13 1 19 1 22 1
+polynomial 15 2
+pop 9 8
+popular 0 1 2 1 3 1
+popularized 3 1
+port 2 2 5 1 20 1
+portability 2 1 14 1
+portable 2 2 3 1 23 1
+porting 7 1 15 1
+position 0 1 13 1
+possibility 19 1
+possible 2 2 3 1 7 1 8 1 13 3 15 1 19 3 22 2
+possibly 8 1
+post 0 1 7 2 8 1 13 1 15 2 23 4
+posted 15 1
+postfix 13 3
+posting 8 1
+postnew 7 2 8 2 15 2 23 2
+potential 19 1
+power 1 1 15 1
+powerball 5 2 20 1 25 2
+powerful 0 1 2 1 13 1 16 1
+practical 12 1 14 1
+practically 2 1
+practice 3 1
+practicing 12 1
+prashant 5 1
+pre 1 2
+precede 13 1 22 1
+preceded 22 1
+precedence 13 4
+precedes 13 2
+preceding 3 1 13 4
+precise 3 1
+prect 19 1
+preface 2 1
+prefer 20 1
+preference 19 1
+preferences 1 1
+preferred 3 2
+prefers 3 1
+prefix 13 6 21 1 22 2
+preprocessor 3 1 12 2 13 1 19 1 22 1
+present 9 1
+pressed 8 2 23 2
+prevent 15 1
+prevention 10 1
+preview 7 1
+previous 3 3 13 5 19 7 22 3
+previously 23 1
+price 22 1
+primarily 14 1
+primary 15 1
+principle 13 1
+principles 1 1
+print 13 3 22 3
+printer 16 1
+printmessage 3 7
+prints 3 2
+prior 23 1
+priority 9 4
+privacy 0 2 1 2 2 2 3 2 4 2 5 2 6 2 7 2 8 2 9 2 10 2 11 2 12 2 13 2 14 2 15 2 16 2 17 2 18 2 19 2 20 2 21 2 22 2 23 2 24 2 25 2
+private 10 1 19 12
+probably 3 2
+problem 5 1 7 1 8 4 10 1 23 1
+problems 2 1 7 1 8 1 14 1
+procedural 2 3
+procedure 3 1
+procedures 1 1 2 1
+proceeds 23 1
+process 2 2 3 1 7 4 13 1 23 2
+processes 2 1 23 1
+processhacker 7 1
+produce 10 1 25 1
+product 14 2 22 1
+production 23 1
+productive 10 1
+productivity 1 1
+program 1 2 2 8 3 14 7 3 8 2 12 4 13 9 14 1 15 1 19 3 22 2 23 4
+programme 23 1
+programmer 2 1
+programmers 2 2 4 1 17 1 23 3
+programming 0 2 1 9 2 18 4 10 5 2 7 7 8 3 9 1 10 6 13 1 14 4 15 7 16 5 17 1 18 1 19 1 20 3 23 7 25 2
+programs 0 1 1 3 2 7 3 1 7 1 12 1 13 1
+progress 24 3
+prohibit 2 1
+projec 7 1 23 1
+project 2 2 7 2 8 1 14 1 25 2
+projects 19 1
+prompt 8 1
+proper 3 1 13 2 22 1
+properly 7 1 15 1
+properties 1 1 9 2 13 3 19 1 22 1
+property 3 2 13 1 19 1
+proprietary 1 1 10 1
+protected 14 1 19 2
+protocol 4 1 5 1 7 1 8 1 10 1 15 1 16 1 20 1 23 1 25 1
+protofunction 3 3
+protoseepp 8 1
+prototype 3 3 19 2 22 2
+prototypes 3 1 10 1
+provide 2 1 3 1 9 1
+provided 2 1 21 3 24 1
+provides 7 1 9 1 24 1
+providing 14 1
+provoking 3 1
+psize 13 3
+public 7 1 15 2 19 16 22 11
+publication 1 1
+publish 5 1 10 1 16 2 20 1 25 1
+published 1 2 14 2
+purpose 2 1 3 1 13 1 23 2
+purposes 10 1 19 1
+push 1 2 2 3 3 3 4 4 5 2 6 2 7 5 8 5 9 11 10 2 11 2 12 2 13 3 14 2 15 5 16 2 17 2 18 2 19 3 20 2 21 2 22 3 23 5 24 3 25 2
+put 13 1
+puts 2 1
+pvscoder 5 1 10 1 20 1
+qualified 13 2 22 1
+qualifier 13 1
+qualify 22 1
+qualifying 3 2 13 1
+quantities 3 1
+query 7 1
+question 15 1 23 2
+questions 0 1 8 1 17 2
+queue 6 1 9 10 11 1 21 1 24 3
+queues 9 1
+quickly 2 1
+quite 2 2 13 2
+quot 7 6 8 7 23 6
+qux 19 1
+radius 19 7
+rakib 7 2
+ram 4 1 23 1
+ran 8 1 15 1
+random 6 1 8 2 9 1 11 1 13 1 20 1 21 1 24 3
+randomization 14 1
+randomly 13 1
+randomness 10 1 25 1
+range 2 2 7 1 9 9 11 1 15 2
+ranges 15 2
+ranging 13 1
+raspberry 23 1
+rather 2 1 13 1 14 1 15 1
+ratio 6 1 9 1 11 1 21 1 24 3
+rbegin 9 10
+rcast 16 1 20 1
+read 2 1 8 2 13 9 19 1 22 2 23 2
+reading 8 1 13 1 15 1
+readline 15 1
+ready 4 1 5 1 7 1 8 1 10 1 15 1 16 1 20 1 23 1 25 1
+real 2 1
+really 2 1 7 1 8 1 13 1 23 1
+reason 13 2 22 1
+reasons 3 1 13 1
+recall 13 1
+recent 7 1
+recently 19 1
+recognizing 13 1
+recommended 22 1
+rect 19 32
+rectangle 8 1 19 60
+rectb 19 24
+rectc 19 3
+rectd 19 1
+recursion 20 1
+recursive 3 2 20 1 25 2
+recursivity 3 2
+reduce 13 1
+reducing 19 1
+ref 0 2
+refer 2 2 13 4 22 2
+reference 0 2 1 1 2 1 3 10 4 1 5 1 6 4 7 1 8 3 9 5 10 1 11 4 12 1 13 2 14 5 15 2 16 1 17 1 18 1 19 1 20 1 21 5 22 3 23 1 24 8 25 1
+references 3 8 13 1 14 1
+referred 19 1 22 1
+referring 1 1 22 1
+refers 2 3 13 5 22 1
+reflected 3 1
+reflecting 1 1
+reflects 2 1
+regard 2 1 3 1
+regarded 14 2
+regarding 13 1
+regardless 2 1
+regex 6 1 7 2 9 1 11 1 21 1 24 2
+regfree 7 1
+register 7 1
+registered 0 1 5 1 7 1 8 1 10 1 15 1 16 1 20 1 23 1 25 1
+regular 3 4 13 2 14 2 19 3 22 2 24 1
+regularly 8 1
+regulary 15 1
+rehash 9 5
+reinitialized 19 1
+reintroduces 19 1
+relat 8 1
+relate 8 1
+related 4 1 7 1 13 1 21 1 24 1
+relation 19 1 22 1
+relationship 19 1 24 1
+relative 13 1
+relatively 3 1
+release 14 1 23 1
+released 14 6
+relevant 13 1
+rely 1 1 2 2
+relying 9 1
+remains 13 1
+remarkable 2 2
+remember 3 1 13 1 19 1
+remembering 8 1 13 2
+remove 9 6 15 1
+removechild 0 1 1 1 2 1 3 1 4 2 5 1 6 1 7 4 8 4 9 1 10 1 11 1 12 1 13 1 14 1 15 4 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 4 24 1 25 1
+removing 9 1
+rend 9 10
+reorganize 3 1
+repeat 0 2
+repeats 13 1
+replace 3 1 7 1 15 1 22 1
+replaced 3 3
+replacing 1 1 3 2 13 1
+replicate 9 1
+replies 7 16 8 18 15 20 23 17
+reply 7 4 8 2 23 3
+repo 23 2
+report 14 1
+reported 14 1
+reports 14 1
+represent 3 1 13 3 22 1
+representation 13 1
+representations 13 1
+represented 3 1 13 4
+represents 13 1 22 1
+require 2 1 3 1 13 1
+required 3 3 13 1 22 1
+requirement 3 1 15 1 22 2
+requirements 23 1
+requires 2 1 3 1 13 1 22 2
+reread 7 1
+reserve 9 7
+reserved 0 1 1 1 2 2 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+resident 23 1
+resize 9 5
+resorting 19 1
+resource 7 1 15 3
+resources 0 1
+respected 14 1
+respective 13 1 19 1
+respectively 3 2 13 2
+responded 14 1
+response 7 1
+responsibility 2 1
+rest 19 1
+restricted 22 2
+restricting 19 1
+restrictions 2 1
+result 2 2 3 25 13 1 19 2 22 10
+resulting 2 3 3 1 13 1
+results 0 1 2 2 19 1
+resume 3 1
+resumes 3 1
+return 0 1 1 3 2 1 3 32 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 10 14 1 15 1 16 1 17 1 18 1 19 20 20 1 21 1 22 27 23 1 24 1 25 1
+returned 3 7 22 2
+returning 3 2 22 2
+returns 3 7 13 2 19 1 22 3
+retval 22 3
+reused 2 1
+revamped 5 1 20 1 25 1
+reverse 9 3
+revised 14 1
+revision 1 1
+rgb 7 1
+rgv 7 1
+rhs 22 3
+right 0 1 3 1 8 1 12 1 13 2 22 2
+rights 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 2 20 1 21 1 22 1 23 1 24 1 25 1
+roachmaster 5 1 25 1
+roughly 13 1
+rout 15 1
+routine 15 1
+royalty 1 1
+rule 3 1
+rules 2 2 13 2
+run 2 5 7 1 13 1 23 2
+running 7 3 15 1
+runs 2 1 13 1
+runtime 3 1 13 5
+sacrifice 2 1
+sacrificing 14 1
+safe 2 2 10 1
+safety 2 1 13 1 20 1
+said 13 1 14 1
+salem 7 1 15 1 23 3
+same 1 1 3 11 7 1 8 2 13 20 14 2 19 10 21 6 22 9 23 2
+sans 0 1
+saurabh 16 1
+saw 8 1 13 1
+says 15 1
+scanner 5 1 20 1
+scene 23 1
+sch 0 2
+schematic 1 1
+school 8 2
+scope 19 4 22 1
+score 5 1 10 1 16 1 20 1 25 1
+scores 8 1
+scraping 7 1
+screen 16 1
+screenshot 23 1
+screenshots 23 1
+script 4 2 5 2 7 2 8 2 10 2 15 2 16 2 20 2 23 3 25 2
+scroll 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+seam 8 2
+seamaxhandle 8 1
+sean 10 1
+search 0 5 1 1 2 3 3 1 4 1 5 1 6 1 7 2 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+searched 7 1
+second 3 8 13 6 19 2 22 6
+secondvalue 13 13
+section 0 2 1 1 2 1 4 2 23 1
+sections 12 1 13 1
+securb 5 1 10 1
+security 20 1
+see 3 2 13 4 19 1 23 1 24 1
+seems 13 1
+seen 1 1 3 2 13 2 19 1 22 1
+seeplus 7 2 8 4 15 3
+segments 3 1
+seldom 22 1
+self 14 1 18 1
+semantics 21 1 23 1
+semaphore 5 1 10 1
+semicolon 3 2
+semogenaz 23 1
+sen 7 1
+send 7 1 8 1
+sending 7 1 8 1
+sense 2 1 13 2 19 1
+sep 5 2 7 14 8 14 10 4 15 14 20 2 23 14 25 3
+separate 8 1
+separated 3 1
+separator 25 1
+seperate 4 1 8 2
+seperation 4 1 8 1
+sequence 9 3 13 1 20 1
+sequences 3 1 12 2 13 4 19 1 22 1 24 1
+series 5 1 10 1
+serif 0 1
+serves 22 1
+servi 7 1
+service 7 1
+services 7 1 16 1
+set 1 1 3 1 6 2 8 1 9 16 11 3 13 3 19 20 21 2 24 6
+setaccount 4 1 5 1 7 1 8 1 10 1 15 1 16 1 20 1 23 1 25 1
+setclientdata 15 1
+setjmp 6 1 9 1 11 1 21 3 24 2
+sets 0 1 2 1 10 1 22 1
+setter 15 1
+several 3 1 7 1 9 1 13 1 14 2 15 2 19 1 21 1 22 1 23 1 24 1
+shall 3 7 13 1 19 1 22 3
+shapes 15 1
+share 9 2
+shared 22 1 23 1
+sharing 22 1 23 1
+sharma 16 2
+she 2 1
+shell 23 3
+shift 23 2
+shimon 5 1 10 1 25 2
+shinegatori 23 1
+short 0 1 3 1 13 3 17 1
+shortly 14 1
+should 13 2 23 1
+show 8 1 13 1
+shown 3 1 13 1 19 1 24 1
+shrink 9 3
+side 2 1 3 1 22 1
+sierpinski 10 1 25 1
+sign 13 3 19 2 22 2
+signal 6 1 9 1 11 1 21 3 24 2
+signals 21 2 24 1
+signatures 22 1
+signs 3 1
+simconnect 15 1
+similar 2 3 3 4 7 1 9 1 13 1 14 1 19 1 22 1
+similarly 19 1
+simple 1 2 5 3 10 2 13 1 15 1 19 1 20 1 22 1
+simplicity 19 1
+simplification 1 1
+simplify 1 1 2 1
+simply 3 4 7 1 13 6 19 2
+simula 14 3
+simulations 14 1
+simulator 5 2 20 1 25 2
+since 2 2 3 3 9 1 13 3 19 4 22 1
+single 13 1 14 1 19 2 23 1
+sit 23 1
+size 0 1 9 34 13 8 23 1
+sizeof 13 6
+sizes 13 1 21 2 24 1
+skeleton 2 1
+skype 10 1
+slashes 14 1
+slight 13 1
+slightly 13 1
+slow 14 1
+slower 2 1
+small 7 1 23 1
+snake 23 1
+snap 7 1
+snapshot 7 1
+sobo 5 2 10 1 25 1
+social 0 1
+socket 7 3
+software 7 1 14 1 23 2
+solid 0 1
+solution 3 1
+solutions 20 1
+solve 8 1
+solved 23 1
+solving 15 1
+some 1 5 2 12 3 9 7 5 8 2 9 1 13 5 14 4 17 1 19 5 21 1 22 4 23 2
+somehow 3 1
+something 2 1 3 1 7 2 8 1 13 1
+sometime 14 1
+sometimes 2 2 9 1 13 1
+somewhat 13 1
+somewhere 3 1 13 1 22 1
+sooner 13 1
+sorry 8 1
+sort 5 2 9 3 13 1 23 1 25 2
+sorting 3 1 10 1 15 1 25 2
+soulie 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+source 5 11 7 1 10 9 15 1 16 11 20 8 25 16
+sourceforge 2 1
+space 9 1 13 2 23 1
+spaces 13 3
+speak 2 1
+special 1 2 3 2 12 2 13 3 19 4 22 3
+specialization 22 13
+specializations 22 1
+specialized 22 1
+specially 24 1
+specific 1 2 3 1 7 2 9 2 10 2 13 3 21 1 22 1
+specifically 8 1
+specified 2 1 3 4 13 1 19 1 22 4
+specifier 3 3 13 1 19 4
+specifiers 19 3
+specifies 19 1 22 2
+specify 3 2 19 1 22 1
+specifying 2 1 13 1
+speed 14 1
+spellings 21 2 24 1
+spistol 23 2
+splice 9 3
+split 5 1 10 1 20 1 25 2
+spotted 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 1 24 1 25 1
+sql 7 1
+sqlite 16 1
+src 0 2 4 1 5 1 7 1 8 1 10 1 15 1 16 1 20 1 23 1 25 1
+srvany 7 1
+ssl 4 1 5 1 7 1 8 1 10 1 15 1 16 1 20 1 23 1 25 1
+sstream 6 1 9 1 11 1 21 1 24 1
+sta 7 1
+stable 14 1 16 1
+stack 3 1 6 1 9 5 11 1 21 1 24 3
+stacking 3 1
+stacks 9 1
+standard 0 4 1 8 2 6 3 1 5 4 6 10 9 1 10 5 12 2 13 3 14 10 15 1 16 4 19 1 20 24 21 7 22 1 24 7 25 4
+standardization 2 2
+standardized 2 4 14 1
+standards 2 2 14 2
+start 8 1 12 1 13 5 23 1
+starting 8 1
+starts 3 1
+state 2 1 5 1 10 1 13 1 19 1 22 1
+statement 2 1 3 10 13 7
+statements 2 2 3 10 12 1 13 4 19 2 22 1
+states 2 1
+stathagat 7 1
+static 2 3 4 1 7 4 14 1 22 11 23 1
+statically 2 1
+status 24 1
+std 1 1 3 7 5 1 8 4 13 6 15 2 19 7 20 2 21 1 22 9 23 1 25 1
+stdafx 16 1
+stdarg 6 1 9 1 11 1 21 3 24 2
+stdbool 6 1 9 1 11 1 21 2 24 2
+stddef 6 1 9 1 11 1 21 3 24 2
+stdexcept 6 1 9 1 11 1 21 1 24 2
+stdint 6 1 9 1 11 1 21 2 24 2
+stdio 6 1 9 1 11 1 21 3 24 2
+stdiostream 20 1
+stdlib 6 1 9 1 11 1 21 5 24 2
+step 5 2 10 2
+still 13 2 14 2 22 2
+stod 11 2
+stof 11 2
+stoi 11 2
+stol 11 2
+stold 11 2
+stoll 11 2
+stop 13 4
+stopped 3 1
+storage 9 1 15 1 19 1 23 1
+store 13 2 15 1 19 1 22 4
+stored 7 1 13 4
+stores 7 1 9 1 13 2 22 1
+stoul 11 2
+stoull 11 2
+stranger 1 1
+strchr 21 1
+stream 6 9 16 1 24 1
+streambuf 6 3 9 1 11 1 21 1 24 1
+streams 6 1 24 1
+strength 2 1
+strict 2 1
+string 0 2 3 12 5 1 6 2 8 2 9 2 10 1 11 32 13 5 15 2 21 4 22 1 23 2 24 4 25 1
+strings 3 5 5 2 11 3 13 1 20 2 21 2 24 3 25 1
+strong 2 4 14 1
+strongly 2 1 22 1
+stroustrup 14 6
+strpbrk 21 1
+strrchr 21 1
+strstr 21 1
+struct 7 1 19 6 22 1
+structs 8 1
+structure 2 1 3 5 8 1 12 4 13 2 15 2 19 2 21 1 22 2
+structured 1 1 2 4
+structures 3 1 9 1 12 3 13 1 19 8 22 1
+struggling 15 2
+stu 23 1
+stuck 8 1
+studio 7 1
+stuff 8 1
+stunning 2 1
+style 13 2 19 2
+subclass 7 1
+subject 2 1
+subnet 16 1 20 1
+subroutines 2 1
+subset 2 2 24 1
+subtract 3 1 22 1
+subtracting 13 1
+subtraction 3 14 13 6
+success 3 1
+successful 3 2
+successfully 3 1 15 1
+succession 13 1
+such 1 1 2 8 3 5 6 1 9 2 13 8 19 2 22 5 23 2
+suckless 23 2
+suffix 13 3
+suggest 3 1 19 1 23 1
+suit 13 1
+suitable 2 1
+summary 2 1 22 1
+sums 8 1
+suomynonapatri 23 1
+sup 8 2
+superset 14 1
+supplemental 18 1
+support 2 3 13 1 14 5
+supported 2 1 9 1
+supports 1 1 2 5
+suppose 13 1 22 1
+supposed 2 4 15 1
+sure 7 1 23 3
+surrounded 3 1
+surrounding 13 1
+swap 9 15
+symbol 8 1 14 1
+symbols 16 1
+synonym 2 1
+syntax 3 3 8 2 13 5 14 1 19 7 22 3
+syntaxes 19 1
+sysconf 23 1
+system 2 6 5 1 6 1 9 1 11 1 13 3 14 1 15 1 16 1 20 1 21 1 23 3 24 3
+systems 2 1
+tab 23 1
+table 0 2 10 1 15 1 22 1
+tag 5 1 10 1 15 1 16 1 20 1 25 1
+tags 15 1
+take 2 1 3 1 7 1 13 3 22 2 23 3
+taken 3 2 14 1
+takes 2 1 3 4 13 5 19 3 22 1 23 1
+taking 3 2 19 1 22 1
+talk 7 1 8 1 15 1 23 1
+tarc 15 1
+target 2 1
+task 2 1 3 1 8 1 13 1
+tasks 2 1 3 2
+taught 1 1
+tbt 7 7 8 7 15 7 23 7
+tbttop 7 6 8 6 15 6 23 6
+tchar 16 1
+tck 20 1
+tea 15 2
+teaching 18 1
+tear 23 1
+technical 0 1 4 1 14 2 21 1
+technically 8 1
+technique 10 1 25 1
+tedious 2 1
+temp 22 8
+template 1 2 4 1 7 2 9 16 11 12 14 1 15 3 22 35 24 1
+templates 0 1 1 1 3 2 9 3 11 2 12 2 13 1 14 1 19 1 22 5
+tends 13 1
+term 2 1
+terminal 23 1
+terminated 13 2
+terminating 13 1
+terminology 10 1
+terms 2 4 19 1
+tes 15 1
+test 15 2
+tested 23 1
+testing 7 1
+tests 15 1
+text 0 4 4 3 5 1 7 1 8 3 10 1 15 2 16 1 20 2 23 1 25 2
+tgmath 6 1 9 1 11 1 21 1 24 2
+tha 7 1 8 1
+than 1 3 2 4 3 2 13 7 15 1 19 1 22 2
+thank 7 1 8 2 15 1 23 5
+thanks 3 1 7 1 8 2 23 1
+that 1 6 2 23 3 44 6 2 7 7 8 4 9 3 13 69 14 6 15 5 19 24 21 1 22 40 23 3
+the 0 12 1 37 2 64 3 295 4 2 5 4 6 2 7 16 8 23 9 15 10 6 12 2 13 275 14 56 15 25 16 1 17 3 18 2 19 149 20 1 21 32 22 123 23 20 24 8 25 6
+their 2 5 3 9 8 1 13 4 14 1 19 8 21 3 22 4
+them 2 4 3 3 8 3 9 3 13 7 19 4 22 4
+themselves 3 2 13 2 22 1
+then 2 3 3 2 7 1 13 3 14 1 15 1 19 1 22 1 23 2
+theory 2 1
+there 1 3 2 2 3 5 7 3 8 1 13 4 15 1 19 1 22 4 23 2
+thereafter 14 1
+therefore 1 1 3 6 13 9 19 2 21 1
+thes 7 1
+these 1 2 2 2 3 9 7 1 8 1 12 1 13 14 17 1 19 8 22 4 23 1 24 1
+thesis 14 1
+they 1 1 2 9 3 10 7 2 8 2 9 1 13 27 14 1 15 3 19 16 21 1 22 7
+thing 8 1 13 2 15 2
+things 8 1 13 2 19 1
+think 3 1 8 2 15 1 22 1
+third 3 3 13 3 22 1
+this 0 6 1 5 2 9 3 46 4 2 5 3 6 2 7 5 8 9 9 3 10 3 11 2 12 1 13 42 14 3 15 8 16 3 17 4 18 2 19 29 20 3 21 3 22 30 23 8 24 2 25 3
+those 2 1 3 1 19 4 22 3
+though 2 1 3 3 13 2 19 1 22 1
+thought 2 1 7 1 23 1
+thousand 13 2
+thread 6 1 7 2 8 2 9 1 11 1 15 2 21 1 23 4 24 3
+threading 6 1 9 1 11 1 14 1 21 1 24 2
+threadlist 4 1 7 2 8 2 15 2 23 2
+three 3 2 13 4 19 1 22 1 23 1
+through 8 1 9 1 13 1 24 1
+throughout 1 1
+thus 2 7 3 2 13 3 19 3 22 4
+thx 23 1
+tigureq 23 1
+time 1 1 2 6 3 1 6 1 9 1 11 1 13 1 14 2 15 3 19 1 21 5 23 2 24 4
+times 2 1 3 2 13 1 22 1 23 1
+timmyj 23 1
+tiogrand 15 1
+tips 5 9 10 14 16 3 20 7 25 8
+title 15 1
+together 8 1 22 3
+token 15 1
+told 2 1
+tonic 23 1
+too 13 1 14 1 23 1
+tool 7 2
+tools 0 1 1 3 2 1 5 2 10 5 16 3 20 3 25 3
+top 0 2 15 1 24 1
+topic 4 1 7 5 8 5 10 1 15 4 23 4
+topics 0 1 4 2 7 1 8 1 15 1 23 1
+topological 5 1 25 1
+total 7 1
+tower 20 1 25 1
+trackpageview 4 1 5 1 7 1 8 1 10 1 15 1 16 1 20 1 23 1 25 1
+trade 2 1 9 1
+traditional 21 1
+traits 6 1 9 1 11 5 21 1 24 3
+transfer 3 1
+transformed 13 1
+translate 14 1
+translated 2 1
+trapezoids 15 1
+traversal 25 1
+treats 1 1
+trees 9 1 25 1
+triangle 10 1 25 1
+triangles 15 1
+tricks 5 9 10 12 16 3 20 7 25 8
+tricky 3 1 13 1
+tried 8 1
+tries 2 1
+trilinos 15 1
+trouble 15 1 23 2
+true 1 2 4 1 5 1 7 1 8 1 9 1 10 1 13 3 15 1 16 1 20 1 22 1 23 1 25 1
+truthy 8 1
+try 1 1 2 1 8 3 23 2
+trying 7 2 8 3 15 2 23 2
+tuple 6 1 8 2 9 1 11 1 21 1 24 3
+tuples 8 1
+turbo 14 3
+turn 13 1
+tutorial 1 1 18 3 23 2
+tutorials 0 3 1 2 2 1 3 4 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 5 13 4 14 1 15 1 16 1 17 1 18 6 19 4 20 1 21 1 22 4 23 1 24 1 25 1
+twilightspectre 16 1
+two 3 9 9 1 13 9 14 1 15 1 19 7 20 1 21 1 22 7 25 1
+txt 4 2 8 2
+type 1 1 2 13 3 20 4 1 5 2 6 1 7 2 8 4 9 2 10 2 11 1 12 2 13 44 14 1 15 3 16 2 19 17 20 3 21 3 22 25 23 3 24 8 25 2
+typed 2 3
+typedef 7 1
+typeindex 6 1 9 1 11 1 21 1 24 2
+typeinfo 6 1 9 1 11 1 21 1 24 2
+typename 7 1
+types 1 2 2 9 3 11 8 1 9 1 11 1 12 6 13 8 19 6 21 7 22 9 24 4
+typical 13 3
+typically 2 1
+typing 2 9
+uchar 6 1 9 1 11 1 21 2 24 2
+ultrablack 23 2
+unambiguous 22 1
+uncertain 2 1
+unchanged 13 1
+und 8 1 23 1
+undefined 2 1 8 1 10 1 13 1
+under 13 1 24 1
+underline 0 1
+underlying 2 1 9 2
+understand 2 4 15 1 23 2
+understood 23 1
+undesired 2 1
+undetermined 13 2 19 1
+unexpected 19 2 23 1
+unfortunately 15 1
+unicode 16 1 21 1 24 2
+uniform 19 7
+unincremented 13 1
+uninitialized 13 2
+union 19 3
+unions 14 1 19 2
+unique 9 3 13 2
+uniquely 23 1
+unix 0 1 4 3 5 2 7 1 8 1 10 3 14 1 15 1 16 5 20 3 23 8 25 1
+unless 15 1
+unlike 2 1 19 1
+unordered 6 2 9 25 11 2 21 2 24 6
+unoriginal 16 1
+uns 15 1
+unsafe 2 3
+unsi 8 1
+unsigned 11 2
+unsure 15 1
+until 14 3
+update 15 2 24 3
+updated 5 16 10 15 14 1 16 17 20 17 25 19
+upper 9 5
+uppercase 22 3
+upwards 2 1
+url 0 6
+use 1 5 2 2 3 2 7 3 8 1 9 1 13 9 14 1 15 5 16 3 19 2 20 1 21 1 22 2 23 4 24 1
+used 1 1 2 5 3 12 7 1 8 1 9 2 13 12 14 1 15 1 19 9 21 1 22 8 23 1 25 1
+useful 3 3 13 1 14 1 19 1
+user 0 2 1 2 2 1 4 1 5 1 7 1 8 3 10 1 15 1 16 2 20 1 23 3 25 1
+users 0 1 5 1 7 2 8 2 10 1 13 1 15 2 16 1 20 1 23 2 25 1
+uses 0 1 1 3 2 2 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 8 14 1 15 1 16 1 17 1 18 1 19 2 20 1 21 1 22 2 23 1 24 1 25 1
+using 1 1 3 8 5 2 7 5 8 3 10 3 13 8 14 1 15 4 16 1 19 15 20 1 22 12 25 1
+usual 3 1 13 1 15 1 19 1 22 1
+usually 2 4 8 1
+utc 4 7 7 20 8 20 15 20 23 20
+utilities 21 2 24 1
+utility 6 1 7 1 9 1 11 1 21 1 24 4
+utk 15 1
+val 22 6
+valarray 6 1 9 2 11 1 21 1 24 2
+valid 3 1 13 6 19 2 22 5
+value 3 39 8 2 9 5 11 2 13 65 15 2 19 7 22 4
+values 3 19 7 3 10 1 13 2 15 2 19 21 22 5 24 1 25 1
+var 0 4 1 4 2 4 3 4 4 8 5 7 6 4 7 7 8 7 9 4 10 7 11 4 12 4 13 4 14 4 15 7 16 7 17 4 18 4 19 4 20 7 21 4 22 4 23 7 24 4 25 7
+variable 2 1 3 11 4 1 6 1 7 2 9 1 11 1 13 27 14 1 19 4 21 3 22 7 23 3 24 4
+variables 2 6 3 12 12 2 13 6 19 10 22 4
+variadic 14 1
+variant 14 1
+various 14 1
+vcm 25 1
+vect 15 1
+vector 6 1 7 1 8 3 9 8 11 1 15 1 21 1 22 1 24 3
+vectors 0 1 15 1 20 1 22 3
+verbal 25 1
+verbosity 2 1
+verdana 0 1
+versatile 0 1 2 1
+version 3 3 7 2 16 1 21 2 22 2 23 1
+versions 13 1 19 1 21 4
+vertical 0 2
+very 2 5 3 3 8 1 9 1 13 5 14 2 15 1 19 1 22 3 23 1
+view 19 1
+viewing 7 1
+viktar 20 1 25 1
+vincent 23 1
+violation 8 1
+virtual 10 1 14 1
+virtualthreadlist 4 1
+vis 4 1 7 1 8 1 15 1 23 1
+visibility 3 1 12 2 13 1 19 1 22 1
+visible 19 1
+visited 0 1
+vista 16 2
+visual 1 5 5 1 7 1 10 5 16 8 20 2 25 1
+vital 10 1
+void 3 19 13 12 15 1 19 10 22 1
+volume 19 4
+votes 5 20 10 20 16 20 20 20 25 20
+vqx 25 1
+vreynaud 23 1
+want 2 1 7 3 8 2 15 2 23 2
+wanted 22 1
+was 1 4 2 1 3 11 7 1 8 5 13 4 14 25 19 3 22 1 23 2
+waste 19 1
+way 2 3 3 4 7 1 8 1 9 1 10 1 13 6 19 4 20 1 23 1 25 1
+ways 1 2 2 1 3 1 13 1 19 2
+wcerr 6 2
+wchar 6 2 9 1 11 1 21 3 24 2
+wcin 6 2
+wclog 6 2
+wcout 6 2
+wctype 6 1 9 1 11 1 21 2 24 2
+weak 2 2
+weasel 23 1
+webcam 7 2
+website 0 3 1 2 2 2 3 1 4 2 5 1 6 1 7 1 8 1 9 1 10 1 11 1 12 1 13 1 14 1 15 1 16 1 17 1 18 1 19 1 20 1 21 1 22 1 23 3 24 1 25 1
+week 8 1
+welcome 7 2 8 2 15 2 23 2
+well 1 1 2 3 3 1 13 1 14 2
+went 8 1
+were 3 4 13 2 14 6 19 3 22 1
+what 1 5 2 8 3 6 5 1 7 1 8 2 12 1 13 5 15 3 19 1 22 1 23 1
+whatever 8 1
+when 2 3 3 12 8 4 13 10 14 1 15 2 19 5 22 6 23 2
+whenever 13 1 19 1
+whenid 4 7 7 20 8 20 15 20 23 20
+where 0 1 1 2 2 1 3 8 8 2 13 5 15 2 19 3 21 1 22 1
+whereas 13 1 19 1
+whether 1 1 7 1 13 1
+which 1 3 2 9 3 18 7 2 9 3 13 14 14 12 19 9 21 1 22 7
+while 2 4 3 1 4 1 7 5 8 3 13 7 15 3 19 2 23 3
+whitegentle 8 2
+who 0 1 2 2 23 1
+whole 3 1 13 1 24 1
+whose 13 2 19 5 22 1
+why 3 4 8 2 20 1
+wide 2 2 6 5 11 2 21 2 24 2
+widely 1 1 14 1
+width 0 3 19 29
+wikipedia 15 1
+will 1 2 2 9 3 1 13 4 15 1 19 1 23 4
+williamcpowell 7 1
+win 4 1 7 2 8 1
+winapi 7 2 16 1
+window 1 2 2 3 3 3 4 2 6 2 7 7 8 3 9 3 11 2 12 2 13 3 14 2 15 3 16 1 17 2 18 2 19 3 21 2 22 3 23 3 24 3
+windowed 1 3
+windowing 1 1
+windows 0 2 1 2 4 2 5 1 7 12 8 1 10 3 15 2 16 28 20 4 23 2 25 1
+winner 8 1
+winners 8 1
+winsock 7 1
+wip 5 1 25 1
+wish 0 1 2 1 8 2
+wishes 2 1
+wit 23 1
+with 0 1 1 7 2 9 3 29 4 1 5 1 7 7 8 6 9 4 10 3 12 3 13 39 14 9 15 4 18 1 19 31 20 1 21 6 22 16 23 7 24 1 25 3
+within 0 1 3 10 19 8 21 2 22 4
+without 1 1 2 2 3 5 8 1 13 3 14 1 15 1 19 2
+wondered 7 1
+words 1 1 2 1 8 1
+work 2 3 8 2 13 1 14 3 15 2 23 1 24 1
+worked 8 1 14 1 15 1
+working 7 3 8 1 15 1 23 1
+works 3 1
+world 1 1 2 3 8 2 13 1
+worry 13 1
+worse 8 1
+worth 14 1 22 1
+would 2 3 3 10 13 18 14 5 19 5 22 5 23 1
+wrapper 16 1
+write 2 1 3 2 8 1 13 1 15 2 22 1
+writing 2 1 7 1 8 2 15 1
+written 1 3 2 4 3 1 7 1 8 1 13 1 14 2 15 1 20 1
+wrong 7 1
+wrote 13 1
+wstring 11 4
+www 4 1 5 1 7 1 8 1 10 1 15 1 16 1 20 1 23 1 25 1
+xwindow 1 1
+yada 7 3
+yea 23 1
+yeah 15 1
+year 14 2
+years 7 1
+yes 22 2
+yet 14 1
+yield 2 1
+yielding 3 1
+you 0 2 1 7 2 1 3 4 4 1 5 1 6 1 7 8 8 17 9 1 10 1 11 1 12 1 13 4 14 1 15 8 16 1 17 1 18 1 19 1 20 1 21 1 22 4 23 16 24 1 25 1
+your 0 1 1 4 7 4 8 1 13 1 16 2 23 2
+yours 23 1
+yourself 3 1 8 1 18 1
+zero 3 1 13 1
+zeros 22 1
+zolaboony 8 1
+zsummer 16 1
+ztm 4 4 7 15 8 11 15 12 23 14
+ztma 7 1 8 1 15 1 23 3
+ztmaa 15 1
+ztmab 7 1
+ztmae 4 1
+ztmb 4 2 15 2 23 1
+ztmbd 8 1
+ztmbdd 8 1
+ztmbe 7 1
+ztmc 8 1 15 1
+ztmd 8 3 15 3 23 1
+ztmda 8 1
+ztme 7 2
+ztmec 8 1
+ztmf 23 1

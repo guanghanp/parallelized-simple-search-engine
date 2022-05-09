@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -C knl
+#SBATCH -q debug
+#SBATCH -J cs267
+#SBATCH -t 00:30:00
+#SBATCH --output=openmp-serial-%j.out
+
+./indexer ../pages_68/1/ ../index_files/serial/1_depth.txt
+./indexer ../pages_68/2/ ../index_files/serial/2_depth.txt
+./indexer ../pages_68/3/ ../index_files/serial/3_depth.txt
+./indexer ../pages_68/4/ ../index_files/serial/4_depth.txt
