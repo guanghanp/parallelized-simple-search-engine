@@ -1,8 +1,7 @@
 /*
- * indexer.cpp --- create and save an indexer from a directory of crawled webpages
+ * distribute_indexer.cpp --- distributed version of indexer
  * 
  */
-
 
 extern "C"
 {
@@ -16,9 +15,7 @@ extern "C"
 #include <upcxx/upcxx.hpp>
 
 #include <vector>
-#include <unordered_map>
 #include <string>
-#include <list>
 
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -75,89 +72,99 @@ int main(int argc, char *argv[]){
 
 	upcxx::init();
 
-	auto start_time = std::chrono::steady_clock::now();
-
-	// upcxx::global_ptr<list<int>> gptr = upcxx::new_<int>(0);
 	using dobj_list_t = upcxx::dist_object<list<int>>;
 	using dobj_reduce_arr_t = upcxx::dist_object<vector<tuple<string, int>>> ;
 
-	dobj_list_t job_queue({});
-	dobj_reduce_arr_t reduce_arr({});
-	
-	if(upcxx::rank_me() == 0){
-		for(int i = 0; i < file_count-2; i++){
-			job_queue -> push_back(i);
-		}
-		
-	} 
-	
-	if(upcxx::rank_me() > 0) {
-		// Map 
-		while(true){
-			int doc_id = upcxx::rpc(0, 
-                      [](dobj_list_t &job_queue) -> int {
-						if(!job_queue -> empty()){
-							int next = job_queue -> front();
-                    		job_queue -> pop_front();
-							return next;
-						}
-						return -1;
-					  }, job_queue).wait();
-			if (doc_id == -1)
-				break;
-		
-			webpage_t *current = pageload(doc_id, pagedir);
-			char* result;
-			int pos = 0;
-			while ( (pos = webpage_getNextWord(current, pos, &result)) > 0) {
+	upcxx::global_ptr<int> cur_doc = upcxx::new_<int>(0);
+	upcxx::atomic_domain<int> ad({upcxx::atomic_op::fetch_add});
+	upcxx::global_ptr<int> bcast_doc = upcxx::broadcast(cur_doc, 0).wait();
 
-				// go through each word and normalize
-				if(normalizeWord(result) != NULL){
-					string result_string = string(result);
-					int result_hash = hash<string>{}(result_string) % (upcxx::rank_n()-1);
-					int idc = upcxx::rpc(result_hash+1, 
-                      [](dobj_reduce_arr_t &reduce_arr, string result_string, int doc_id) -> int {
-						reduce_arr -> push_back(make_tuple(result_string, doc_id));
-						return 0;
-					  }, reduce_arr, result_string, doc_id).wait();
-				}
+	dobj_reduce_arr_t reduce_arr({});
+
+	auto start = std::chrono::steady_clock::now();
+
+	// Map 
+	while(true){
+		int doc_id = ad.fetch_add(bcast_doc, 1, memory_order_relaxed).wait();
+		// cout << "rank: " << upcxx::rank_me() << " doc_id: " << doc_id << endl;
+		if (doc_id >= file_count-2)
+			break;
+	
+		webpage_t *current = pageload(doc_id, pagedir);
+		char* result;
+		int pos = 0;
+		while ( (pos = webpage_getNextWord(current, pos, &result)) > 0) {
+
+			// go through each word and normalize
+			if(normalizeWord(result) != NULL){
+				string result_string = string(result);
+				int result_hash = hash<string>{}(result_string) % upcxx::rank_n();
+				upcxx::rpc(result_hash, 
+				[](dobj_reduce_arr_t &reduce_arr, string result_string, int doc_id) {
+					reduce_arr -> push_back(make_tuple(result_string, doc_id));
+				}, reduce_arr, result_string, doc_id).wait();
 			}
 
-			webpage_delete((void*)current);
-			
+			free(result);
 		}
+		webpage_delete((void*)current);
 	}
+	auto end_map = std::chrono::steady_clock::now();
 
 	upcxx::barrier();
 
+	auto end_all_map = std::chrono::steady_clock::now();
+	double map_time = std::chrono::duration<double>(end_all_map - start).count();
+    if (upcxx::rank_me() == 0) {
+        cout << "Finished Map in = " << map_time << " seconds." << endl;
+    }
+
+	auto start_reduce = std::chrono::steady_clock::now();
+
 	// Reduce
-	if(upcxx::rank_me() > 0) {
-
-		sort(reduce_arr -> begin(), reduce_arr -> end());
-		ofstream myfile;
-		myfile.open(string(argv[2]) + "-" + to_string(upcxx::rank_me()));
-		string prev_word = "";
-		for (int i = 0; i < reduce_arr -> size();){
-			string cur_word = get<0>((reduce_arr -> at(i)));
-			int cur_doc = get<1>((reduce_arr -> at(i)));
-			if(cur_word.compare(prev_word) != 0){
-				if(prev_word.compare("") != 0){
-					myfile << endl;
-				}
-				prev_word = cur_word;
-				myfile << cur_word;
+	sort(reduce_arr -> begin(), reduce_arr -> end());
+	ofstream myfile;
+	myfile.open(string(argv[2]) + "-" + to_string(upcxx::rank_me()));
+	string prev_word = "";
+	for (int i = 0; i < reduce_arr -> size();){
+		string cur_word = get<0>((reduce_arr -> at(i)));
+		int cur_doc = get<1>((reduce_arr -> at(i)));
+		if(cur_word.compare(prev_word) != 0){
+			if(prev_word.compare("") != 0){
+				myfile << endl;
 			}
-			int j = i + 1;
-			while( j < reduce_arr -> size() && get<0>((reduce_arr -> at(j))).compare(cur_word) == 0 && get<1>((reduce_arr -> at(j))) == cur_doc)
-				j++;
-			myfile << " " << cur_doc << " " << j-i;
-			i = j;
+			prev_word = cur_word;
+			myfile << cur_word;
 		}
-		myfile << endl;
-		myfile.close();
-		
+		int j = i + 1;
+		while( j < reduce_arr -> size() && get<0>((reduce_arr -> at(j))).compare(cur_word) == 0 && get<1>((reduce_arr -> at(j))) == cur_doc)
+			j++;
+		myfile << " " << cur_doc << " " << j-i;
+		i = j;
 	}
+	myfile << endl;
+	myfile.close();
 
+	upcxx::barrier();
+    auto end = std::chrono::steady_clock::now();
+
+	std::chrono::duration<double> diff = end - start;
+	std::chrono::duration<double> map_diff = end_map - start;
+	std::chrono::duration<double> reduce_diff = end - start_reduce;
+
+    double seconds = diff.count();
+	double map_seconds = map_diff.count();
+	double reduce_seconds = reduce_diff.count();
+	// cout << "Rank: " << upcxx::rank_me() << ", Total Time = " << seconds << " seconds. " << " Map Time = " << map_seconds << " seconds. " << "Reduce Time = " << reduce_seconds << " seconds" " for " << " indexing.\n";
+
+    if (upcxx::rank_me() == 0) {
+        cout << "Finished Reduce in = " << reduce_seconds << " seconds." << endl;
+		cout << "Total time = " << seconds << " seconds." << endl;
+    }
+    upcxx::barrier();
+
+	upcxx::delete_(cur_doc);
 	upcxx::finalize();
+
 	exit(EXIT_SUCCESS);
 }
