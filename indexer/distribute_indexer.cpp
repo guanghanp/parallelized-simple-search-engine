@@ -44,7 +44,7 @@ int main(int argc, char *argv[]){
 
 	// check number of arguments
 	if(argc != 3){
-		printf("usage: indexer <pagedir> <outputfile>\n");
+		printf("usage: distribute_indexer <pagedir> <outputfile>\n");
 		exit(EXIT_FAILURE);
 	}
 
@@ -72,7 +72,6 @@ int main(int argc, char *argv[]){
 
 	upcxx::init();
 
-	using dobj_list_t = upcxx::dist_object<list<int>>;
 	using dobj_reduce_arr_t = upcxx::dist_object<vector<tuple<string, int>>> ;
 
 	upcxx::global_ptr<int> cur_doc = upcxx::new_<int>(0);
@@ -84,6 +83,7 @@ int main(int argc, char *argv[]){
 	auto start = std::chrono::steady_clock::now();
 
 	// Map 
+	upcxx::future<> fut_all = upcxx::make_future();
 	while(true){
 		int doc_id = ad.fetch_add(bcast_doc, 1, memory_order_relaxed).wait();
 		// cout << "rank: " << upcxx::rank_me() << " doc_id: " << doc_id << endl;
@@ -93,22 +93,27 @@ int main(int argc, char *argv[]){
 		webpage_t *current = pageload(doc_id, pagedir);
 		char* result;
 		int pos = 0;
+		// upcxx::future<> fut_all = upcxx::make_future();
 		while ( (pos = webpage_getNextWord(current, pos, &result)) > 0) {
 
 			// go through each word and normalize
 			if(normalizeWord(result) != NULL){
 				string result_string = string(result);
 				int result_hash = hash<string>{}(result_string) % upcxx::rank_n();
-				upcxx::rpc(result_hash, 
+				upcxx::future<> fut = upcxx::rpc(result_hash, 
 				[](dobj_reduce_arr_t &reduce_arr, string result_string, int doc_id) {
 					reduce_arr -> push_back(make_tuple(result_string, doc_id));
-				}, reduce_arr, result_string, doc_id).wait();
+				}, reduce_arr, result_string, doc_id);
+				fut_all = upcxx::when_all(fut_all, fut);
+				
 			}
-
+			if (pos % 5 == 0) upcxx::progress();
 			free(result);
 		}
+		// fut_all.wait();
 		webpage_delete((void*)current);
 	}
+	fut_all.wait();
 	auto end_map = std::chrono::steady_clock::now();
 
 	upcxx::barrier();
